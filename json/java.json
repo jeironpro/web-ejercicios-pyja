@@ -1389,7 +1389,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/51.svg"
+        "uml": "img/uml/51.svg"
     },
     {
         "id": "52",
@@ -1432,7 +1432,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/52.svg"
+        "uml": "img/uml/52.svg"
     },
     {
         "id": "53",
@@ -1472,7 +1472,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/53.svg"
+        "uml": "img/uml/53.svg"
     },
     {
         "id": "54",
@@ -1512,7 +1512,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/54.svg"
+        "uml": "img/uml/54.svg"
     },
     {
         "id": "55",
@@ -1548,7 +1548,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/55.svg"
+        "uml": "img/uml/55.svg"
     },
     {
         "id": "56",
@@ -1591,7 +1591,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/56.svg"
+        "uml": "img/uml/56.svg"
     },
     {
         "id": "57",
@@ -1634,7 +1634,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/57.svg"
+        "uml": "img/uml/57.svg"
     },
     {
         "id": "58",
@@ -1676,7 +1676,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/58.svg"
+        "uml": "img/uml/58.svg"
     },
     {
         "id": "59",
@@ -1718,7 +1718,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/59.svg"
+        "uml": "img/uml/59.svg"
     },
     {
         "id": "60",
@@ -1763,7 +1763,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/60.svg"
+        "uml": "img/uml/60.svg"
     },
     {
         "id": "61",
@@ -1802,7 +1802,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/61.svg"
+        "uml": "img/uml/61.svg"
     },
     {
         "id": "62",
@@ -1838,7 +1838,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/62.svg"
+        "uml": "img/uml/62.svg"
     },
     {
         "id": "63",
@@ -1875,7 +1875,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/63.svg"
+        "uml": "img/uml/63.svg"
     },
     {
         "id": "64",
@@ -1950,7 +1950,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/64.svg"
+        "uml": "img/uml/64.svg"
     },
     {
         "id": "65",
@@ -2000,7 +2000,7 @@
             ],
             "salida": []
         },
-        "uml": "../img/uml/65.svg"
+        "uml": "img/uml/65.svg"
     },
     {
         "id": "66",
@@ -2116,7 +2116,7 @@
                 "Adiós."
             ]
         },
-        "uml": "../img/uml/66.svg"
+        "uml": "img/uml/66.svg"
     },
     {
         "id": "67",
@@ -2233,7 +2233,7 @@
                 "Adiós."
             ]
         },
-        "uml": "../img/uml/67.svg"
+        "uml": "img/uml/67.svg"
     },
     {
         "id": "68",
@@ -2288,7 +2288,7 @@
                 "Ganador: Luxa (con 20 HP restante)"
             ]
         },
-        "uml": "../img/uml/68.svg"
+        "uml": "img/uml/68.svg"
     },
     {
         "id": "69",
@@ -2350,7 +2350,7 @@
                 "Total recaudado: 200.0 €"
             ]
         },
-        "uml": "../img/uml/69.svg"
+        "uml": "img/uml/69.svg"
     },
     {
         "id": "70",
@@ -2397,7 +2397,7 @@
                 "Informe de seguimiento generado correctamente."
             ]
         },
-        "uml": "../img/uml/70.svg"
+        "uml": "img/uml/70.svg"
     },
     {
         "id": "71",
@@ -2443,7 +2443,7 @@
                 "4. Anish Giri – 1.5 pts"
             ]
         },
-        "uml": "../img/uml/71.svg"
+        "uml": "img/uml/71.svg"
     },
     {
         "id": "72",
@@ -2487,7 +2487,7 @@
                 "- Gimnasio       | 03/04/2025 | 18:00-19:00 | Cancelada"
             ]
         },
-        "uml": "../img/uml/72.svg"
+        "uml": "img/uml/72.svg"
     },
     {
         "id": "73",
@@ -2541,7 +2541,7 @@
                 "- Ana entregó: Hechizo Espejo"
             ]
         },
-        "uml": "../img/uml/73.svg"
+        "uml": "img/uml/73.svg"
     },
     {
         "id": "74",
@@ -2585,7 +2585,7 @@
                 "Error: Laura ya tiene 2 reservas hoy (límite alcanzado)"
             ]
         },
-        "uml": "../img/uml/74.svg"
+        "uml": "img/uml/74.svg"
     },
     {
         "id": "75",
@@ -2623,7 +2623,7 @@
                 "Ganador de la competencia: RoboMax con 4 tareas completadas"
             ]
         },
-        "uml": "../img/uml/75.svg"
+        "uml": "img/uml/75.svg"
     },
     {
         "id": "76",
@@ -2660,7 +2660,7 @@
                 "- Explorers: Tirolina 10:00-12:00, 4 plazas"
             ]
         },
-        "uml": "../img/uml/76.svg"
+        "uml": "img/uml/76.svg"
     },
     {
         "id": "77",
@@ -2702,7 +2702,7 @@
                 "Plazas libres en Yoga: 10"
             ]
         },
-        "uml": "../img/uml/77.svg"
+        "uml": "img/uml/77.svg"
     },
     {
         "id": "78",
@@ -2744,7 +2744,7 @@
                 "Estado de tarea 'Diseñar interfaz' actualizado a COMPLETADA."
             ]
         },
-        "uml": "../img/uml/78.svg"
+        "uml": "img/uml/78.svg"
     },
     {
         "id": "79",
@@ -2787,7 +2787,7 @@
                 "Reservas mesa 1:\n(ninguna reserva)"
             ]
         },
-        "uml": "../img/uml/79.svg"
+        "uml": "img/uml/79.svg"
     },
     {
         "id": "80",
@@ -2854,7 +2854,7 @@
                 "Adiós"
             ]
         },
-        "uml": "../img/uml/80.svg"
+        "uml": "img/uml/80.svg"
     },
     {
         "id": "81",
@@ -2939,7 +2939,7 @@
                 "Adiós"
             ]
         },
-        "uml": "../img/uml/81.svg"
+        "uml": "img/uml/81.svg"
     },
     {
         "id": "82",
@@ -3020,7 +3020,7 @@
                 "Adiós"
             ]
         },
-        "uml": "../img/uml/82.svg"
+        "uml": "img/uml/82.svg"
     },
     {
         "id": "83",
@@ -3114,7 +3114,7 @@
                 "Gracias por usar Banco Virtual."
             ]
         },
-        "uml": "../img/uml/83.svg"
+        "uml": "img/uml/83.svg"
     },
     {
         "id": "84",
@@ -3193,7 +3193,7 @@
                 "Gracias por usar Dieta Tracker."
             ]
         },
-        "uml": "../img/uml/84.svg"
+        "uml": "img/uml/84.svg"
     },
     {
         "id": "85",
@@ -3271,7 +3271,7 @@
                 "Gracias por usar el sistema de facturación."
             ]
         },
-        "uml": "../img/uml/85.svg"
+        "uml": "img/uml/85.svg"
     },
     {
         "id": "86",
@@ -3335,7 +3335,7 @@
                 "Ganador: Arkon"
             ]
         },
-        "uml": "../img/uml/86.svg"
+        "uml": "img/uml/86.svg"
     },
     {
         "id": "87",
@@ -3380,7 +3380,7 @@
                 "Informe generado."
             ]
         },
-        "uml": "../img/uml/87.svg"
+        "uml": "img/uml/87.svg"
     },
     {
         "id": "88",
@@ -3423,7 +3423,7 @@
                 "- Sesiones realizadas: 24"
             ]
         },
-        "uml": "../img/uml/88.svg"
+        "uml": "img/uml/88.svg"
     },
     {
         "id": "89",
@@ -3461,7 +3461,7 @@
                 "Devolución registrada. Herramienta ahora disponible."
             ]
         },
-        "uml": "../img/uml/89.svg"
+        "uml": "img/uml/89.svg"
     },
     {
         "id": "90",
@@ -3500,7 +3500,7 @@
                 "Atracción más visitada del día: Dragón (35 accesos)"
             ]
         },
-        "uml": "../img/uml/90.svg"
+        "uml": "img/uml/90.svg"
     },
     {
         "id": "91",
@@ -3543,7 +3543,7 @@
                 "- NeoMuseo de Berlín (15/03/2024 - 28/04/2024)"
             ]
         },
-        "uml": "../img/uml/91.svg"
+        "uml": "img/uml/91.svg"
     },
     {
         "id": "92",
@@ -3573,7 +3573,7 @@
                 "Salario calculado empleado por horas: 1800.0"
             ]
         },
-        "uml": "../img/uml/92.svg"
+        "uml": "img/uml/92.svg"
     },
     {
         "id": "93",
@@ -3607,7 +3607,7 @@
                 "Ana - 777654321 - ana@mail.com"
             ]
         },
-        "uml": "../img/uml/93.svg"
+        "uml": "img/uml/93.svg"
     },
     {
         "id": "94",
@@ -3650,7 +3650,7 @@
                 "ID: 102, Nombre: Luis, Puesto: Analista, Salario: 2300.0"
             ]
         },
-        "uml": "../img/uml/94.svg"
+        "uml": "img/uml/94.svg"
     },
     {
         "id": "95",
@@ -3704,7 +3704,7 @@
                 "Conductor: Juan García, Licencia: B1234567"
             ]
         },
-        "uml": "../img/uml/95.svg"
+        "uml": "img/uml/95.svg"
     },
     {
         "id": "96",
@@ -3765,7 +3765,7 @@
                 "Pokémon Pikachu asignado a Ash."
             ]
         },
-        "uml": "../img/uml/96.svg"
+        "uml": "img/uml/96.svg"
     },
     {
         "id": "97",
@@ -3817,7 +3817,7 @@
                 "Ninja Sasuke asignado a misión M001."
             ]
         },
-        "uml": "../img/uml/97.svg"
+        "uml": "img/uml/97.svg"
     },
     {
         "id": "98",
@@ -3874,7 +3874,7 @@
                 "Misión registrada para Sasuke."
             ]
         },
-        "uml": "../img/uml/98.svg"
+        "uml": "img/uml/98.svg"
     },
     {
         "id": "99",
@@ -3937,7 +3937,7 @@
                 "Equipo con mejor ranking promedio: Dragones Negros (Promedio: 1500 puntos)"
             ]
         },
-        "uml": "../img/uml/99.svg"
+        "uml": "img/uml/99.svg"
     },
     {
         "id": "100",
@@ -3983,6 +3983,6 @@
                 "Lenguaje Pascal eliminado de la plataforma."
             ]
         },
-        "uml": "../img/uml/100.svg"
+        "uml": "img/uml/100.svg"
     }
 ]
