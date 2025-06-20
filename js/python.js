@@ -103,26 +103,28 @@ fetch("json/python.json")
       const btnAnterior = document.createElement("button");
       btnAnterior.textContent = "Anterior";
       btnAnterior.disabled = paginaActual === 1;
-      btnAnterior.onclick = () => mostrarPagina(paginaActual - 1);
+      btnAnterior.onclick = () => {
+        if (paginaActual > 1) {
+          mostrarPagina(paginaActual - 1);
+        }
+      };
       paginacionDiv.appendChild(btnAnterior);
 
-      // Botones de páginas numeradas
-      for (let i = 1; i <= totalPaginas; i++) {
-        const btnPagina = document.createElement("button");
-        btnPagina.textContent = i;
-        if (i === paginaActual) {
-          btnPagina.disabled = true;
-          btnPagina.style.fontWeight = "bold";
-        }
-        btnPagina.onclick = () => mostrarPagina(i);
-        paginacionDiv.appendChild(btnPagina);
-      }
+      // Texto que muestra "paginaActual / totalPaginas"
+      const textoPagina = document.createElement("span");
+      textoPagina.textContent = `${paginaActual} / ${totalPaginas}`;
+      textoPagina.style.margin = "0 15px"; // espacio entre botones y texto
+      paginacionDiv.appendChild(textoPagina);
 
       // Botón "Siguiente"
       const btnSiguiente = document.createElement("button");
       btnSiguiente.textContent = "Siguiente";
       btnSiguiente.disabled = paginaActual === totalPaginas;
-      btnSiguiente.onclick = () => mostrarPagina(paginaActual + 1);
+      btnSiguiente.onclick = () => {
+        if (paginaActual < totalPaginas) {
+          mostrarPagina(paginaActual + 1);
+        }
+      };
       paginacionDiv.appendChild(btnSiguiente);
     }
 
