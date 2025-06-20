@@ -7,7 +7,7 @@ function normalizarCadena(texto) {
     .replace(/[^a-z0-9-]/g, "");
 }
 
-fetch("../json/java.json")
+fetch("json/java.json")
   .then((response) => response.json())
   .then((data) => {
     const contenedor = document.querySelector("main");
