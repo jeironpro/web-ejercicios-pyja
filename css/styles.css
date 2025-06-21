@@ -264,7 +264,7 @@ footer {
   text-align: center;
 }
 
-/* Tablets (601px a 900px) */
+/* Tablets */
 @media (min-width: 601px) and (max-width: 900px) {
   .contenedor-principal {
     grid-template-columns: repeat(2, 1fr);
@@ -308,7 +308,7 @@ footer {
   }
 }
 
-/* Smartphones (max-width: 600px) */
+/* Smartphones */
 @media (max-width: 600px) {
   .contenedor-principal {
     grid-template-columns: 1fr;
@@ -360,17 +360,16 @@ footer {
   }
 
   #paginacion {
-    overflow-x: auto; /* Scroll horizontal si no caben */
     padding: 10px 5px;
-    -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+    -webkit-overflow-scrolling: touch;
   }
 
   #paginacion button {
     min-width: 40px;
     font-size: 13px;
     padding: 8px 10px;
-    margin: 0 4px;
-    white-space: nowrap; /* Evita que el texto se corte o haga wrap */
+    margin: 5px;
+    white-space: nowrap;
   }
 
   footer {
