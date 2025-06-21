@@ -303,6 +303,11 @@ footer {
     font-size: 15px;
   }
 
+  .dificultad,
+  .tipo {
+    font-size: 14px;
+  }
+
   .uml-diagrama {
     width: 100%;
     max-width: 480px;
