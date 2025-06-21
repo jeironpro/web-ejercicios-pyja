@@ -2083,7 +2083,7 @@
         "titulo": "Etiquetado ecológico según emisiones de CO₂",
         "nivel": "fácil",
         "tipo": "elementos básicos",
-        "enunciado": "Una empresa quiere etiquetar sus productos con un sello ecológico basado en las emisiones estimadas de CO₂ por unidad producida. El sistema categoriza el nivel de impacto de cada producto según el valor ingresado (en gramos de CO₂):\n    · Menor a 100 → \"🥇 Excelente\"\n    · Entre 100 y 250 → \"🥈 Bueno\"\n    · Entre 251 y 500 → \"⚠️ A mejorar\"\n    · Más de 500 → \"❌ Impacto alto\"\n\nEl programa debe permitir ingresar varias emisiones de productos (separadas por comas) y mostrar la etiqueta correspondiente para cada una.\n\nRequisitos:\n    · El orden de entrada debe mantenerse.\n    · Validar que todos los valores sean numéricos positivos.\n    · Redondear a enteros en la presentación.",
+        "enunciado": "Una empresa quiere etiquetar sus productos con un sello ecológico basado en las emisiones estimadas de CO₂ por unidad producida. El sistema categoriza el nivel de impacto de cada producto según el valor ingresado (en gramos de CO₂):\n    · Menor a 100 → \"Excelente\"\n    · Entre 100 y 250 → \"Bueno\"\n    · Entre 251 y 500 → \"A mejorar\"\n    · Más de 500 → \"Impacto alto\"\n\nEl programa debe permitir ingresar varias emisiones de productos (separadas por comas) y mostrar la etiqueta correspondiente para cada una.\n\nRequisitos:\n    · El orden de entrada debe mantenerse.\n    · Validar que todos los valores sean numéricos positivos.\n    · Redondear a enteros en la presentación.",
         "tareas": [
             "Leer la lista de emisiones separadas por comas.",
             "Validar que sean números positivos; ignorar o avisar si no lo son.",
@@ -2100,10 +2100,10 @@
                 "Introduce emisiones en gramos: 80, 120, 450, 620"
             ],
             "salida": [
-                "Producto 1: 80 g → 🥇 Excelente",
-                "Producto 2: 120 g → 🥈 Bueno",
-                "Producto 3: 450 g → ⚠️ A mejorar",
-                "Producto 4: 620 g → ❌ Impacto alto"
+                "Producto 1: 80 g → Excelente",
+                "Producto 2: 120 g → Bueno",
+                "Producto 3: 450 g → A mejorar",
+                "Producto 4: 620 g → Impacto alto"
             ]
         }
     },
@@ -2194,7 +2194,7 @@
             ],
             "salida": [
                 "Frecuencias: a(1), b(2), c(3)",
-                "¿Es piramidal?: ✅ Sí"
+                "¿Es piramidal?: Sí"
             ]
         }
     },
@@ -2574,7 +2574,6 @@
             "Opcional: elimina automáticamente herramientas rotas de la caja."
         ],
         "pistas": [
-            "Usa emojis para indicar el estado: ✔️ para herramientas disponibles y ❌ para rotas.",
             "No uses librerías externas ni archivos, todo en memoria.",
             "El programa debe ser claro y organizado."
         ],
@@ -2590,8 +2589,8 @@
                 "caja.estado()"
             ],
             "salida": [
-                "[✔️] Destornillador – Usos: 0/10",
-                "[❌] Martillo – Usos: 5/5 (rota)"
+                "Destornillador – Usos: 0/10",
+                "Martillo – Usos: 5/5 (rota)"
             ]
         }
     },

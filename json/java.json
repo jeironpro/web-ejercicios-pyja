@@ -3494,7 +3494,7 @@
             "salida": [
                 "Visitante registrado: Julia Gómez (altura: 1.50m, entrada: NORMAL)",
                 "Atracción registrada: Montaña Rusa \"Dragón\" (mínimo: 1.40m, soloVIP: false)",
-                "Intentando acceso de Julia a Dragón... ✅ Acceso permitido. Registro exitoso.",
+                "Intentando acceso de Julia a Dragón... Acceso permitido. Registro exitoso.",
                 "Visitante registrado: Alex Pérez (altura: 1.35m, entrada: VIP)",
                 "Acceso denegado: Alex no cumple la altura mínima (1.40m) para Dragón.",
                 "Atracción más visitada del día: Dragón (35 accesos)"
