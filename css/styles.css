@@ -360,6 +360,11 @@ footer {
     font-size: 14px;
   }
 
+  .dificultad,
+  .tipo {
+    font-size: 12px;
+  }
+
   .uml-diagrama {
     width: 100%;
     max-width: 100%;
