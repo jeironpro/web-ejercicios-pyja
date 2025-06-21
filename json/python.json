@@ -3,7 +3,7 @@
         "id": "01",
         "titulo": "Generador de patrones binarios",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un investigador quiere analizar cómo se distribuyen los patrones binarios en secuencias. Para ello, desea generar todas las cadenas binarias posibles de una longitud determinada n, pero no le interesan todas, sino solo aquellas que no tienen dos unos consecutivos. Por ejemplo, para n = 3, las cadenas válidas son: \"000\", \"001\", \"010\", \"100\", \"101\". Quedan descartadas cadenas como \"011\" o \"110\" porque contienen al menos dos unos seguidos.",
         "tareas": [
             "Pedir al usuario un número entero n mayor o igual a 1.",
@@ -31,7 +31,7 @@
         "id": "02",
         "titulo": "Cifrado escalonado",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un antiguo sistema de cifrado utilizado por mensajeros rebeldes consiste en convertir cada letra de un mensaje en su equivalente numérico ASCII, pero aplicando una transformación escalonada:\n· La primera letra se convierte a su código ASCII.\n· La segunda letra suma 1 al código ASCII.\n· La tercera suma 2, la cuarta suma 3, etc.\n\nAsí, el mensaje \"hola\" se transformaría en:\n· 'h' -> ord('h') = 104\n· 'o' -> ord('o') + 1 = 112\n· 'l' -> ord('l') + 2 = 110\n· 'a' -> ord('a') + 3 = 100\n\nEl mensaje cifrado sería: \"104 112 110 100\"\n\nAhora bien, también se puede descifrar aplicando la operación inversa. Dado el mensaje \"104 112 110 100\", restando 0, 1, 2, 3... se obtienen los valores ASCII originales:\n· 104 - 0 = 104 -> 'h'\n· 112 - 1 = 111 -> 'o'\n· 110 - 2 = 108 -> 'l'\n· 100 - 3 = 97  -> 'a'\n\nCrea un programa cifrado_escalonado.py que implemente un menú interactivo con dos opciones:\n1. Cifrar mensaje\n2. Descifrar mensaje\n3. Salir\n\n· Si se elige 1, se pedirá un mensaje al usuario y se mostrará la versión cifrada en números separados por espacios.\n· Si se elige 2, se pedirá una lista de números separados por espacios y se mostrará el mensaje original.\n· El programa se repetirá hasta que el usuario seleccione la opción 3.",
         "tareas": [
             "Implementar un menú interactivo con las opciones 1, 2 y 3.",
@@ -83,7 +83,7 @@
         "id": "03",
         "titulo": "Anagramas",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un anagrama es una palabra o frase formada reorganizando las letras de otra. Crea un programa que reciba pares de palabras separados por un espacio y determine si son anagramas. El programa debe ignorar mayúsculas, espacios y tildes.\n\nEl programa termina cuando se introduce una línea vacía.\n\nRequisitos:\n· Se debe ignorar el uso de mayúsculas.\n· Los espacios en las palabras deben eliminarse antes de comprobar.\n· No se deben tener en cuenta tildes ni caracteres especiales.\n· Solo se aceptan pares de palabras por línea.",
         "tareas": [
             "Leer pares de palabras hasta que se introduzca una línea vacía.",
@@ -119,7 +119,7 @@
         "id": "04",
         "titulo": "Calculadora imprecisa",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una empresa construyó una calculadora defectuosa. Aunque sus operaciones parecen normales, todas devuelven resultados ligeramente alterados, como si tuviera un margen de error o un sesgo \"caprichoso\".\n\nEl comportamiento es el siguiente:\n· Suma (+): el resultado siempre es 1 más de lo correcto.\n· Resta (-): el resultado siempre es 2 menos de lo correcto.\n· Multiplicación (*): el resultado es un 10% más del valor real, redondeado a 2 decimales.\n· División (/): el resultado es un 5% menos del valor real, redondeado a 2 decimales.\n· División por 0 debe devolver el mensaje \"¡Error! División por cero.\"\n\n¿Qué debe hacer?\nEscribe un programa llamado calculadora_imprecisa que:\n· Permita al usuario ingresar una operación en el formato: num1 operador num2, por ejemplo: 4 + 5 o 10 / 2.\n· Evalúe la operación aplicando las reglas defectuosas.\n· Permita repetir la operación hasta que el usuario ingrese una línea vacía.\n\nRequisitos:\n· Usa input() para la entrada del usuario.\n· Usa split() para separar los elementos de la operación.\n· Usa condicionales para aplicar cada tipo de operación.\n· Controla los errores como la división por cero o entradas mal formateadas.",
         "tareas": [
             "Leer la operación ingresada por el usuario en formato 'num1 operador num2'.",
@@ -161,7 +161,7 @@
         "id": "05",
         "titulo": "Análisis de frases",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Diseña un programa que almacene todas las frases que introduce el usuario. El usuario puede escribir frases libremente, una por línea. Cuando introduzca una línea vacía, el programa debe finalizar y mostrar:\n\n· La frase con menos caracteres.\n\n· La frase con más caracteres.\n\n· La frase con más palabras.\n\n· La frase con más vocales (considera solo a, e, i, o, u).\n\nRequisitos:\n· Las comparaciones deben ser insensibles a mayúsculas/minúsculas.\n· Las frases pueden contener cualquier tipo de puntuación o carácter.\n· Se deben contar correctamente las vocales (sin tildes).",
         "tareas": [
             "Leer frases una por una hasta recibir una línea vacía.",
@@ -200,7 +200,7 @@
         "id": "06",
         "titulo": "Clasificador de contraseñas",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Construye un programa que clasifique contraseñas como Fuertes, Moderadas o Débiles en función de los siguientes criterios:\n\n1. Tener al menos 8 caracteres.\n\n2. Contener al menos una letra mayúscula.\n\n3. Contener al menos una letra minúscula.\n\n4. Incluir al menos un número o símbolo.\n\nTu programa debe solicitar contraseñas una por una hasta que el usuario introduzca una línea vacía. Al recibir cada contraseña, el programa debe evaluarla y mostrar su categoría.\n\nRequisitos:\n· El programa debe ignorar espacios al inicio o final de la contraseña.\n· No es necesario validar tildes ni caracteres Unicode especiales.\n· Una contraseña que cumpla exactamente 3 criterios es Moderada. Si cumple menos de 3, es Débil.",
         "tareas": [
             "Solicitar contraseñas repetidamente hasta recibir una línea vacía.",
@@ -238,7 +238,7 @@
         "id": "07",
         "titulo": "Combinaciones de vocales",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Imagina que tienes una cadena de texto larga, pero las vocales son las únicas que nos interesan. Tu tarea será construir un programa que, a partir de una cadena, extraiga todas las vocales que se encuentren separadas por cualquier cantidad de caracteres entre ellas, y construya todas las combinaciones posibles con esas vocales en el mismo orden en el que aparecen.\n\nPor ejemplo, si la entrada es \"h3e!!l9l&o\", las vocales son e, o. La única combinación posible será \"eo\".\n\nPero si la entrada es \"c4a*b#a@e\", las vocales extraídas son a, a, e. Las combinaciones posibles serían:\n· \"aae\"\n· \"aae\" (repetida, por las mismas vocales repetidas)\n\nPero solo se debe mostrar una única vez cada combinación.\n\nEl programa deberá:\n· Detectar las vocales (tanto mayúsculas como minúsculas).\n· Ignorar cualquier otro carácter que no sea vocal.\n· Generar todas las combinaciones posibles de esas vocales manteniendo el orden.\n· Imprimir todas las combinaciones únicas encontradas.\n\nNotas:\n· Usa recursividad o backtracking si lo ves conveniente.\n· Puedes ayudarte con itertools.combinations para explorar combinaciones si no quieres usar recursión.\n· Asegúrate de que el resultado no tenga repeticiones.",
         "tareas": [
             "Solicitar una cadena de texto al usuario.",
@@ -278,7 +278,7 @@
         "id": "08",
         "titulo": "Hora más tardía posible",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Imagina que tienes un reloj digital muy especial: muestra la hora en formato 24 horas (por ejemplo, \"14:25\"), pero está descompuesto. Por alguna razón, algunos dígitos han dejado de verse y han sido reemplazados por el carácter ?.\n\nEjemplos de horas descompuestas serían:\n· \"1?:3?\"\n· \"?4:5?\"\n· \"??:??\"\n\nTu misión es escribir un programa que encuentre la hora más tardía posible que se pueda formar a partir de la hora descompuesta recibida. Por ejemplo:\n· Si el reloj muestra \"1?:3?\", deberías interpretar los signos de pregunta de manera que formes la hora más tardía posible válida. En este caso: \"19:39\".\n\n· Si el reloj muestra \"2?:??\", la hora más tardía que podrías formar sería \"23:59\" (recordando que el formato 24h va de 00:00 a 23:59).\n\n· Si muestra \"??:??\", entonces debe devolver \"23:59\".",
         "tareas": [
             "Solicitar al usuario la hora con signos ? incluidos.",
@@ -311,7 +311,7 @@
         "id": "09",
         "titulo": "Diccionario corrupto",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Imagina que tienes un archivo de definiciones en un diccionario digital. Cada entrada tiene una palabra y su definición. Sin embargo, un virus ha infectado el sistema, y las definiciones están mezcladas:\n\n· Cada definición tiene las letras de la palabra desordenadas.\n\n· Tienes que detectar qué definiciones podrían corresponder a qué palabra... si ambas fueran anagramas (mismo contenido, distinto orden).\n\n¿Qué debes hacer?\nDesarrolla el programa diccionario_corrupto que, dado un conjunto de palabras y un conjunto de definiciones, detecte cuáles podrían estar emparejadas como anagramas.\n\nEl programa debe pedir al usuario una lista de palabras y una lista de definiciones, separadas por coma, y luego mostrar las parejas palabra-definición posibles, si ambas son anagramas (ignorando mayúsculas, espacios y acentos).\n\nAdemás, la salida debe estar ordenada alfabéticamente por palabra.\n\nReglas:\n· No se permite usar collections.Counter\n· Ignora mayúsculas y minúsculas.\n· Ignora acentos (áéíóúàèìòùäëïöüâêîôû → aeiou).\n· Ignora espacios.\n· Una definición solo puede usarse una vez.\n· Las coincidencias deben tener exactamente las mismas letras (sin extras, ni faltantes).",
         "tareas": [
             "Pedir al usuario una lista de palabras separadas por coma.",
@@ -346,7 +346,7 @@
         "id": "10",
         "titulo": "Cifrado espejo",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un agente secreto necesita comunicar mensajes ocultos. Para ello, utiliza una técnica llamada \"cifrado espejo\": toma el mensaje original, lo divide en palabras, invierte cada palabra individualmente y luego reconstruye el mensaje.\n\nPor ejemplo, el mensaje \"python es genial\" se transforma en \"nohtyp se laineg\".\n\nSin embargo, debido a errores humanos, algunos mensajes tienen puntuación mal colocada, espacios extra o incluso símbolos especiales que no deberían procesarse.\n\nTu programa deberá encargarse de:\n· Invertir cada palabra por separado (sin alterar su posición en la frase).\n· Conservar exactamente la misma cantidad y posición en la frase.\n· Mantener signos de puntuación fuera del proceso de inversión.\n· Todo carácter que no sea una letra o un número debe mantenerse tal como está en su lugar.",
         "tareas": [
             "Leer mensajes hasta que se introduzca una cadena vacía.",
@@ -381,7 +381,7 @@
         "id": "11",
         "titulo": "Suma de diagonales en matriz cuadrada",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Dada una matriz cuadrada de tamaño n x n de números enteros, escribe un programa que calcule la suma de los elementos de la diagonal principal y la diagonal secundaria. Finalmente, devuelve la suma total de ambas diagonales, sin contar el elemento central dos veces en caso de que n sea impar.\n\nQué se debe hacer:\n· Leer la matriz (puede ser por código o input).\n· Calcular la suma de la diagonal principal (de arriba izquierda a abajo derecha).\n· Calcular la suma de la diagonal secundaria (de arriba derecha a abajo izquierda).\n· Si la matriz tiene tamaño impar, restar el elemento central que se contó dos veces.\n· Mostrar la suma total.",
         "tareas": [
             "Solicitar al usuario el tamaño n de la matriz cuadrada.",
@@ -411,7 +411,7 @@
         "id": "12",
         "titulo": "Detección de palíndromos",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que reciba una lista de palabras y devuelva solo aquellas que sean palíndromos (se leen igual de izquierda a derecha y viceversa). Ignora mayúsculas, minúsculas y espacios.\n\nQué se debe hacer:\n· Recibir una lista de palabras (por ejemplo, mediante input separado por comas).\n· Para cada palabra, comprobar si es palíndromo.\n· Devolver una lista con los palíndromos encontrados.",
         "tareas": [
             "Solicitar al usuario una lista de palabras separadas por comas.",
@@ -437,7 +437,7 @@
         "id": "13",
         "titulo": "Caminos en una cuadrícula",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Dada una cuadrícula de tamaño m x n, cuenta de cuántas maneras diferentes puedes llegar desde la esquina superior izquierda a la esquina inferior derecha moviéndote solo hacia la derecha o hacia abajo.\n\nQué se debe hacer:\n· Implementar una función recursiva que calcule el número de caminos posibles.\n· No utilizar programación dinámica o memoización para este ejercicio, para forzar la recursión pura.",
         "tareas": [
             "Solicitar al usuario el número de filas (m).",
@@ -465,7 +465,7 @@
         "id": "14",
         "titulo": "Clase Agenda de contactos",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Crea una clase Agenda que permita guardar contactos con nombre y número de teléfono. Debe tener métodos para añadir un contacto, eliminarlo por nombre y mostrar todos los contactos ordenados alfabéticamente.\n\nQué se debe hacer:\n· Crear la clase con los atributos y métodos indicados.\n· El método mostrar debe imprimir los contactos ordenados por nombre.",
         "tareas": [
             "Definir la clase Agenda con un atributo para almacenar contactos.",
@@ -499,7 +499,7 @@
         "id": "15",
         "titulo": "Conteo de palabras en archivo",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa que lea un archivo de texto y cuente la frecuencia de cada palabra, mostrando las 10 más frecuentes.\n\nQué se debe hacer:\n· Leer un archivo (puedes crear un archivo de prueba con texto).\n· Normalizar palabras (minúsculas, sin signos de puntuación).\n· Contar y mostrar las 10 palabras con mayor frecuencia.",
         "tareas": [
             "Abrir y leer un archivo de texto.",
@@ -527,7 +527,7 @@
         "id": "16",
         "titulo": "Ordenación por selección",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Implementa el algoritmo de ordenación por selección para ordenar una lista de números enteros de forma ascendente.\n\nQué se debe hacer:\n· Recorrer la lista para seleccionar el menor elemento y colocarlo al inicio, repetir para toda la lista.\n· Mostrar la lista ordenada.",
         "tareas": [
             "Pedir al usuario una lista de números separados por espacios.",
@@ -551,7 +551,7 @@
         "id": "17",
         "titulo": "Eliminador de acentos",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe una función que reciba una cadena y devuelva la misma cadena pero sin acentos, diéresis o caracteres especiales (por ejemplo, 'á' -> 'a', 'ü' -> 'u').\n\nQué se debe hacer:\n· Utilizar el módulo unicodedata para normalizar y eliminar acentos.\n· Mostrar el texto normalizado.",
         "tareas": [
             "Pedir al usuario una cadena de texto.",
@@ -574,7 +574,7 @@
         "id": "18",
         "titulo": "Clase Pila LIFO",
         "nivel": "fácil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Implementa una clase Pila que simule una estructura LIFO (Last In, First Out) con métodos push, pop y es_vacia.\n\nQué se debe hacer:\n· Crear la clase con la lista interna para almacenar elementos.\n· Implementar los métodos indicados.\n· Probar la clase con una secuencia de operaciones.",
         "tareas": [
             "Definir la clase Pila con un atributo interno para la lista de elementos.",
@@ -607,7 +607,7 @@
         "id": "19",
         "titulo": "Torre de Hanoi",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa que resuelva el problema de la Torre de Hanoi para n discos, mostrando los movimientos necesarios para trasladarlos desde la torre A a la torre C usando la torre B como auxiliar.\n\nQué se debe hacer:\n· Implementar la solución recursiva clásica.\n· Mostrar cada movimiento en el formato \"Mueve disco de torre X a torre Y\".",
         "tareas": [
             "Pedir al usuario el número de discos.",
@@ -638,7 +638,7 @@
         "id": "20",
         "titulo": "Decorador medir_tiempo",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un decorador medir_tiempo que mida el tiempo que tarda en ejecutarse una función y lo imprima por pantalla.\n\nQué se debe hacer:\n· Implementar el decorador usando el módulo time.\n· Probarlo con una función que haga alguna operación pesada (por ejemplo, calcular factorial grande).",
         "tareas": [
             "Crear el decorador medir_tiempo que registre el tiempo antes y después de ejecutar la función.",
@@ -663,7 +663,7 @@
         "id": "21",
         "titulo": "El espíritu que persigue vocales",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En una remota aldea se cuenta la historia de un espíritu que persigue únicamente las vocales de los mensajes escritos. El escriba real, obsesionado con esta leyenda, decidió crear un software para encontrar y mostrar todas las vocales de un mensaje, junto a su posición exacta dentro del texto. El programa debe permitir al usuario introducir una frase y mostrar una lista con las vocales encontradas en orden, indicando el carácter y su índice correspondiente en el texto.\n\nPor ejemplo, para el mensaje \"Bienvenido al valle encantado\", el programa debe indicar que en la posición 1 está la vocal 'i', en la 2 la 'e', y así sucesivamente, excluyendo las consonantes y signos de puntuación.\n\nRequisitos:\n· El programa debe ignorar mayúsculas/minúsculas: considera todas las letras minúsculas para el análisis.\n· Solo se consideran como vocales las letras 'a', 'e', 'i', 'o', 'u'.\n· El índice debe reflejar la posición del carácter en la cadena original.\n· El análisis termina cuando se introduce una cadena vacía.",
         "tareas": [
             "Pedir al usuario que introduzca una frase.",
@@ -694,7 +694,7 @@
         "id": "22",
         "titulo": "El experimento de duplicación de objetos",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un científico loco está realizando un experimento con cajas que duplican su contenido al azar. Para ello, introduce una serie de objetos (representados como palabras) en una caja. Sin embargo, al final del experimento necesita saber exactamente qué objetos se duplicaron. Tu programa debe leer una lista de elementos separados por espacios y mostrar únicamente aquellos que aparezcan más de una vez, sin repeticiones en la salida.\n\nPor ejemplo, si se introducen \"llave martillo sierra martillo clavo sierra clavo\", el programa debe mostrar: \"martillo\", \"sierra\" y \"clavo\".\n\nRequisitos:\n· El programa debe ser insensible al orden de entrada.\n· No deben mostrarse objetos repetidos en la salida.\n· La salida debe estar ordenada alfabéticamente.\n· El programa terminará cuando se ingrese una línea vacía.",
         "tareas": [
             "Leer una línea con objetos separados por espacios.",
@@ -722,7 +722,7 @@
         "id": "23",
         "titulo": "Generador de patrón binario alternante",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En una simulación computacional, se necesita generar un patrón binario específico para analizar respuestas de redes neuronales artificiales. El patrón consiste en una cadena binaria que alterna entre 1s y 0s en función de un número de longitud introducido por el usuario. Si se introduce 7, el patrón sería \"1010101\". Si se introduce 6, entonces \"101010\".\n\nTu tarea es crear un programa que reciba un número entero positivo y devuelva el patrón alternante empezando siempre con 1.",
         "tareas": [
             "Pedir al usuario un número entero positivo.",
@@ -752,7 +752,7 @@
         "id": "24",
         "titulo": "Contador de consonantes en palabra secreta",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En un sistema de codificación ultrasónico, se requiere analizar la cantidad de letras consonantes utilizadas en una palabra secreta, ignorando vocales y otros caracteres. El programa deberá pedir una palabra y devolver el número total de letras que no son vocales (ni espacios, números ni signos de puntuación).",
         "tareas": [
             "Pedir al usuario una palabra o cadena.",
@@ -781,7 +781,7 @@
         "id": "25",
         "titulo": "Análisis de tiempo invertido en tareas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una empresa de análisis de productividad quiere saber cuánto tiempo invierte un empleado en diferentes tareas. El programa debe permitir introducir varias actividades con su duración en minutos (por ejemplo, \"leer:30\"), y al final mostrar el total de tiempo invertido y cuál fue la tarea que más tiempo tomó.\n\nSi se introducen \"leer:30\", \"escribir:45\", \"descansar:20\", el resultado debe indicar un total de 95 minutos y que la tarea más larga fue \"escribir\".",
         "tareas": [
             "Permitir al usuario introducir tareas en formato nombre:minutos por línea.",
@@ -814,7 +814,7 @@
         "id": "26",
         "titulo": "Casas visibles desde la torre",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En una antigua ciudad amurallada, un vigía se encuentra en lo alto de una torre observando las posiciones de las casas alineadas en una recta. Cada casa tiene una altura distinta, y el vigía sólo puede ver aquellas casas que no quedan ocultas tras otras más altas que estén antes en la línea de visión.\nSe te pide que, dado un listado de alturas de casas, determines cuántas casas puede ver el vigía desde su posición inicial (que equivale a observar desde el primer elemento hacia el final de la lista).\n\nPor ejemplo, si la lista de alturas es [3, 2, 4, 1, 5, 2], el vigía verá las casas de altura 3, 4 y 5, ya que las demás quedan ocultas por otras más altas antes de ellas.",
         "tareas": [
             "Pedir al usuario una línea con alturas de casas separadas por espacios.",
@@ -840,7 +840,7 @@
         "id": "27",
         "titulo": "Detección de contenedores duplicados",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una empresa logística está revisando los contenedores que ha transportado. Cada contenedor tiene un identificador numérico. Sin embargo, a veces por error de inventario, se duplican registros de contenedores. Tu tarea consiste en pedir al usuario una lista de identificadores de contenedores y mostrar cuáles están duplicados.\n\nEl programa debe analizar la lista y devolver un conjunto de todos los identificadores que aparecen más de una vez, en orden creciente.",
         "tareas": [
             "Pedir al usuario una línea con identificadores de contenedores separados por espacios.",
@@ -866,7 +866,7 @@
         "id": "28",
         "titulo": "Cuenta regresiva personalizada",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una cuenta regresiva puede ser útil en múltiples contextos: juegos, lanzamientos, alarmas, etc. En este ejercicio, vas a crear un programa que simule una cuenta regresiva personalizada. El usuario debe introducir el número inicial y el programa mostrará los números descendiendo hasta 0, con un segundo de pausa entre cada número.\n\nEste tipo de programas entrena el uso de módulos del sistema y el control de flujo de bucles.",
         "tareas": [
             "Pedir al usuario un número entero inicial para la cuenta regresiva.",
@@ -899,7 +899,7 @@
         "id": "29",
         "titulo": "Secuencia Fibonacci modificada",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "La famosa secuencia Fibonacci se define sumando los dos términos anteriores para obtener el siguiente. En esta variante, deberás generar una secuencia similar, pero con la siguiente regla:\n\n    Los dos primeros términos son 1 y 2.\n\n    Cada término siguiente es la suma de los dos anteriores menos 1.\n\nPor ejemplo, los primeros términos serían: 1, 2, 2 (1+2-1), 3 (2+2-1), 4 (2+3-1), 6 (3+4-1), …\n\nTu programa debe pedir al usuario cuántos términos quiere generar y mostrar la secuencia completa.",
         "tareas": [
             "Pedir al usuario el número de términos a generar.",
@@ -927,7 +927,7 @@
         "id": "30",
         "titulo": "Detección de palabras palíndromas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un palíndromo es una palabra que se lee igual de izquierda a derecha y de derecha a izquierda, como “ana” o “reconocer”. Para ayudar a un grupo de lingüistas, debes crear un programa que reciba un texto completo, lo divida en palabras y muestre todas las palabras palíndromas que contenga (sin repetirlas).\n\nAdemás, el programa debe ignorar mayúsculas y signos de puntuación, para detectar correctamente las palabras.",
         "tareas": [
             "Pedir al usuario que introduzca un texto completo.",
@@ -957,7 +957,7 @@
         "id": "31",
         "titulo": "Cálculo de precio de entradas de cine",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En un cine, la taquilla ofrece distintos tipos de entradas con precios diferentes según la edad del cliente y la función a la que desea asistir. Las reglas son:\n    · Niños menores de 12 años pagan 5€.\n    · Jóvenes entre 12 y 18 años pagan 7€.\n    · Adultos entre 19 y 64 años pagan 10€.\n    · Mayores de 65 años pagan 6€.\n    Además, si la función es en horario de tarde (después de las 18:00), se aplica un descuento del 10% sobre el precio final.\n\nCrea un programa que reciba la edad del cliente y el horario de la función (mañana o tarde), y calcule el precio final de la entrada aplicando las reglas anteriores.",
         "tareas": [
             "Pedir al usuario la edad del cliente.",
@@ -996,7 +996,7 @@
         "id": "32",
         "titulo": "Cálculo de nota final ponderada",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En una asignatura, las notas finales se calculan con distintas ponderaciones según el tipo de evaluación:\n    · Examen final: 50%\n    · Exámenes parciales: 30% (promedio de todos los parciales)\n    · Tareas y prácticas: 20% (promedio de todas)\n\nCrea un programa que pida al usuario:\n    · La nota del examen final.\n    · Las notas de los exámenes parciales (pueden ser varias, terminando con un valor vacío).\n    · Las notas de las tareas/prácticas (pueden ser varias, terminando con un valor vacío).\n\nCalcula la nota final ponderada y muestra el resultado.",
         "tareas": [
             "Pedir la nota del examen final y validar que esté entre 0 y 10.",
@@ -1033,7 +1033,7 @@
         "id": "33",
         "titulo": "Verificación de seguridad de contraseña",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Diseña un programa que verifique si una contraseña introducida por el usuario es segura. Para considerarla segura, debe cumplir al menos 4 de los 5 criterios siguientes:\n    · Tener al menos 8 caracteres.\n    · Contener al menos una letra mayúscula.\n    · Contener al menos una letra minúscula.\n    · Contener al menos un número.\n    · Contener al menos un carácter especial (por ejemplo: !, @, #, $, %, &, etc.)\n\nEl programa debe mostrar qué criterios cumple y si la contraseña es segura o no.",
         "tareas": [
             "Pedir al usuario que introduzca una contraseña.",
@@ -1066,7 +1066,7 @@
         "id": "34",
         "titulo": "Simulación de lanzamientos de moneda y dado",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que simule lanzamientos de monedas y dados para juegos de mesa. El programa debe permitir al usuario elegir entre:\n    · Lanzar una moneda (cara o cruz).\n    · Lanzar un dado de 6 caras (números del 1 al 6).\n\nEl programa pedirá al usuario qué lanzamiento desea realizar y cuántas veces. Luego mostrará los resultados de todos los lanzamientos. El programa se repetirá hasta que el usuario decida salir.",
         "tareas": [
             "Pedir al usuario el tipo de lanzamiento: moneda, dado o salir.",
@@ -1101,7 +1101,7 @@
         "id": "35",
         "titulo": "Análisis de frase con conteo y signos de puntuación",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Dada una frase introducida por el usuario, el programa debe analizar y mostrar:\n    · Número total de palabras.\n    · Número total de caracteres (sin contar espacios).\n    · Número de signos de puntuación (.,;:!?).\n    · La palabra más larga y su longitud.\n\nEl programa debe ser capaz de procesar cualquier frase con signos de puntuación y mayúsculas/minúsculas.",
         "tareas": [
             "Pedir al usuario que introduzca una frase.",
@@ -1133,7 +1133,7 @@
         "id": "36",
         "titulo": "Reserva de salas en biblioteca según tamaño de grupo",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una biblioteca permite reservar salas de estudio para grupos de estudiantes. Las salas tienen una capacidad máxima y se asignan según el número de personas del grupo. Las reglas son:\n    · Grupos de 1 a 2 personas: sala pequeña (capacidad 2).\n    · Grupos de 3 a 5 personas: sala mediana (capacidad 5).\n    · Grupos de 6 a 10 personas: sala grande (capacidad 10).\n    · Si el grupo supera las 10 personas, no se puede reservar.\n\nEl programa debe pedir el número de personas del grupo, indicar qué sala corresponde, o informar si no se puede reservar.",
         "tareas": [
             "Pedir al usuario el número de personas del grupo.",
@@ -1165,7 +1165,7 @@
         "id": "37",
         "titulo": "Cálculo de días entre dos fechas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que calcule el número de días que hay entre dos fechas introducidas por el usuario. Las fechas se pedirán en formato “DD/MM/AAAA”. El programa debe validar que las fechas sean correctas (mes entre 1 y 12, día válido para cada mes, año positivo) y luego mostrar el número de días entre ellas.",
         "tareas": [
             "Pedir al usuario la primera fecha en formato DD/MM/AAAA.",
@@ -1197,7 +1197,7 @@
         "id": "38",
         "titulo": "Generador de contraseñas aleatorias",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que genere contraseñas aleatorias con las siguientes características: longitud definida por el usuario (mínimo 8 caracteres); puede incluir letras mayúsculas, minúsculas, números y símbolos especiales; el usuario puede elegir si quiere incluir cada tipo de carácter (sí/no para mayúsculas, minúsculas, números y símbolos). El programa debe generar y mostrar la contraseña resultante con las opciones seleccionadas.",
         "tareas": [
             "Pedir la longitud de la contraseña, validar que sea al menos 8.",
@@ -1232,7 +1232,7 @@
         "id": "39",
         "titulo": "Cálculo de nota final con bonificación y penalización según asistencia",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un profesor quiere calcular la nota final de un alumno teniendo en cuenta que la nota base es la media de sus exámenes. Se añade una bonificación del 5% si la asistencia es mayor o igual al 90%, se penaliza un 3% si la asistencia es menor al 70%, y en cualquier otro caso no hay bonificación ni penalización.",
         "tareas": [
             "Pedir al usuario las notas de los exámenes una a una, hasta que introduzca vacío.",
@@ -1268,7 +1268,7 @@
         "id": "40",
         "titulo": "Juego: Adivina el número entre 1 y 100",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que genere un número aleatorio entre 1 y 100 y permita al usuario intentar adivinarlo. Después de cada intento, el programa debe indicar si el número es mayor o menor que el intento, o si ha acertado. El usuario tiene un máximo de 10 intentos. Al finalizar, se debe mostrar un mensaje con el resultado y el número de intentos usados.",
         "tareas": [
             "Generar un número aleatorio entre 1 y 100.",
@@ -1303,7 +1303,7 @@
         "id": "41",
         "titulo": "Análisis de sentimientos básico",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un pequeño sistema de análisis de sentimientos clasifica un texto como positivo, negativo o neutral basándose en la cantidad de palabras positivas y negativas que contiene. Se dispone de dos listas predefinidas: una con palabras positivas (ejemplo: \"bueno\", \"feliz\", \"genial\") y otra con palabras negativas (ejemplo: \"malo\", \"triste\", \"horrible\"). El programa debe recibir un texto del usuario, contar cuántas palabras positivas y negativas contiene (ignorando mayúsculas y signos de puntuación), y determinar: si hay más palabras positivas que negativas, el texto es positivo; si hay más palabras negativas, es negativo; si hay igual número o ninguna de las dos, es neutral.",
         "tareas": [
             "Normalizar el texto para evitar problemas con mayúsculas y signos.",
@@ -1339,7 +1339,7 @@
         "id": "42",
         "titulo": "Conversor de temperaturas entre Celsius, Fahrenheit y Kelvin",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que permita convertir temperaturas entre grados Celsius, Fahrenheit y Kelvin. El usuario debe introducir el valor numérico de la temperatura, la unidad de origen (C, F o K) y la unidad de destino (C, F o K). El programa realizará la conversión correspondiente y mostrará el resultado con dos decimales.",
         "tareas": [
             "Validar que las unidades introducidas sean válidas (C, F, K).",
@@ -1370,7 +1370,7 @@
         "id": "43",
         "titulo": "Verificación de contraseña fuerte",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un sistema requiere que las contraseñas cumplan con los siguientes requisitos para considerarse fuertes: tener al menos 8 caracteres, contener al menos una letra mayúscula, una letra minúscula, un número y un símbolo especial (como !, @, #, $, %, &, *). El programa debe pedir una contraseña al usuario y verificar si cumple estos requisitos, mostrando un mensaje que indique si la contraseña es fuerte o no.",
         "tareas": [
             "Validar todos los puntos indicados.",
@@ -1397,7 +1397,7 @@
         "id": "44",
         "titulo": "Cálculo de impuesto sobre la renta progresivo",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En un país imaginario, el impuesto sobre la renta se calcula de forma progresiva según los siguientes tramos:\n    · Hasta 10,000 unidades monetarias: 0%.\n    · De 10,001 a 20,000: 10%.\n    · De 20,001 a 35,000: 15%.\n    · De 35,001 a 50,000: 20%.\n    · Más de 50,000: 25%.\n\nEl programa debe pedir al usuario su ingreso anual y calcular el total a pagar en impuestos según estos tramos.",
         "tareas": [
             "Validar que el ingreso sea un número positivo.",
@@ -1423,7 +1423,7 @@
         "id": "45",
         "titulo": "Gestor de inventario para tienda pequeña",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una pequeña tienda quiere controlar su inventario de productos. El programa debe permitir al usuario: añadir un producto con su cantidad, mostrar la lista completa de productos con sus cantidades, actualizar la cantidad de un producto existente y eliminar un producto. El programa mostrará un menú con opciones y se repetirá hasta que el usuario decida salir.",
         "tareas": [
             "Usar un diccionario para almacenar productos y cantidades.",
@@ -1459,7 +1459,7 @@
         "id": "46",
         "titulo": "Generador de contraseñas seguras",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que genere contraseñas aleatorias y seguras con las siguientes características:\n    · Longitud indicada por el usuario (mínimo 8 caracteres).\n    · La contraseña debe contener al menos una letra mayúscula, una minúscula, un número y un símbolo especial (por ejemplo: !, @, #, $, %, &).\n    · Mostrar la contraseña generada al usuario.",
         "tareas": [
             "Validar que la longitud sea un número entero y mayor o igual a 8.",
@@ -1485,7 +1485,7 @@
         "id": "47",
         "titulo": "Simulador de lanzamiento de dados",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un juego de mesa utiliza dados de 6 caras. Crea un programa que permita simular el lanzamiento de varios dados al mismo tiempo. El usuario debe ingresar:\n    · Número de dados a lanzar (entre 1 y 10).\n\nEl programa mostrará el resultado de cada dado y la suma total de todos los dados.",
         "tareas": [
             "Validar que el número de dados sea un entero entre 1 y 10.",
@@ -1512,7 +1512,7 @@
         "id": "48",
         "titulo": "Comprobador de palíndromos",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un palíndromo es una palabra o frase que se lee igual de izquierda a derecha que de derecha a izquierda, ignorando espacios, signos de puntuación y mayúsculas.\nCrea un programa que reciba una frase del usuario y determine si es un palíndromo o no.",
         "tareas": [
             "Ignorar mayúsculas, espacios y signos de puntuación.",
@@ -1540,7 +1540,7 @@
         "id": "49",
         "titulo": "Agenda telefónica",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea una agenda telefónica que permita almacenar nombres y números de teléfono. El programa debe ofrecer un menú para:\n    · Añadir un contacto.\n    · Buscar un contacto por nombre (imprimir número o mensaje si no existe).\n    · Mostrar todos los contactos.\n    · Salir.",
         "tareas": [
             "Usar un diccionario para almacenar contactos (clave: nombre, valor: número).",
@@ -1571,7 +1571,7 @@
         "id": "50",
         "titulo": "Cálculo de factorial",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "El factorial de un número entero positivo n se define como el producto de todos los enteros desde 1 hasta n (n!).\nCrea un programa que pida al usuario un número entero no negativo y calcule su factorial.\nSi el usuario introduce un número negativo, debe mostrar un error y pedir nuevamente.",
         "tareas": [
             "Validar que el número sea entero y no negativo.",
@@ -1599,7 +1599,7 @@
         "id": "51",
         "titulo": "Análisis de texto",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa que permita al usuario ingresar un texto completo, que puede incluir varias frases y párrafos. El programa debe calcular y mostrar:\n    · El número total de palabras que contiene el texto.\n    · El número total de caracteres, excluyendo espacios.\n    · La palabra más larga encontrada en el texto.\n\nEl programa debe repetir el proceso hasta que el usuario decida salir.",
         "tareas": [
             "Considerar palabras separadas por espacios.",
@@ -1628,7 +1628,7 @@
         "id": "52",
         "titulo": "Cajero automático básico",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Desarrolla un programa que simule un cajero automático básico. El usuario comienza con un saldo inicial de 1000 unidades monetarias. El programa debe permitir:\n    · Consultar saldo.\n    · Realizar ingresos.\n    · Realizar retiradas, siempre que el saldo sea suficiente.\n    · Salir del programa.",
         "tareas": [
             "Mostrar un menú interactivo con las opciones.",
@@ -1664,7 +1664,7 @@
         "id": "53",
         "titulo": "Media y mediana de una lista",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que permita al usuario introducir una lista de números enteros separados por espacios y calcule:\n    · La media aritmética de los números.\n    · La mediana (el valor central cuando los números están ordenados).\n\nEl programa debe seguir solicitando listas hasta que el usuario introduzca una línea vacía para salir.",
         "tareas": [
             "Validar que se introduzcan números enteros válidos.",
@@ -1691,7 +1691,7 @@
         "id": "54",
         "titulo": "Frecuencia de palabras en un texto",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Se desea analizar un texto para conocer qué palabras se repiten y cuántas veces lo hacen. El programa debe solicitar al usuario que introduzca un texto (una frase o párrafo). Luego, debe procesar el texto para contar la frecuencia de cada palabra, ignorando mayúsculas/minúsculas y signos de puntuación (como comas, puntos, signos de exclamación o interrogación). Finalmente, mostrará una lista ordenada por frecuencia descendente, indicando cada palabra junto con su número de apariciones.",
         "tareas": [
             "Ignorar diferencias entre mayúsculas y minúsculas.",
@@ -1725,7 +1725,7 @@
         "id": "55",
         "titulo": "Estadísticas de una lista de números",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa que permita al usuario introducir una lista de números enteros separados por espacios. A partir de esos números, el programa debe calcular y mostrar las siguientes estadísticas:\n\n    El valor mínimo.\n\n    El valor máximo.\n\n    La suma total.\n\n    La media aritmética con dos decimales.\n\n    La mediana.\n\nEl programa debe validar la entrada, asegurarse que se introducen números válidos y repetir el proceso hasta que el usuario deje la entrada vacía para terminar.",
         "tareas": [
             "La lista puede contener cualquier cantidad de números, al menos uno.",
@@ -1756,7 +1756,7 @@
         "id": "56",
         "titulo": "Clasificación de archivos por extensión",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Simula un explorador de archivos básico. El usuario introducirá nombres de archivos con su extensión separados por espacios (ej. foto.jpg documento.pdf informe.docx). El programa debe clasificar los archivos según su tipo de extensión y mostrar cuántos archivos hay por cada tipo. Si el archivo no tiene extensión, se contará como \"desconocido\".",
         "tareas": [
             "La extensión es lo que viene después del último punto (.).",
@@ -1787,7 +1787,7 @@
         "id": "57",
         "titulo": "Conversor de números a texto (0-99)",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa que convierta números enteros entre 0 y 99 a su equivalente en texto en español. Por ejemplo, el número 42 se convertirá en \"cuarenta y dos\". El usuario introduce un número en cada línea y el programa devuelve la versión en palabras.\n\nEste tipo de ejercicio refuerza la lógica condicional y la gestión de múltiples casos concretos.",
         "tareas": [
             "Aceptar solo números entre 0 y 99.",
@@ -1819,7 +1819,7 @@
         "id": "58",
         "titulo": "Eliminar duplicados en una lista",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "El usuario introducirá una lista de elementos separados por comas (pueden ser palabras, números, etc.). El programa eliminará los duplicados respetando el orden original y mostrará el resultado como una nueva lista sin repeticiones. Esto es útil en tareas de limpieza de datos.",
         "tareas": [
             "Conservar el orden original.",
@@ -1845,7 +1845,7 @@
         "id": "59",
         "titulo": "Días impares de un mes",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Desarrolla un programa que, dado un mes (en número del 1 al 12) y un año, genere una lista de los días impares del mes. El programa debe tener en cuenta si el mes tiene 28, 30 o 31 días, y en el caso de febrero considerar si el año es bisiesto.\n\nEste ejercicio combina control de flujo, condiciones y cálculo de fechas.",
         "tareas": [
             "Calcular correctamente los días según el mes y si es bisiesto.",
@@ -1875,7 +1875,7 @@
         "id": "60",
         "titulo": "Generador automático de etiquetas de productos",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una empresa de logística utiliza un sistema automático que recibe nombres de productos como entradas de texto, y debe generar etiquetas que cumplan el siguiente formato:\n<NOMBRE_EN_MAYÚSCULAS> - <CATEGORÍA>\n\nLa categoría se asigna de forma automática en base a palabras clave que contenga el nombre:\n    · Si contiene \"botella\", \"vaso\" o \"taza\" → categoría: BEBIDAS\n    · Si contiene \"camisa\", \"pantalón\" o \"chaqueta\" → categoría: ROPA\n    · Si contiene \"cable\", \"adaptador\" o \"cargador\" → categoría: ELECTRÓNICA\n    · Si no se encuentra ninguna coincidencia → categoría: OTROS\n\nEl programa pedirá nombres de productos y generará sus etiquetas correspondientes hasta que se introduzca una línea vacía.",
         "tareas": [
             "La búsqueda de palabras clave no distingue mayúsculas/minúsculas.",
@@ -1907,7 +1907,7 @@
         "id": "61",
         "titulo": "Detectar alumnos ausentes totales",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una academia guarda una lista de alumnos inscritos en un curso. Cada semana se registra una lista de asistentes. El programa debe identificar a los alumnos que no han asistido ninguna vez en las últimas tres semanas. Primero se introducen los nombres de todos los inscritos separados por comas, y luego tres listas semanales de asistentes. El programa muestra los ausentes totales.\n\nEste ejercicio refuerza la manipulación de listas, comparación de cadenas ignorando mayúsculas/minúsculas y control de flujo.",
         "tareas": [
             "Comparar nombres sin distinguir mayúsculas/minúsculas.",
@@ -1936,7 +1936,7 @@
         "id": "62",
         "titulo": "Rango de tiempo con margen de error",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un cronómetro experimental registra tiempos en segundos para tareas, pero todos los tiempos están alterados por ±10%. El programa recibe una lista de tiempos reales estimados separados por comas y muestra para cada tarea el rango posible de tiempo con el margen de error aplicado, redondeando a dos decimales.\n\nEste ejercicio trabaja manejo de listas, operaciones matemáticas y formateo de números.",
         "tareas": [
             "Calcular el rango de ±10% para cada tiempo.",
@@ -1964,7 +1964,7 @@
         "id": "63",
         "titulo": "Clave inversa para caja fuerte",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un sistema de seguridad tiene una caja fuerte que se abre solo con la combinación de palabras clave en orden inverso. El usuario introduce la combinación original como una lista de palabras separadas por guiones. El programa debe mostrar la clave invertida, también separada por guiones, sin usar métodos de inversión directa.\n\nEl programa debe repetirse hasta que el usuario introduzca una línea vacía.\n\nEste ejercicio refuerza el manejo de cadenas, listas y construcción manual de listas invertidas.",
         "tareas": [
             "No usar [::-1] ni reverse() para invertir.",
@@ -1991,7 +1991,7 @@
         "id": "64",
         "titulo": "Detección de eventos sospechosos en sensores",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En una lista de resultados de sensores, cada número representa un tipo de evento. Si un número aparece más de dos veces seguidas, se considera sospechoso.\nEl programa debe detectar y marcar las repeticiones de eventos sospechosos, mostrando el número y cuántas veces seguidas se repitió.\n\nEste ejercicio trabaja la detección de patrones en listas y el manejo de secuencias repetidas.",
         "tareas": [
             "Leer una secuencia de números separados por espacios.",
@@ -2019,7 +2019,7 @@
         "id": "65",
         "titulo": "Clasificación de puntos geográficos por cuadrantes",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una expedición geográfica toma notas de coordenadas registradas como cadenas con el formato \"(x,y)\", donde x e y son enteros positivos o negativos. El programa debe interpretar estas coordenadas y determinar:\n    · Cuántos puntos están en cada uno de los cuatro cuadrantes.\n    · Cuántos están exactamente sobre algún eje.\n\nEl programa debe validar la sintaxis y avisar si alguna coordenada es inválida para evitar errores.\n\nEste ejercicio ayuda a practicar el procesamiento de cadenas, validación y clasificación condicional.",
         "tareas": [
             "Leer una lista de coordenadas separadas por comas.",
@@ -2053,7 +2053,7 @@
         "id": "66",
         "titulo": "Filtro de palabras prohibidas en mensajes",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una red social ha implementado un sistema de moderación que filtra mensajes con ciertas palabras prohibidas. El sistema carga una lista de palabras censuradas introducidas por el moderador, y luego verifica si un mensaje contiene alguna de ellas. Si se detecta alguna palabra censurada, se debe mostrar una advertencia y las palabras encontradas.\n\nEl programa debe:\n    · Pedir al usuario que introduzca las palabras prohibidas separadas por comas.\n    · Luego permitir introducir un mensaje (una línea de texto).\n    · Detectar si alguna palabra prohibida aparece de forma exacta (no por partes).\n    · Mostrar las palabras detectadas o un mensaje de aprobado.\n\nRequisitos:\n    · Comparar sin distinguir mayúsculas/minúsculas.\n    · El mensaje puede tener puntuación, que debe ignorarse al comparar.\n    · No usar expresiones regulares ni librerías externas.",
         "tareas": [
             "Pedir las palabras prohibidas y crear una lista limpia sin espacios.",
@@ -2082,7 +2082,7 @@
         "id": "67",
         "titulo": "Etiquetado ecológico según emisiones de CO₂",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una empresa quiere etiquetar sus productos con un sello ecológico basado en las emisiones estimadas de CO₂ por unidad producida. El sistema categoriza el nivel de impacto de cada producto según el valor ingresado (en gramos de CO₂):\n    · Menor a 100 → \"Excelente\"\n    · Entre 100 y 250 → \"Bueno\"\n    · Entre 251 y 500 → \"A mejorar\"\n    · Más de 500 → \"Impacto alto\"\n\nEl programa debe permitir ingresar varias emisiones de productos (separadas por comas) y mostrar la etiqueta correspondiente para cada una.\n\nRequisitos:\n    · El orden de entrada debe mantenerse.\n    · Validar que todos los valores sean numéricos positivos.\n    · Redondear a enteros en la presentación.",
         "tareas": [
             "Leer la lista de emisiones separadas por comas.",
@@ -2111,7 +2111,7 @@
         "id": "68",
         "titulo": "Detector de frases con todas las vocales",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un programa lingüístico debe analizar si una frase contiene todas las vocales (a, e, i, o, u) al menos una vez. Esto se utiliza para detectar frases pangramáticas en ciertas pruebas de idioma. El usuario introduce una frase y el programa verifica si contiene todas las vocales sin distinguir mayúsculas. Si es válida, se debe mostrar cuántas veces aparece cada vocal. El proceso se repite hasta que el usuario escriba una línea vacía.\n\nEste ejercicio trabaja la normalización de texto, conteo de caracteres y uso de estructuras de control iterativas.",
         "tareas": [
             "Solicitar frases al usuario una y otra vez hasta que se introduzca una línea vacía.",
@@ -2144,7 +2144,7 @@
         "id": "69",
         "titulo": "Números ausentes en una secuencia discontinua",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En una secuencia de números que se supone consecutiva, algunos valores pueden faltar. La tarea del programa es identificar qué números están ausentes para que la secuencia sea continua desde el menor hasta el mayor. El usuario introduce los números desordenados, separados por comas, y el programa debe mostrar cuáles faltan dentro del rango completo.\n\nEste ejercicio permite practicar la limpieza de datos, ordenación, uso de rangos y conjuntos.",
         "tareas": [
             "Pedir al usuario una lista de números separados por comas.",
@@ -2172,7 +2172,7 @@
         "id": "70",
         "titulo": "Verificador de palabras piramidales",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una palabra se considera piramidal si sus letras pueden ordenarse de forma que la primera aparezca una vez, la segunda dos veces, la tercera tres veces, y así sucesivamente. Por ejemplo, \"abbccc\" es piramidal. El programa debe leer una palabra, contar la frecuencia de cada letra, ordenarlas por frecuencia ascendente y verificar si esas frecuencias forman la secuencia exacta 1, 2, 3...\n\nEste ejercicio trabaja el conteo de caracteres, ordenación por frecuencia y validación de secuencias naturales.",
         "tareas": [
             "Solicitar una palabra al usuario.",
@@ -2202,7 +2202,7 @@
         "id": "71",
         "titulo": "Descompresor de cadenas antiguas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En ciertas bases de datos antiguas, se utilizaba una técnica de compresión sencilla para ahorrar espacio: en vez de repetir caracteres iguales, se almacenaban como pares letra+número, indicando cuántas veces se repite. Por ejemplo: 'A3B1C2' representa 'AAABCC'. El sistema que vas a construir debe permitir al usuario introducir una cadena comprimida y devolver la versión original expandida, conservando el orden original.\n\nEste ejercicio es útil para practicar el procesamiento de cadenas, validación de patrones y comprensión de bucles.",
         "tareas": [
             "Solicitar al usuario una cadena comprimida formada por pares letra+número.",
@@ -2232,7 +2232,7 @@
         "id": "72",
         "titulo": "Organizador de días del mes",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una agenda electrónica almacenó los días del mes en una lista desordenada, y el usuario desea visualizarlos ordenados por número de día. Pero además, quiere que los fines de semana (sábado y domingo) aparezcan al final. Dado un listado de días en el formato 'día-número' (por ejemplo, 'lunes-5', 'domingo-12'), el programa debe ordenarlos primero por número y luego reubicar los fines de semana al final sin alterar su orden relativo.\n\nEste ejercicio es ideal para trabajar con listas, ordenación personalizada y manipulación de cadenas estructuradas.",
         "tareas": [
             "Pedir al usuario una lista de hasta 31 entradas separadas por comas con el formato 'día-número'.",
@@ -2265,7 +2265,7 @@
         "id": "73",
         "titulo": "Fusión alterna de listas numéricas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una función muy útil en procesamiento de datos es la fusión alterna de dos listas. Es decir, dadas dos listas de elementos, se deben entrelazar sus elementos uno por uno, tomando un elemento de cada una de forma sucesiva. Si una lista es más larga que la otra, los elementos restantes deben añadirse al final sin modificar su orden. Este proceso es especialmente útil en tareas de combinación de resultados, procesamiento paralelo o algoritmos de mezcla.\n\nEste ejercicio es excelente para trabajar la manipulación de listas, validación de entradas y uso de estructuras de control.",
         "tareas": [
             "Solicitar dos listas de números separados por comas al usuario.",
@@ -2293,7 +2293,7 @@
         "id": "74",
         "titulo": "Descodificador de contraseñas ASCII",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un sistema bancario en fase de pruebas utiliza una codificación simple de contraseñas: cada letra se transforma por el carácter cuyo valor ASCII se incrementa en 2. Por ejemplo, la letra 'a' se convierte en 'c', 'b' en 'd', y así sucesivamente. Tu tarea consiste en revertir ese proceso, es decir, recuperar la contraseña original a partir de la versión codificada.\n\nEste ejercicio es ideal para practicar el uso de códigos ASCII, operaciones con caracteres y validación de texto básico.",
         "tareas": [
             "Pedir al usuario una contraseña codificada sin tildes ni caracteres especiales.",
@@ -2320,7 +2320,7 @@
         "id": "75",
         "titulo": "Gestor de inventario alfabético",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Imagina una caja de inventario con múltiples objetos, cada uno identificado por su nombre y cantidad, separados por dos puntos (:). Todo el inventario se guarda como una línea de texto, donde los objetos están separados por comas. Tu programa debe analizar la entrada, validar que los datos sean correctos, mostrar el listado ordenado alfabéticamente y calcular el total de unidades. Este tipo de tratamiento de datos es común en sistemas de almacén o formularios simples.\n\nEste ejercicio refuerza la práctica en manipulación de cadenas, estructuras de datos y ordenación.",
         "tareas": [
             "Solicitar una línea con varios objetos en el formato nombre:cantidad.",
@@ -2354,7 +2354,7 @@
         "id": "76",
         "titulo": "Depurador de fórmulas químicas",
         "nivel": "dificil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un científico trabaja con fórmulas químicas representadas como cadenas de texto, pero ha comenzado a perder la capacidad de distinguir elementos importantes. Cada vez que aparece un símbolo químico que empieza por vocal (como 'O' o 'I'), debe eliminarlo de la fórmula, junto con el número inmediatamente después, si existe. Además, si una letra es minúscula pero no forma parte de un símbolo válido, también debe ser eliminada.\n\nPor ejemplo, dado el string 'H2O2NaClI3Fe': 'O2' e 'I3' serán eliminados porque 'O' e 'I' empiezan por vocal. 'H2', 'Na', 'Cl' y 'Fe' se mantienen.\n\nEste ejercicio es ideal para trabajar la segmentación de cadenas, lógica de control, validación de caracteres y manejo de casos especiales sin usar expresiones regulares.",
         "tareas": [
             "Pedir al usuario una fórmula química como cadena de texto.",
@@ -2382,7 +2382,7 @@
         "id": "77",
         "titulo": "La vela que renace de sus cenizas",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un monasterio budista tiene una vela que se regenera sola. Cada vez que se consume completamente, deja un pequeño residuo del que pueden fundirse nuevas velas. Por cada 3 residuos acumulados, se puede crear una vela nueva. Dado un número inicial de velas, implementa un programa que calcule cuántas velas pueden encenderse en total, incluyendo las que se regeneran a partir de los residuos.\n\nEste ejercicio representa un caso clásico de optimización basada en reciclaje, y es ideal para practicar bucles, divisiones enteras y acumuladores.",
         "tareas": [
             "Pedir al usuario un número entero positivo que represente las velas iniciales.",
@@ -2409,7 +2409,7 @@
         "id": "78",
         "titulo": "Fragmentación de texto por longitudes",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa que divida una cadena en fragmentos de longitud variable. El usuario introducirá un texto y luego una lista de longitudes separadas por comas. El programa debe mostrar cada fragmento consecutivamente según las longitudes indicadas. Si la suma de las longitudes excede la longitud de la cadena, se ignora el exceso. Si no alcanza, se corta hasta donde se pueda.",
         "tareas": [
             "Usar split para dividir la lista de longitudes.",
@@ -2436,7 +2436,7 @@
         "id": "79",
         "titulo": "Conteo de números distintos sin set",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un programa debe leer una lista de números enteros introducidos por el usuario, separados por espacios. Luego, debe contar cuántos números distintos hay, es decir, cuántos valores únicos se han ingresado. Tu tarea es mostrar ese número de elementos distintos y luego imprimirlos en orden ascendente.",
         "tareas": [
             "Leer los números separados por espacios.",
@@ -2463,7 +2463,7 @@
         "id": "80",
         "titulo": "Conteo de consonantes entre vocales",
         "nivel": "dificil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Elementos básicos",
         "enunciado": "En una agencia de inteligencia artificial, se está entrenando a un modelo para detectar patrones de pronunciación inusuales en frases escritas. Uno de los algoritmos de prueba requiere contar cuántas consonantes hay entre cada vocal en una frase dada. Para ello, se deben identificar los bloques de texto que comienzan y terminan con vocal y determinar cuántas consonantes hay dentro de ese bloque (sin contar las vocales delimitadoras). La tarea consiste en procesar la frase, detectar estos bloques y mostrar el número de consonantes en cada uno.",
         "tareas": [
             "Solicitar una frase al usuario.",
@@ -2496,7 +2496,7 @@
         "id": "81",
         "titulo": "Gestión sencilla de libros en biblioteca",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una biblioteca quiere un sistema sencillo para gestionar sus libros usando programación orientada a objetos. Cada libro tiene un título, un autor, un año de publicación y un estado que indica si está prestado o disponible. El sistema debe permitir crear libros, consultar su información y cambiar su estado de préstamo. Además, debe impedir prestar un libro que ya esté prestado y devolver un libro que no esté prestado.",
         "tareas": [
             "Define una clase Libro con los atributos: título, autor, año, y estado (prestado o no).",
@@ -2530,7 +2530,7 @@
         "id": "82",
         "titulo": "Reloj digital parlante en español",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Estás desarrollando un sistema de reloj digital parlante para personas con discapacidad visual. El sistema debe representar la hora y los minutos en palabras, no en números. Se debe crear una clase Reloj que almacene hora y minutos, permita avanzar el tiempo minuto a minuto y mostrar la hora en texto legible en español, diferenciando mañana y tarde.",
         "tareas": [
             "Crea una clase Reloj con los atributos hora y minuto.",
@@ -2565,7 +2565,7 @@
         "id": "83",
         "titulo": "Gestión de caja de herramientas con control de usos",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un inventor tiene una caja de herramientas especial. Cada herramienta tiene un nombre, usos máximos y un contador de usos actuales. Al usarla, el contador aumenta y cuando alcanza el máximo la herramienta se rompe. Debes crear dos clases para gestionar estas herramientas, permitiendo agregarlas, usarlas y mostrar su estado.",
         "tareas": [
             "Implementa la clase Herramienta con atributos nombre, usos_maximos, usos_actuales y método usar() que aumente usos actuales y marque si está rota.",
@@ -2598,7 +2598,7 @@
         "id": "84",
         "titulo": "Gestión de biblioteca digital con control de préstamos",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Imagina que trabajas en una biblioteca digital donde se almacenan libros en formato electrónico. Cada libro tiene título, autor, año de publicación y estado de préstamo (disponible o prestado). El sistema debe permitir administrar la colección de libros y controlar qué libros están prestados y cuáles disponibles.\n\nDebes crear dos clases: Libro y Biblioteca.\n    · La clase Libro contiene la información básica de cada libro y métodos para prestar y devolver un libro.\n    · La clase Biblioteca debe manejar una colección de libros, añadir libros nuevos, buscar libros por título o autor, prestar libros si están disponibles y mostrar el estado completo de la biblioteca.",
         "tareas": [
             "Implementa la clase Libro con atributos: titulo, autor, anio, prestado (booleano).",
@@ -2641,7 +2641,7 @@
         "id": "85",
         "titulo": "Gestión básica de cuentas bancarias con operaciones y menú interactivo",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Estás desarrollando un sistema simple para gestionar cuentas bancarias. Cada cuenta debe guardar información sobre el titular, número de cuenta y saldo actual. Además, debe permitir realizar operaciones básicas: depósito, retiro y consulta de saldo.\n\nSe requiere que diseñes una clase CuentaBancaria que tenga los atributos y métodos necesarios para administrar estas operaciones, garantizando que no se pueda retirar más dinero del que hay disponible y que los depósitos sean siempre positivos.\n\nAdemás, crea un programa que permita interactuar con varias cuentas, agregando nuevas cuentas y seleccionando cuál operar, mostrando un menú con opciones para depositar, retirar o consultar saldo, hasta que el usuario decida salir.",
         "tareas": [
             "Crear la clase CuentaBancaria con atributos: titular (str), numero_cuenta (str) y saldo (float).",
@@ -2711,7 +2711,7 @@
         "id": "86",
         "titulo": "Gestión de tareas diarias con prioridad y estado",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Estás desarrollando una aplicación para gestionar tareas diarias donde cada tarea tiene un título, una descripción, una prioridad (baja, media, alta) y un estado (pendiente, en progreso, completada). Se debe implementar un sistema que permita agregar tareas, modificar su estado, listar tareas filtrando por prioridad o estado, y eliminar tareas completadas.\n\nCrea una clase Tarea que contenga los atributos mencionados y métodos para cambiar el estado de la tarea. Además, crea una clase GestorTareas que mantenga una lista de tareas y métodos para añadir, eliminar tareas completadas, actualizar estados y listar tareas según filtros.",
         "tareas": [
             "Crear la clase Tarea con atributos:\n    · titulo (str)\n    · descripcion (str)\n    · prioridad (str, valores: \"baja\", \"media\", \"alta\")\n    · estado (str, valores: \"pendiente\", \"en progreso\", \"completada\")\nAñadir método para actualizar el estado de la tarea.",
@@ -2782,7 +2782,7 @@
         "id": "87",
         "titulo": "Gestión de vehículos con herencia",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En un sistema de gestión de vehículos para una empresa de transporte, se necesita modelar diferentes tipos de vehículos, como coches, camiones y motocicletas. Todos los vehículos comparten características comunes como matrícula, marca y modelo, pero cada tipo tiene atributos específicos:\n    · Coches tienen número de puertas.\n    · Camiones tienen capacidad de carga en toneladas.\n    · Motocicletas tienen tipo de manillar (por ejemplo, deportivo o clásico).\n\nCrea una jerarquía de clases usando herencia para representar estos vehículos. La clase base debe ser Vehiculo, y las clases derivadas Coche, Camion y Motocicleta. Implementa métodos para mostrar la información completa de cada vehículo.\n\nAdemás, crea un pequeño programa que permita crear varios vehículos de diferentes tipos y mostrar sus datos en consola.",
         "tareas": [
             "Crear la clase base Vehiculo con atributos comunes: matricula, marca, modelo.",
@@ -2809,7 +2809,7 @@
         "id": "88",
         "titulo": "Gestión de membresías en gimnasio",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un gimnasio desea gestionar las membresías de sus socios. Cada socio tiene un nombre, un número de identificación y un tipo de membresía que puede ser “Básica”, “Premium” o “VIP”. Según el tipo de membresía, el socio tendrá acceso a diferentes servicios y descuentos:\n    · Básica: acceso a máquinas y clases grupales básicas.\n    · Premium: todo lo de Básica, más acceso a clases especializadas y sauna.\n    · VIP: acceso ilimitado a todas las instalaciones y servicios, además de un entrenador personal.\n\nCrea una clase base Socio con los atributos comunes, y clases derivadas para cada tipo de membresía que incluyan los servicios y descuentos correspondientes. Implementa un método que muestre la información completa del socio y los servicios a los que puede acceder.\n\nFinalmente, crea un programa que permita ingresar datos de varios socios y muestre la lista con sus detalles completos.",
         "tareas": [
             "Crear la clase base Socio con atributos: nombre, id, tipo_membresia.",
@@ -2845,7 +2845,7 @@
         "id": "89",
         "titulo": "Gestión de libros y autores en librería",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una librería quiere llevar un control de sus libros y autores. Cada libro tiene un título, un año de publicación y un autor. Cada autor tiene un nombre, nacionalidad y año de nacimiento. Además, un autor puede tener varios libros publicados.\n\nCrea dos clases, Autor y Libro. La clase Autor debe contener la información del autor y un método para mostrar sus datos junto con la lista de títulos de sus libros publicados. La clase Libro debe contener los atributos del libro y una referencia a su autor.\n\nImplementa un programa que permita crear varios autores y libros, asociándolos correctamente, y que al mostrar un autor muestre también sus libros.",
         "tareas": [
             "Crear la clase Autor con atributos: nombre, nacionalidad, año_nacimiento, y lista de libros.",
@@ -2883,7 +2883,7 @@
         "id": "90",
         "titulo": "Sistema de sensores ambientales con herencia",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En un centro de control meteorológico, se desea modelar diferentes tipos de sensores que miden variables ambientales. Todos los sensores comparten atributos básicos como id_sensor, ubicación y unidad_de_medida, pero cada tipo de sensor tiene sus propios datos adicionales:\n · Sensor de temperatura: tiene un método que convierte la temperatura de Celsius a Fahrenheit.\n · Sensor de humedad: registra un porcentaje de humedad y puede determinar si el ambiente está seco, normal o húmedo según ese porcentaje.\n · Sensor de presión: mide la presión atmosférica en hPa y puede convertirla a atmósferas (atm).\n\nCrea una clase base Sensor con los atributos comunes y un método para mostrar la información básica. Luego, crea clases derivadas SensorTemperatura, SensorHumedad y SensorPresion que implementen los métodos específicos mencionados.",
         "tareas": [
             "Crear la clase base Sensor con atributos: id_sensor, ubicacion, unidad_de_medida.",
@@ -2925,7 +2925,7 @@
         "id": "91",
         "titulo": "Jerarquía de vehículos con aptitud para transporte",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa de transporte cuenta con diferentes vehículos: coches, camiones y motos. Todos tienen matrícula, marca y velocidad máxima. Los camiones tienen además capacidad de carga, las motos tienen cilindrada y los coches tipo de combustible. Se pide crear una jerarquía de clases para representar estos vehículos, con un método para mostrar los detalles completos de cada uno.\n\nAdemás, implementa un método que devuelva si el vehículo es apto para transportar mercancías (solo los camiones con capacidad mayor a 5000 kg).",
         "tareas": [
             "Crear la clase base Vehiculo con atributos: matrícula, marca y velocidad máxima.",
@@ -2963,7 +2963,7 @@
         "id": "92",
         "titulo": "Juego de cartas coleccionables con polimorfismo y comparación",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En un juego de cartas coleccionables, cada carta tiene un nombre, tipo (monstruo, hechizo, trampa), y un nivel de poder. Los monstruos tienen además puntos de ataque y defensa, los hechizos un efecto especial y las trampas una condición para activarse.\n\nDiseña una clase base Carta y las clases derivadas correspondientes. Incluye métodos para mostrar la información detallada y para comparar dos cartas según su nivel de poder.",
         "tareas": [
             "Crear la clase base Carta con atributos: nombre, tipo y nivel.",
@@ -2998,7 +2998,7 @@
         "id": "93",
         "titulo": "Gestión de personal en escuela con cálculo de sueldo usando herencia",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una escuela quiere gestionar su personal: profesores y administrativos. Todos tienen nombre, DNI y años de antigüedad. Los profesores tienen una asignatura que enseñan, y los administrativos un departamento.\n\nEl sueldo base es de 1000€, más un plus del 100€ por cada año de antigüedad. Además, los profesores reciben un plus adicional de 300€, y los administrativos de 150€.\n\nCrea la jerarquía de clases y métodos para calcular el sueldo total y mostrar los datos completos de cada empleado.",
         "tareas": [
             "Crear clase base Empleado con atributos: nombre, DNI, años de antigüedad.",
@@ -3032,7 +3032,7 @@
         "id": "94",
         "titulo": "Gestión de trabajos mecánicos con cálculo de coste según vehículo",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un taller mecánico gestiona trabajos de reparación para coches y motos. Cada trabajo tiene un código, descripción y coste base. Los trabajos en coches pueden incluir un coste adicional por piezas, mientras que los de motos pueden tener un descuento por mano de obra.\n\nCrea una jerarquía de clases que permita calcular el coste total del trabajo, considerando los extras o descuentos según el tipo de vehículo.",
         "tareas": [
             "Crear clase base Trabajo con atributos código, descripción y coste base.",
@@ -3064,7 +3064,7 @@
         "id": "95",
         "titulo": "Gestión de mascotas con jerarquía y método hablar",
         "nivel": "fácil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En un sistema de gestión de mascotas, se registran perros, gatos y aves. Todos tienen nombre, edad y dueño. Los perros tienen una raza, los gatos un color de pelaje, y las aves el tipo de canto.\n\nModela esta jerarquía con POO y crea un método para que cada mascota \"hable\", retornando un mensaje específico según el tipo de mascota (por ejemplo, \"Guau\" para perros, \"Miau\" para gatos y \"Pío\" para aves).",
         "tareas": [
             "Crear clase base Mascota con atributos nombre, edad y dueño.",
@@ -3100,7 +3100,7 @@
         "id": "96",
         "titulo": "Gestión de tienda online con productos y usuarios",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una aplicación para gestionar una tienda online tiene productos y usuarios. Los productos pueden ser electrónicos o ropa. Los electrónicos tienen garantía y voltaje, la ropa tiene talla y material. Los usuarios pueden ser clientes o administradores, con permisos distintos.\n\nModela las clases necesarias para representar productos y usuarios con sus atributos y métodos para mostrar información. Además, implementa un método para verificar si un usuario tiene permiso para modificar productos (solo administradores).",
         "tareas": [
             "Crear clase base Producto con atributos comunes como nombre.",
@@ -3137,7 +3137,7 @@
         "id": "97",
         "titulo": "Planes de suscripción en empresa de telecomunicaciones con cálculo de precio final",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa de telecomunicaciones ofrece distintos planes de suscripción: Básico, Premium y Corporativo. Todos los planes tienen un nombre y un precio base. Los planes Premium incluyen llamadas internacionales, y los Corporativos incluyen soporte 24/7 y número de usuarios ilimitados.\n\nCrea la jerarquía de clases adecuada, con métodos para mostrar los detalles de cada plan y calcular el precio final, que será:\n\n    Básico: precio base.\n\n    Premium: precio base + 15€ por llamadas internacionales.\n\n    Corporativo: precio base + 50€ por soporte.",
         "tareas": [
             "Crear clase base Plan con atributos nombre y precio_base.",
@@ -3174,7 +3174,7 @@
         "id": "98",
         "titulo": "Gestión de contenidos en plataforma de streaming con resumen detallado",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una plataforma de streaming ofrece diferentes tipos de contenido: películas, series y documentales. Todos tienen título, duración y año de lanzamiento. Las series además tienen número de temporadas, las películas tienen director y los documentales un tema principal.\n\nCrea una jerarquía de clases para modelar esta situación e implementa un método que muestre un resumen detallado del contenido según su tipo.",
         "tareas": [
             "Crear clase base Contenido con atributos título, duración y año de lanzamiento.",
@@ -3210,7 +3210,7 @@
         "id": "99",
         "titulo": "Gestión de animales en zoológico con emisión de sonidos característicos",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un zoológico quiere gestionar sus animales, que pueden ser mamíferos, aves o reptiles. Todos los animales tienen un nombre, edad y especie. Los mamíferos tienen un tipo de pelaje, las aves tienen una longitud de ala, y los reptiles una característica especial (por ejemplo, si son venenosos o no).\n\nSe pide crear la jerarquía de clases adecuada para representar estos animales, con un método que devuelva un sonido característico de cada tipo de animal.",
         "tareas": [
             "Crear clase base Animal con atributos nombre, edad y especie.",
@@ -3246,7 +3246,7 @@
         "id": "100",
         "titulo": "Gestión de colonia espacial con roles y acciones específicas",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Imagina que estás diseñando un sistema para gestionar una colonia espacial en un planeta lejano. Cada colono tiene un nombre, edad y rol dentro de la colonia (por ejemplo, ingeniero, biólogo, médico, agricultor).\n\nCada rol tiene diferentes responsabilidades:\n    · Ingeniero: puede reparar módulos de la colonia.\n    · Biólogo: puede analizar muestras de plantas alienígenas.\n    · Médico: puede atender colonos enfermos.\n    · Agricultor: puede cultivar y cosechar alimentos.\n\nSe pide:\n    1. Crear una clase base Colono con atributos comunes (nombre, edad, rol).\n    2. Crear clases derivadas para cada rol que implementen un método propio específico (por ejemplo, reparar(), analizar_muestra(), atender_enfermo(), cultivar()), que impriman un mensaje indicando la acción realizada por el colono con su nombre.\n    3. Crear una clase Colonia que pueda agregar colonos, listar colonos por rol y ejecutar la acción específica de todos los colonos de un rol dado.",
         "tareas": [
             "Crear clase base Colono con atributos nombre, edad y rol.",

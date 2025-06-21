@@ -132,8 +132,9 @@ main {
   display: inline-block;
   border-radius: 12px;
   color: #333333;
+  font-size: 16px;
   font-weight: bold;
-  margin: 10px;
+  margin: 6px 6px 6px 0;
   padding: 4px 12px;
 }
 

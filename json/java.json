@@ -3,7 +3,7 @@
         "id": "01",
         "titulo": "Calculadora básica interactiva",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa llamado CalculadoraBasica.java que simule una calculadora básica capaz de realizar operaciones aritméticas elementales: suma, resta, multiplicación y división. El programa debe solicitar al usuario dos números enteros y un operador (+, -, *, /), y mostrar el resultado correspondiente. Si se intenta dividir entre cero, debe indicarse un error. El programa debe repetirse hasta que el usuario decida salir introduciendo un carácter especial (por ejemplo, 'q').",
         "tareas": [
             "Pedir al usuario dos números enteros.",
@@ -39,7 +39,7 @@
         "id": "02",
         "titulo": "Reloj binario",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa llamado RelojBinario.java que lea una hora del día en formato de 24 horas (por ejemplo, \"13:45\") y la convierta a una representación binaria separando las horas y minutos. La salida debe mostrar los bits correspondientes a cada número, alineados como si fuese un reloj binario visual. Es una práctica excelente para trabajar con enteros, divisiones y representación binaria en consola.",
         "tareas": [
             "Leer una hora con el formato HH:mm.",
@@ -64,7 +64,7 @@
         "id": "03",
         "titulo": "Tabla del clima semanal",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Desarrolla un programa llamado TablaDelClima.java que pida al usuario registrar las temperaturas de los próximos 7 días y luego imprima una tabla mostrando cada día y su temperatura, así como el promedio final. Se busca practicar arreglos, bucles y entrada de datos.",
         "tareas": [
             "Pedir al usuario ingresar 7 temperaturas, una por cada día de la semana.",
@@ -97,7 +97,7 @@
         "id": "04",
         "titulo": "Patrón serpiente",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa llamado PatronSerpiente.java que reciba como entrada un número entero positivo N e imprima un patrón de serpiente de NxN caracteres, donde cada fila se imprime de forma alternada: la primera fila de izquierda a derecha, la segunda de derecha a izquierda, y así sucesivamente. Se numeran las posiciones desde 1 hasta N×N.",
         "tareas": [
             "Leer el tamaño N (entero positivo).",
@@ -124,7 +124,7 @@
         "id": "05",
         "titulo": "Número en palabras",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Desarrolla un programa llamado NumeroEnPalabras.java que lea un número entero entre 0 y 99 y lo traduzca a palabras en español. Este programa es ideal para trabajar con estructuras condicionales y control de flujo. Debe contemplar los casos especiales del idioma español, como \"veintiuno\" en lugar de \"veinte y uno\".",
         "tareas": [
             "Leer un número entero entre 0 y 99.",
@@ -148,7 +148,7 @@
         "id": "06",
         "titulo": "Número feliz",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un número entero positivo se llama feliz si, al reemplazarlo por la suma de los cuadrados de sus dígitos y repetir este proceso, eventualmente se llega al número 1. Si se entra en un ciclo que no incluye al 1, entonces no es feliz. Escribe un programa NumeroFeliz.java que lea un número positivo e indique si es un número feliz o no, mostrando además la secuencia generada.",
         "tareas": [
             "Validar que el número sea positivo.",
@@ -174,7 +174,7 @@
         "id": "07",
         "titulo": "Marcador inverso",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Se ha perdido el marcador original de una competición y solo queda el marcador invertido, en el que los dígitos están en orden inverso y separados por un guion. Por ejemplo, si aparece \"3-2\" realmente era \"2-3\". Crea un programa MarcadorInverso.java que lea una entrada como \"4-1\", la invierta y diga quién ganó (equipo A o B, o empate).",
         "tareas": [
             "Leer un marcador como texto con formato \"X-Y\".",
@@ -198,7 +198,7 @@
         "id": "08",
         "titulo": "Clave intercalada",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una técnica de codificación básica intercalaba una palabra con una clave del mismo tamaño, letra por letra. Por ejemplo, la palabra \"HOLA\" con la clave \"CLAV\" se convierte en \"HCLOALVA\". Crea un programa ClaveIntercalada.java que reciba dos palabras del mismo tamaño y genere la palabra intercalada como resultado.",
         "tareas": [
             "Leer dos palabras de igual longitud.",
@@ -224,7 +224,7 @@
         "id": "09",
         "titulo": "Divisores primos",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa DivisoresPrimos.java que reciba un número entero positivo y muestre una lista de todos sus divisores primos sin repetir. El programa debe calcular cada divisor y verificar si es primo, sin usar listas predefinidas de primos. Se trata de comprender divisibilidad y optimización con bucles.",
         "tareas": [
             "Leer un número entero positivo.",
@@ -250,7 +250,7 @@
         "id": "10",
         "titulo": "Sílabas abiertas",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una sílaba abierta en español es aquella que termina en vocal (por ejemplo, \"ma\", \"te\", \"lu\"). Escribe un programa SilabasAbiertas.java que lea una palabra y cuente cuántas sílabas abiertas tiene. Para simplificar, asumiremos que cada sílaba es un par de letras y que hay tantas sílabas como pares posibles, descartando la última si la longitud es impar.",
         "tareas": [
             "Leer una palabra.",
@@ -271,7 +271,7 @@
         "id": "11",
         "titulo": "Eco infinito",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un servicio secreto utiliza un sistema de eco infinito para reforzar la confidencialidad de los mensajes: cada palabra del mensaje original se repite una vez más que la anterior, comenzando con una única repetición. Por ejemplo, el mensaje \"hola mundo clave\" se transforma en \"hola mundo mundo clave clave clave\". Crea un programa EcoInfinito.java que tome un mensaje y construya su eco según esta lógica.",
         "tareas": [
             "Leer una línea de texto (mensaje original).",
@@ -292,7 +292,7 @@
         "id": "12",
         "titulo": "Factorial truncado",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "El factorial de un número n es el producto de todos los enteros positivos menores o iguales a n. Este programa FactorialTruncado.java debe calcular el factorial, pero truncando el resultado al primer dígito impar encontrado de derecha a izquierda. Si el resultado termina en ceros o pares, se eliminan hasta encontrar un impar.",
         "tareas": [
             "Leer un entero no negativo.",
@@ -314,7 +314,7 @@
         "id": "13",
         "titulo": "Sistema dúo",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un grupo de ingenieros usa un sistema numérico en base 2, pero con las cifras representadas por letras: 'A' representa 0 y 'B' representa 1. Por ejemplo, el número binario 101 se escribe como BAB. Crea un programa SistemaDuo.java que permita convertir un número decimal a este sistema y también descodificarlo.",
         "tareas": [
             "Ofrecer un menú con opciones:\n  1. Decimal a sistema dúo\n  2. Sistema dúo a decimal\n  3. Salir",
@@ -339,7 +339,7 @@
         "id": "14",
         "titulo": "Cadenas espejo",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Dos palabras se consideran \"espejo\" si una es exactamente la inversa de la otra. Por ejemplo, \"roma\" y \"amor\". Crea un programa CadenasEspejo.java que reciba dos palabras y determine si son reflejo exacto entre sí. El programa debe ignorar mayúsculas y mostrar el resultado claro.",
         "tareas": [
             "Leer dos palabras.",
@@ -364,7 +364,7 @@
         "id": "15",
         "titulo": "Contador de vocales y consonantes",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa ContadorLetras.java que reciba una frase y cuente cuántas vocales y cuántas consonantes contiene. El programa debe ignorar espacios, mayúsculas y signos de puntuación, considerando solo las letras del alfabeto inglés.",
         "tareas": [
             "Leer una frase del usuario.",
@@ -391,7 +391,7 @@
         "id": "16",
         "titulo": "Matriz fantasma",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Una cuadrícula es considerada \"fantasma\" si todos sus elementos en la diagonal principal son ceros. Crea un programa MatrizFantasma.java que permita al usuario introducir una matriz cuadrada (de tamaño 3x3 como mínimo), la imprima en pantalla y verifique si cumple la propiedad fantasma. El usuario deberá introducir los valores fila por fila.",
         "tareas": [
             "Pedir el tamaño n de la matriz (n ≥ 3).",
@@ -425,7 +425,7 @@
         "id": "17",
         "titulo": "Conversor a Notación Leet",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "La notación leet es una forma de escritura popular en la cultura hacker que sustituye ciertas letras por números o símbolos. Crea un programa LeetConverter.java que tome una frase y la convierta a notación leet siguiendo esta conversión básica: A → 4, E → 3, I → 1, O → 0, S → 5, T → 7. El programa debe preservar mayúsculas si estaban presentes.",
         "tareas": [
             "Leer una frase completa del usuario.",
@@ -449,7 +449,7 @@
         "id": "18",
         "titulo": "Suma Piramidal con Visualización",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "La suma piramidal de un número es la suma de todos los enteros desde 1 hasta ese número. Por ejemplo, la suma piramidal de 4 es 1 + 2 + 3 + 4 = 10. Crea un programa SumaPiramidal.java que permita al usuario introducir un número positivo y calcule su suma piramidal, mostrando además el proceso visualmente como una pirámide alineada a la izquierda.",
         "tareas": [
             "Leer un número entero positivo.",
@@ -472,7 +472,7 @@
         "id": "19",
         "titulo": "Intercambio de Palabras Extremas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa IntercambioExtremos.java que lea una frase y cambie la primera palabra con la última. Si hay una sola palabra, se muestra tal cual. El programa debe funcionar con frases largas y mantener los espacios intermedios sin modificación.",
         "tareas": [
             "Leer una línea completa.",
@@ -496,7 +496,7 @@
         "id": "20",
         "titulo": "Criptograma Desplazado",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa CriptogramaDesplazado.java que cifre un mensaje sustituyendo cada letra por la letra situada n posiciones después en el alfabeto (tipo cifrado César). El desplazamiento n será introducido por el usuario. El alfabeto es circular, así que la 'z' con desplazamiento 1 se convierte en 'a'. El programa solo afecta letras minúsculas.",
         "tareas": [
             "Leer una frase y un número entero de desplazamiento.",
@@ -519,7 +519,7 @@
         "id": "21",
         "titulo": "Contador de Palíndromos",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Los palíndromos son palabras que se leen igual de izquierda a derecha que de derecha a izquierda, como “ana” o “radar”. Crea un programa ContadorPalindromos.java que pida una frase al usuario y cuente cuántas palabras dentro de esa frase son palíndromos. El programa debe ignorar mayúsculas, signos de puntuación y espacios, y considerar solo las letras al evaluar.",
         "tareas": [
             "Leer una frase completa.",
@@ -543,7 +543,7 @@
         "id": "22",
         "titulo": "Minero de Números Primos",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un minero de datos quiere extraer todos los números primos dentro de un rango dado por el usuario. Crea un programa MineroPrimos.java que pida dos números enteros a y b (con a < b) y muestre todos los números primos entre ellos (incluidos). Además, debe mostrar cuántos primos hay en ese rango.",
         "tareas": [
             "Pedir al usuario dos números enteros positivos, asegurando que el primero sea menor que el segundo.",
@@ -566,7 +566,7 @@
         "id": "23",
         "titulo": "Calendario Mensual con Alineación Semanal",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa CalendarioMes.java que pida al usuario un mes (como número entre 1 y 12) y un año, y muestre por pantalla el calendario completo de ese mes en formato semanal (de domingo a sábado). El programa debe tener en cuenta años bisiestos para febrero y mostrar correctamente el día de la semana en que empieza el mes.",
         "tareas": [
             "Leer un número para el mes entre 1 y 12 y un año válido.",
@@ -591,7 +591,7 @@
         "id": "24",
         "titulo": "Decodificador de Código Morse",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "El código Morse es un sistema de codificación que representa letras y números con puntos y rayas. Crea un programa DecodificadorMorse.java que reciba una cadena en Morse (usando '.' para puntos, '-' para rayas, espacios entre letras y ‘/’ entre palabras) y la convierta a texto legible en español. Considera solo letras mayúsculas, números y espacio.",
         "tareas": [
             "Leer una cadena que contenga código Morse.",
@@ -616,7 +616,7 @@
         "id": "25",
         "titulo": "Analizador de Temperaturas Mensuales",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Un meteorólogo necesita analizar datos de temperatura. Crea un programa AnalizadorTemperaturas.java que reciba una serie de temperaturas diarias para un mes (número de días pedido al usuario) y calcule la temperatura media, la temperatura más alta y la más baja. Además, debe mostrar qué días tuvieron la temperatura máxima y mínima.",
         "tareas": [
             "Leer el número de días del mes.",
@@ -641,7 +641,7 @@
         "id": "26",
         "titulo": "Conversor de Bases Numéricas",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Los sistemas numéricos en informática van más allá del decimal. Crea un programa ConversorBases.java que permita al usuario convertir un número entero dado en base decimal a cualquiera de las bases siguientes: binario (base 2), octal (base 8) o hexadecimal (base 16). El usuario debe elegir la base destino, y el programa mostrará el resultado de la conversión. El programa debe validar la entrada y permitir repetir conversiones hasta que el usuario decida salir.",
         "tareas": [
             "Pedir un número entero decimal al usuario.",
@@ -666,7 +666,7 @@
         "id": "27",
         "titulo": "Juego Adivina el Número",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un juego interactivo llamado AdivinaNumero.java en el que el programa genere un número aleatorio entre 1 y 100, y el usuario debe intentar adivinarlo. Por cada intento, el programa indicará si el número es mayor o menor que el intento. El juego termina cuando el usuario acierta y muestra el número de intentos usados.",
         "tareas": [
             "Generar un número aleatorio entre 1 y 100.",
@@ -689,7 +689,7 @@
         "id": "28",
         "titulo": "Validador de Contraseñas",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Es muy importante que las contraseñas sean seguras. Crea un programa ValidadorContrasenas.java que reciba una contraseña y verifique si cumple con los siguientes requisitos: mínimo 8 caracteres, al menos una letra mayúscula, una minúscula, un número y un carácter especial (como !@#$%). Indicar si la contraseña es válida o no, y si no, qué requisitos no cumple.",
         "tareas": [
             "Leer una contraseña introducida por el usuario.",
@@ -715,7 +715,7 @@
         "id": "29",
         "titulo": "Calculadora de Fracciones",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Realiza un programa CalculadoraFracciones.java que pida al usuario dos fracciones (numerador y denominador para cada una) y permita sumar, restar, multiplicar o dividir dichas fracciones. El programa debe mostrar el resultado en su forma simplificada (mínimo común denominador y fracción irreducible).",
         "tareas": [
             "Pedir al usuario el numerador y denominador de la primera fracción.",
@@ -742,7 +742,7 @@
         "id": "30",
         "titulo": "Contador de Palabras Únicas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "En análisis de texto, contar palabras únicas es fundamental. Crea un programa llamado ContadorPalabrasUnicas.java que reciba una frase completa y cuente cuántas palabras diferentes contiene, ignorando mayúsculas y minúsculas. Además, debe mostrar la lista de palabras únicas ordenadas alfabéticamente. Por simplicidad, las palabras estarán separadas por espacios y no habrá signos de puntuación.",
         "tareas": [
             "Leer una frase de texto completa.",
@@ -767,7 +767,7 @@
         "id": "31",
         "titulo": "Analizador de Secuencia Numérica",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Diseña un programa llamado AnalizadorSecuencia.java que reciba una secuencia de números enteros separados por espacios. Debe calcular e imprimir la suma, el promedio, el número máximo y el mínimo de la secuencia. Además, debe indicar si la secuencia está ordenada de forma ascendente, descendente o no está ordenada.",
         "tareas": [
             "Leer la secuencia de números enteros separados por espacios.",
@@ -793,7 +793,7 @@
         "id": "32",
         "titulo": "Simulador de Cambio en Monedas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Elabora un programa llamado SimuladorCambio.java que convierta una cantidad de dinero en euros a monedas de distintas denominaciones: 2 €, 1 €, 0.50 €, 0.20 €, 0.10 €, 0.05 €, 0.02 € y 0.01 €. El programa debe pedir al usuario el importe en euros (puede ser decimal) y mostrar cuántas monedas de cada tipo se necesitan para dar ese importe con la menor cantidad total de monedas posible.",
         "tareas": [
             "Leer la cantidad en euros como número decimal.",
@@ -817,7 +817,7 @@
         "id": "33",
         "titulo": "Contador de Vocales y Consonantes",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa llamado ContadorVocalesConsonantes.java que pida una frase al usuario y cuente cuántas vocales y consonantes contiene. Se deben ignorar los espacios y cualquier otro carácter que no sea una letra del alfabeto. Además, el programa debe mostrar el porcentaje que representan las vocales y las consonantes respecto al total de letras.",
         "tareas": [
             "Leer una frase completa introducida por el usuario.",
@@ -842,7 +842,7 @@
         "id": "34",
         "titulo": "Validador de Palíndromo Numérico",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Realiza un programa llamado ValidadorPalindromo.java que determine si un número entero positivo es un palíndromo, es decir, si se lee igual de izquierda a derecha que de derecha a izquierda. El programa debe pedir el número al usuario y mostrar un mensaje indicando si es palíndromo o no.",
         "tareas": [
             "Leer un número entero positivo.",
@@ -865,7 +865,7 @@
         "id": "35",
         "titulo": "Simulador de Cola de Clientes",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Imagina un banco donde los clientes hacen cola para ser atendidos. Cada cliente tiene un número de ticket. Crea un programa SimuladorCola.java que permita simular la llegada y atención de clientes:\n\n    El usuario podrá añadir clientes a la cola (cada uno recibe un número de ticket consecutivo, empezando en 1).\n\n    El usuario podrá atender (eliminar) el cliente que está al frente de la cola.\n\n    El programa mostrará el estado actual de la cola después de cada operación.\n\n    El programa terminará cuando el usuario decida salir.",
         "tareas": [
             "Implementar el manejo de una cola (puede ser con listas o arrays) para simular los tickets.",
@@ -907,7 +907,7 @@
         "id": "36",
         "titulo": "Conversor de Temperaturas",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa ConversorTemperaturas.java que permita convertir temperaturas entre Celsius, Fahrenheit y Kelvin mediante un menú interactivo. El usuario podrá seleccionar el tipo de conversión que desea hacer y deberá ingresar la temperatura. El programa mostrará el resultado de la conversión y repetirá el menú hasta que el usuario decida salir.",
         "tareas": [
             "Mostrar un menú con opciones: Celsius a Fahrenheit, Fahrenheit a Celsius, Celsius a Kelvin, Kelvin a Celsius, Salir.",
@@ -943,7 +943,7 @@
         "id": "37",
         "titulo": "Números Primos en Rango",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa NumerosPrimosRango.java que solicite dos números enteros al usuario, un límite inferior y un límite superior, y luego muestre todos los números primos que existen entre esos dos límites, inclusive. El programa debe validar que el límite inferior sea menor que el superior y manejar correctamente los casos en que no haya números primos en el rango.",
         "tareas": [
             "Pedir al usuario límite inferior y límite superior.",
@@ -970,7 +970,7 @@
         "id": "38",
         "titulo": "Calculadora de Matrices 2x2",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa CalculadoraMatrices2x2.java que permita realizar operaciones básicas con matrices 2x2: suma, resta y multiplicación. El usuario deberá ingresar dos matrices (cada una con 4 números) y luego elegir la operación a realizar. El programa mostrará el resultado de la operación seleccionada.",
         "tareas": [
             "Pedir al usuario los 4 elementos de la matriz A.",
@@ -999,7 +999,7 @@
         "id": "39",
         "titulo": "Juego del Número Secreto",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Escribe un programa NumeroSecreto.java que genere un número aleatorio entre 1 y 100 y permita que el usuario intente adivinarlo. El programa debe dar pistas diciendo si el número ingresado es mayor o menor que el número secreto. El juego termina cuando el usuario adivine el número y mostrará el número de intentos realizados.",
         "tareas": [
             "Generar un número aleatorio entre 1 y 100.",
@@ -1031,7 +1031,7 @@
         "id": "40",
         "titulo": "Frecuencia de Caracteres",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa FrecuenciaCaracteres.java que reciba una cadena de texto del usuario y calcule la frecuencia de cada carácter que aparece en ella. El programa debe mostrar una lista con cada carácter y cuántas veces aparece en la cadena, ignorando mayúsculas y minúsculas (es decir, 'A' y 'a' se cuentan juntos). Además, los espacios y signos de puntuación también deben ser contados y mostrados.",
         "tareas": [
             "Pedir al usuario que introduzca una frase o texto.",
@@ -1066,7 +1066,7 @@
         "id": "41",
         "titulo": "Validador de Contraseñas Seguras",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Las contraseñas seguras son fundamentales para proteger la información personal en cualquier sistema. Debes crear un programa en Java llamado ValidadorContrasenaSeguras.java que solicite al usuario una contraseña y valide que esta cumpla con requisitos mínimos de seguridad. El programa debe verificar que la contraseña tenga al menos 8 caracteres, contenga al menos una letra mayúscula, una minúscula, un número y un carácter especial (como !, @, #, $, %, &). Si la contraseña no cumple alguno de estos requisitos, el programa debe indicarlo claramente para que el usuario pueda corregirla. Si cumple todos los requisitos, se debe mostrar un mensaje indicando que la contraseña es segura.",
         "tareas": [
             "Pedir al usuario que introduzca una contraseña.",
@@ -1093,7 +1093,7 @@
         "id": "42",
         "titulo": "Generador de Claves Seguras",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Generar contraseñas seguras es una tarea frecuente para proteger cuentas y datos personales. En este ejercicio, debes crear un programa GeneradorClaves.java que permita al usuario definir la longitud deseada de una contraseña y luego genere una contraseña aleatoria que incluya letras mayúsculas, minúsculas, números y símbolos especiales. El programa debe preguntar al usuario si quiere generar otra contraseña y continuar hasta que el usuario decida salir.",
         "tareas": [
             "Pedir al usuario la longitud de la contraseña.",
@@ -1116,7 +1116,7 @@
         "id": "43",
         "titulo": "Inversor de Lista de Números",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Invertir el orden de una lista es un ejercicio clásico para comprender arreglos y algoritmos. En este ejercicio, debes crear un programa InversorLista.java que permita al usuario introducir una lista de números enteros separados por espacios. El programa debe invertir el orden de los números y mostrarlos, pero no puede usar métodos nativos como Collections.reverse(). La inversión debe hacerse mediante intercambio manual.",
         "tareas": [
             "Leer la línea completa con números separados por espacios.",
@@ -1140,7 +1140,7 @@
         "id": "44",
         "titulo": "Buscador de Palíndromas en Frase",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Los palíndromos son palabras que se leen igual al derecho que al revés. Tu tarea es crear un programa BuscadorPalindromas.java que reciba una frase del usuario, la procese eliminando signos de puntuación y normalizando mayúsculas y minúsculas, y luego encuentre todas las palabras palíndromas en esa frase. El programa debe mostrar las palabras palíndromas encontradas, sin repeticiones y ordenadas alfabéticamente.",
         "tareas": [
             "Pedir al usuario una frase.",
@@ -1166,7 +1166,7 @@
         "id": "45",
         "titulo": "Calculadora de Factorial Iterativa",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "El cálculo del factorial de un número entero es una operación común en matemáticas y programación, pero puede volverse muy grande o inválido si se ingresan valores no adecuados. Crea un programa en Java llamado CalculadoraFactorial.java que permita al usuario introducir un número entero y calcule su factorial. El programa debe validar que el número sea un entero no negativo y, en caso contrario, mostrar un mensaje de error y pedir de nuevo. El cálculo debe realizarse usando un método iterativo y mostrar el resultado final.",
         "tareas": [
             "Pedir al usuario un número entero.",
@@ -1189,7 +1189,7 @@
         "id": "46",
         "titulo": "Contador de Palabras y Vocales",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Desarrolla un programa en Java llamado ContadorPalabrasVocales.java que solicite al usuario ingresar una frase completa y, a partir de ella, cuente cuántas palabras tiene y cuántas vocales aparecen en total. El programa debe considerar vocales tanto mayúsculas como minúsculas y debe ignorar caracteres no alfabéticos al contar las vocales. La frase puede contener espacios, signos de puntuación y números, pero solo las palabras alfabéticas se cuentan. Muestra ambos totales claramente.",
         "tareas": [
             "Pedir al usuario una frase.",
@@ -1211,7 +1211,7 @@
         "id": "47",
         "titulo": "Generador de Números Primos hasta N",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Diseña un programa Java llamado GeneradorPrimos.java que solicite un número entero positivo N y muestre todos los números primos menores o iguales a N. El programa debe validar que N sea positivo, y luego usar un método para determinar si un número es primo, mostrando la lista resultante en pantalla. La solución debe ser eficiente para N razonablemente grande (por ejemplo, hasta 10,000).",
         "tareas": [
             "Pedir un número entero positivo N.",
@@ -1233,7 +1233,7 @@
         "id": "48",
         "titulo": "Simulador de Lanzamientos de Dados",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Crea un programa Java llamado SimuladorDados.java que simule el lanzamiento de dos dados de seis caras. El programa debe permitir al usuario indicar cuántas veces quiere lanzar los dados, y luego mostrar la cantidad de veces que cada suma (de 2 a 12) ha aparecido. Debe usarse la clase Random para simular los dados y los resultados deben imprimirse en forma ordenada, indicando claramente cada suma y su frecuencia.",
         "tareas": [
             "Pedir al usuario el número de lanzamientos (entero positivo).",
@@ -1268,7 +1268,7 @@
         "id": "49",
         "titulo": "Gestor Simple de Inventario",
         "nivel": "medio",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Diseña un programa en Java llamado GestorInventario.java que permita gestionar un inventario simple de productos. El usuario podrá ingresar varios productos con su nombre, cantidad y precio unitario. Al finalizar la entrada, el programa debe mostrar un listado con todos los productos y el valor total del inventario (cantidad × precio para cada producto sumado). El programa debe validar que la cantidad y el precio sean valores positivos.",
         "tareas": [
             "Permitir ingresar productos con nombre, cantidad y precio.",
@@ -1305,7 +1305,7 @@
         "id": "50",
         "titulo": "Simulador de Cajero Automático",
         "nivel": "fácil",
-        "tipo": "elementos básicos",
+        "tipo": "Elementos básicos",
         "enunciado": "Desarrolla un programa llamado CajeroAutomatico.java que simule un cajero automático con saldo inicial fijo (ej. 1000 euros). El programa debe mostrar un menú con opciones para consultar saldo, ingresar dinero, retirar dinero y salir. Para ingreso y retiro se actualiza el saldo, validando que no se retire más del disponible. El programa repite el menú hasta que el usuario elige salir.",
         "tareas": [
             "Iniciar saldo fijo (por ejemplo, 1000.0).",
@@ -1355,7 +1355,7 @@
         "id": "51",
         "titulo": "Clase Usuario para red social con solicitudes",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una red social quiere implementar una clase que represente a un Usuario. Cada usuario tiene un perfil con cierta información básica y puede interactuar con otros usuarios mediante el envío de solicitudes de amistad. El sistema necesita mantener un registro de cuántas solicitudes ha enviado y cuántas ha recibido.",
         "tareas": [
             "Implementar la clase Usuario con encapsulación adecuada (atributos privados y métodos públicos).",
@@ -1395,7 +1395,7 @@
         "id": "52",
         "titulo": "Sistema de préstamo de libros en una librería virtual",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una librería virtual desea desarrollar un sistema básico para gestionar libros y préstamos. Para ello, se deben modelar dos clases principales: Libro y Cliente. Cada cliente podrá tomar prestado un máximo de 3 libros a la vez. Cada libro debe saber si está disponible o no.",
         "tareas": [
             "Crear la clase Libro con atributos título, autor, ISBN y disponibilidad.",
@@ -1438,7 +1438,7 @@
         "id": "53",
         "titulo": "Gestión de repartidores y paquetes",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa de reparto necesita un sistema para gestionar a sus repartidores y los envíos que se les asignan. Cada Repartidor tiene un nombre, un identificador único y puede llevar un máximo de 5 paquetes a la vez. Cada Paquete tiene una descripción, una dirección de destino y un estado que puede ser “pendiente”, “en tránsito” o “entregado”.",
         "tareas": [
             "Implementar las clases Paquete y Repartidor con encapsulación adecuada.",
@@ -1478,7 +1478,7 @@
         "id": "54",
         "titulo": "Sistema de encuestas para evaluación de docentes",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una universidad quiere digitalizar su sistema de encuestas para que los estudiantes puedan evaluar anónimamente a sus docentes. Cada Encuesta contiene preguntas y puede ser respondida por múltiples Participantes. Cada participante puede responder sólo una vez, y sus respuestas se almacenan como una lista de números del 1 al 5 (una por pregunta). El objetivo es calcular el promedio por pregunta y mostrar estadísticas.",
         "tareas": [
             "Definir la clase Encuesta con atributos titulo, preguntas y respuestas.",
@@ -1518,7 +1518,7 @@
         "id": "55",
         "titulo": "Sistema de reservas de aulas en un centro educativo",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un centro educativo quiere automatizar la reserva de aulas. Cada Aula tiene un número, una capacidad y un estado de disponibilidad. Los Usuarios pueden hacer una reserva si el aula está libre, indicando fecha y hora. Cada Reserva debe contener la información del aula, del usuario y del momento reservado.",
         "tareas": [
             "Definir la clase Aula con atributos numero, capacidad y disponible.",
@@ -1554,7 +1554,7 @@
         "id": "56",
         "titulo": "Votación digital en comunidad vecinal",
         "nivel": "fácil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En una comunidad vecinal se va a celebrar una votación digital para decidir si se aprueba un nuevo reglamento. El sistema debe garantizar que cada vecino vote solo una vez y que los resultados sean confidenciales hasta que finalice la votación. Se debe simular todo el proceso: registro de vecinos, emisión de votos y publicación de resultados con conteo de votos y porcentaje de participación.",
         "tareas": [
             "Definir la clase Vecino con atributos nombre, dni y haVotado.",
@@ -1597,7 +1597,7 @@
         "id": "57",
         "titulo": "Monitorización energética en ciudad inteligente",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En una ciudad inteligente, los edificios están conectados a una red de energía que monitoriza el consumo eléctrico horario en tiempo real. Se debe registrar el consumo por hora de cada edificio, calcular su consumo total y medio, y clasificarlos como eficientes o ineficientes según si su consumo medio es menor a 200 kWh. Este sistema ayudará a aplicar políticas de ahorro energético y generar informes automatizados.",
         "tareas": [
             "Crear la clase Edificio con atributos nombre y una lista de consumos horarios (List<Double>).",
@@ -1640,7 +1640,7 @@
         "id": "58",
         "titulo": "Gestión de turnos en clínica veterinaria",
         "nivel": "fácil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En una clínica veterinaria moderna, se informatiza la gestión de turnos para atender mascotas en orden de llegada. El sistema debe registrar las mascotas que llegan, permitir atenderlas en orden y generar un resumen con todas las mascotas atendidas durante el día, ordenadas cronológicamente.",
         "tareas": [
             "Crear la clase Mascota con atributos nombre, especie, edad y propietario.",
@@ -1682,7 +1682,7 @@
         "id": "59",
         "titulo": "Gestión de pedidos en panadería artesanal",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una panadería artesanal con venta por encargo necesita un sistema que permita organizar los pedidos diarios. Cada pedido incluye el nombre del cliente, una lista de productos con cantidades y si el pedido ha sido entregado. Se debe poder registrar pedidos, marcar pedidos como entregados, listar pendientes y mostrar un resumen completo.",
         "tareas": [
             "Crear la clase Producto con atributos nombre y precioUnitario.",
@@ -1724,7 +1724,7 @@
         "id": "60",
         "titulo": "Gestión de envíos en empresa de mensajería",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa de mensajería nacional necesita un sistema para controlar sus envíos. Cada envío tiene un código de seguimiento, destinatario, dirección, estado actual y un historial de eventos con fechas. Se debe poder registrar envíos, actualizar su estado con eventos, consultar el estado actual y el historial, y listar los envíos que estén en tránsito.",
         "tareas": [
             "Crear la clase EventoEnvio con atributos descripcion y fecha (LocalDateTime).",
@@ -1769,7 +1769,7 @@
         "id": "61",
         "titulo": "Gestión de préstamos y reservas en biblioteca digital",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una biblioteca digital quiere gestionar su catálogo de libros electrónicos y controlar el préstamo y la reserva de los mismos por parte de los usuarios. Cada libro tiene título, autor, ISBN, y un número total de copias digitales simultáneas disponibles. Los usuarios pueden pedir prestado un libro si hay copias libres, o reservarlo si no hay copias disponibles. Se debe registrar libros, usuarios, préstamos, reservas y consultar estado actual de libros y préstamos de usuarios.",
         "tareas": [
             "Crear clase Libro con atributos: titulo, autor, isbn, copiasTotales, copiasPrestadas y lista de reservas (IDs de usuarios).",
@@ -1808,7 +1808,7 @@
         "id": "62",
         "titulo": "Gestión de alquiler y reservas de vehículos",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa de alquiler de vehículos quiere gestionar su flota y las reservas de clientes. La flota incluye coches, motos y furgonetas, cada uno con características específicas. Se deben registrar vehículos, clientes y reservas, comprobar disponibilidad, calcular costes y listar reservas activas por cliente.",
         "tareas": [
             "Crear clase abstracta Vehiculo con atributos comunes: matrícula, marca, modelo, año de fabricación y precio diario.",
@@ -1844,7 +1844,7 @@
         "id": "63",
         "titulo": "Gestión de recursos digitales en biblioteca digital",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una biblioteca digital necesita un sistema para gestionar sus recursos digitales, que incluyen libros electrónicos, revistas y audiolibros. Cada recurso tiene atributos comunes como título, autor, año de publicación y código identificativo único. Los libros electrónicos incluyen número de páginas y formato (PDF, EPUB). Las revistas tienen número de edición y periodicidad (mensual, trimestral). Los audiolibros incluyen duración en minutos y narrador. El sistema debe registrar recursos, buscar por título o autor, mostrar detalles, permitir préstamos con fecha de inicio y devolución, y consultar recursos prestados y disponibles.",
         "tareas": [
             "Crear clase abstracta RecursoDigital con atributos: codigo, titulo, autor, anioPublicacion, fechaPrestamo, fechaDevolucion.",
@@ -1881,7 +1881,7 @@
         "id": "64",
         "titulo": "Gestión de flota de drones y misiones en organización de rescate",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En una organización de rescate se usa una flota de drones para realizar misiones en zonas difíciles o peligrosas. Cada dron tiene un ID único, modelo, nivel de batería (porcentaje), autonomía en minutos y posición GPS (latitud y longitud). Cada misión tiene código, tipo (búsqueda, entrega, reconocimiento), estado (pendiente, en curso, completada) y descripción. El sistema debe gestionar drones y misiones, permitiendo registrar, asignar misiones solo a drones con batería ≥20% y sin misión activa, actualizar estados, y mostrar reportes. Se requiere un menú para operar hasta salir.",
         "tareas": [
             "Crear clase Dron con atributos privados: id, modelo, bateria, autonomia, latitud, longitud. Añadir getters/setters y método getEstado() que muestre estado completo del dron, incluyendo misión activa si la tiene.",
@@ -1956,7 +1956,7 @@
         "id": "65",
         "titulo": "Gestión de reservas y disponibilidad en hotel moderno",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En un hotel moderno se requiere un sistema para gestionar reservas de habitaciones. Cada habitación tiene número único, tipo (individual, doble, suite) y estado (Disponible, Reservada, Ocupada). Los clientes pueden reservar indicando habitación, nombre y fechas entrada y salida. El sistema debe registrar habitaciones, validar y hacer reservas solo si la habitación está disponible para esas fechas, cambiar estado según uso y mostrar reservas activas y habitaciones libres en un rango de fechas.",
         "tareas": [
             "Crear clase Habitacion con atributos privados: numero (String), tipo (String), estado (String). Añadir getters/setters y métodos para obtener y cambiar estado.",
@@ -2006,7 +2006,7 @@
         "id": "66",
         "titulo": "Gestión de cursos y estudiantes en plataforma online",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En una plataforma de cursos online se requiere un sistema que gestione cursos y estudiantes inscritos. Cada curso tiene nombre, código único, duración en horas y lista de estudiantes. Cada estudiante tiene nombre completo, email y ID único. El sistema debe permitir crear cursos y estudiantes, inscribir estudiantes en cursos evitando duplicados, mostrar información detallada de un curso con sus estudiantes y listar todos los cursos disponibles.",
         "tareas": [
             "Definir clase Curso con atributos privados: nombre (String), código (String), duración (int) y lista de estudiantes (List<Estudiante>). Añadir métodos para agregar estudiantes, mostrar información y listar estudiantes.",
@@ -2122,7 +2122,7 @@
         "id": "67",
         "titulo": "Sistema de reservas de salas de reuniones",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa necesita un sistema para gestionar la reserva de salas de reuniones. Cada sala tiene un nombre único, capacidad máxima y una lista de reservas. Cada reserva está asociada a un empleado y contiene fecha, hora de inicio y duración. El sistema debe permitir registrar salas y empleados, realizar reservas comprobando que no se solapen, mostrar las reservas de una sala, y listar todas las salas con su disponibilidad actual.",
         "tareas": [
             "Definir clase Sala con atributos: nombre (String), capacidad (int) y lista de reservas (List<Reserva>). Añadir métodos para agregar reserva, mostrar reservas y comprobar disponibilidad.",
@@ -2239,7 +2239,7 @@
         "id": "68",
         "titulo": "Simulador de combate de criaturas fantásticas",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una academia mágica entrena criaturas fantásticas para combates simulados por turnos. Cada criatura pertenece a una especie, tiene nombre, puntos de vida (HP), ataque, defensa y una habilidad especial. El sistema debe permitir crear criaturas, simular combates por turnos hasta que una quede sin HP, y registrar los resultados. Las habilidades pueden modificar temporalmente atributos y el sistema debe ser extensible con nuevas especies mediante herencia.",
         "tareas": [
             "Crear clase abstracta Criatura con atributos: nombre, especie, hp, ataque, defensa y método abstracto usarHabilidad() que devuelve un bonus de daño o curación.",
@@ -2294,7 +2294,7 @@
         "id": "69",
         "titulo": "Gestión de centro de reparaciones técnicas",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un centro de reparaciones técnicas recibe dispositivos electrónicos (móviles, ordenadores, consolas, etc.) que deben ser evaluados y reparados por técnicos especializados. Cada dispositivo genera una orden con información del cliente, problema, estado y coste estimado. El sistema debe permitir registrar dispositivos, crear órdenes, asignar técnicos según especialidad, cambiar estados y generar un informe con todas las órdenes finalizadas y el total recaudado.",
         "tareas": [
             "Crear clase abstracta Dispositivo con atributos comunes marca, modelo, número de serie y método abstracto getDescripcion().",
@@ -2356,7 +2356,7 @@
         "id": "70",
         "titulo": "Sistema inteligente de gestión de cultivos en invernaderos",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa agrícola ha desarrollado un sistema inteligente para gestionar cultivos en invernaderos automatizados. Cada invernadero contiene cultivos como tomates, lechugas o fresas, y sensores que miden temperatura, humedad y niveles de agua. El sistema debe registrar cultivos, controlar condiciones ambientales, detectar alertas y generar informes de seguimiento. Se debe usar clases, herencia y composición para permitir la extensión del modelo a otros cultivos y sensores.",
         "tareas": [
             "Crear clase abstracta Cultivo con atributos nombre, tipo, fecha de siembra y estado de crecimiento (enum).",
@@ -2403,7 +2403,7 @@
         "id": "71",
         "titulo": "Sistema de gestión de torneos oficiales de ajedrez",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "La Federación Internacional de Ajedrez requiere un sistema orientado a objetos para gestionar torneos oficiales. Cada torneo contiene jugadores, partidas y permite calcular clasificaciones finales. El sistema debe controlar datos personales, resultados, emparejamientos por ranking, y generar informes de rendimiento acumulado en varios torneos.",
         "tareas": [
             "Crear clase Jugador con atributos nombre, nacionalidad, ELO y lista de partidas jugadas.",
@@ -2449,7 +2449,7 @@
         "id": "72",
         "titulo": "Sistema de reservas deportivas universitarias",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una universidad desea crear una aplicación orientada a objetos que permita a estudiantes y personal reservar instalaciones deportivas como canchas, campos o gimnasios. El sistema debe permitir registrar usuarios, consultar la disponibilidad de las instalaciones, realizar o cancelar reservas y ver el historial de uso. Se requiere que cada instalación tenga un horario y reglas claras, y que los usuarios respeten límites de tiempo y cantidad de reservas. El sistema debe estar preparado para futuras extensiones como pagos o integración con calendarios.",
         "tareas": [
             "Crear clase Instalacion con nombre, tipo (tenis, fútbol, gimnasio), horario de apertura y cierre, y lista de reservas.",
@@ -2493,7 +2493,7 @@
         "id": "73",
         "titulo": "Gestor de colecciones de cartas",
         "nivel": "dificil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Estás desarrollando un sistema orientado a objetos para una aplicación de coleccionismo de cartas, como las de juegos de fantasía, estrategia o deportes. Cada carta posee atributos únicos como su nombre, tipo (por ejemplo, mágica, criatura, artefacto), rareza (común, rara, épica, legendaria), puntos de ataque y defensa. Los usuarios pueden crear colecciones personales, añadir y quitar cartas de ellas, e intercambiar cartas con otros usuarios. El sistema debe también permitir obtener estadísticas sobre las cartas (como cuántas hay por rareza o cuál es la más poderosa), y permitir buscar cartas globalmente. Para asegurar la integridad, las cartas no pueden duplicarse dentro de una misma colección, y los intercambios deben ser justos y validados por ambas partes. Además, debe existir un sistema para clonar colecciones a modo de copia de seguridad.",
         "tareas": [
             "Crear una clase Carta con los atributos: nombre, tipo, rareza, ataque y defensa.",
@@ -2547,7 +2547,7 @@
         "id": "74",
         "titulo": "Sistema de reservas de salas de estudio",
         "nivel": "dificil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una universidad quiere implementar un sistema para gestionar las reservas de salas de estudio distribuidas en sus bibliotecas. Cada sala puede tener una capacidad específica, distintos equipamientos (como proyector, pizarra, ventilación), y franjas horarias reservables por los estudiantes. Los estudiantes registrados en el sistema deben poder consultar la disponibilidad de salas, realizar reservas para una hora concreta, cancelarlas si es necesario y reportar cualquier incidencia. Es importante que no se permitan reservas que se solapen, que cada estudiante tenga un límite de reservas por día (máximo dos), y que todo quede registrado para auditorías. El sistema debe estar modelado con clases que representen las salas, las reservas, los estudiantes, el gestor general del sistema y los reportes de incidencias.",
         "tareas": [
             "Crear la clase SalaEstudio con identificador, capacidad, ubicación, equipamiento y lista de reservas.",
@@ -2591,7 +2591,7 @@
         "id": "75",
         "titulo": "Competencia anual de robots autónomos",
         "nivel": "dificil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Cada año, una empresa de robótica organiza una competencia donde distintos modelos de robots autónomos deben superar circuitos con obstáculos y tareas. Cada robot tiene un nombre, una velocidad y una cantidad limitada de energía, y debe enfrentarse a una secuencia de tareas que pueden incluir esquivar, empujar o cargar objetos. El sistema debe permitir registrar diferentes tipos de robots con estrategias distintas, modelar los tipos de tareas con dificultad y requisitos energéticos, y simular el comportamiento de cada robot al enfrentar el circuito. La simulación debe calcular el rendimiento de cada robot y permitir comparar resultados. Además, se debe tener en cuenta que los robots no pueden completar tareas para las que no tienen suficiente energía, y que ciertas clases de robot tienen ventajas o desventajas según el tipo de tarea.",
         "tareas": [
             "Crear una clase abstracta Robot con atributos nombre, velocidad, energía y un método abstracto ejecutarTarea(Tarea t).",
@@ -2629,7 +2629,7 @@
         "id": "76",
         "titulo": "Sistema de reservas para parque de aventuras",
         "nivel": "dificil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un parque de aventuras ofrece actividades al aire libre como tirolina, escalada y rafting. Se necesita un sistema orientado a objetos que gestione reservas de grupos en distintas actividades y horarios, garantizando que no se exceda la capacidad máxima en cada franja horaria. El sistema debe permitir consultar disponibilidad, hacer reservas, cancelar o modificar reservas y agregar nuevas actividades o modificar horarios sin alterar las clases principales. Cada reserva vincula un grupo con un número de personas a una actividad y un horario determinado.",
         "tareas": [
             "Crear la clase Actividad con nombre, capacidad máxima y lista de horarios.",
@@ -2666,7 +2666,7 @@
         "id": "77",
         "titulo": "Gestión de reservas para clases grupales en gimnasio",
         "nivel": "dificil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un gimnasio quiere digitalizar la gestión de reservas para sus clases grupales como yoga, spinning y pilates, con horarios y capacidad limitada. Se necesita un sistema orientado a objetos que permita registrar usuarios, inscribirlos o cancelar sus reservas en clases específicas, controlar que no se sobrepase la capacidad ni se produzcan conflictos de horario, y consultar la disponibilidad y el historial de reservas de cada usuario.",
         "tareas": [
             "Crear la clase Clase con atributos nombre, horario, capacidad máxima y lista de usuarios inscritos.",
@@ -2708,7 +2708,7 @@
         "id": "78",
         "titulo": "Gestión de proyectos, tareas y empleados en empresa de software",
         "nivel": "dificil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa de desarrollo de software desea gestionar sus proyectos y tareas internas para organizar mejor a sus empleados y prioridades. El sistema debe permitir crear varios proyectos, cada uno con tareas asignadas a empleados, controlar prioridades y estados de tareas, actualizar estados y consultar tareas por proyecto o empleado, siempre validando fechas y evitando duplicados.",
         "tareas": [
             "Crear clase Proyecto con nombre, descripción y lista de tareas.",
@@ -2750,7 +2750,7 @@
         "id": "79",
         "titulo": "Gestión de reservas de mesas en restaurante",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un restaurante quiere gestionar las reservas de mesas para optimizar el uso de su espacio y mejorar la atención al cliente. Cada mesa tiene un número identificador y una capacidad máxima. Los clientes reservan indicando nombre, número de personas y horario. El sistema debe permitir registrar mesas y reservas, validar capacidad, evitar reservas duplicadas y consultar o cancelar reservas por mesa y día.",
         "tareas": [
             "Crear clase Mesa con número, capacidad y lista de reservas.",
@@ -2793,7 +2793,7 @@
         "id": "80",
         "titulo": "Gestión de animales en zoológico con herencia y polimorfismo",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Eres responsable de desarrollar un programa para un zoológico que registre diferentes especies de animales, cada una con sus características, dieta y comportamiento propio. Debe permitir añadir, eliminar y listar animales, alimentar y hacer emitir sonidos a todos los animales, con validación de dietas y comportamientos específicos según el tipo de animal.",
         "tareas": [
             "Crear clase base Animal con atributos privados: nombre, edad, tipoDieta (enum Dieta).",
@@ -2860,7 +2860,7 @@
         "id": "81",
         "titulo": "Gestión de vuelos y pasajeros en aerolínea con POO y colecciones",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una aerolínea desea desarrollar un sistema orientado a objetos en Java para gestionar sus vuelos y pasajeros. El sistema debe permitir crear vuelos, gestionar su estado, registrar pasajeros en cada vuelo y consultar información relevante. Cada vuelo tiene un código único, una ruta (origen y destino), una hora programada de salida, duración estimada y un estado que puede cambiar según la situación. El sistema debe garantizar que no se asignen asientos duplicados, permitir cancelaciones y mostrar estadísticas básicas.",
         "tareas": [
             "Crear la clase Vuelo con atributos privados: código vuelo (String), origen, destino, horaSalida (LocalDateTime), duración (int), estado (enum EstadoVuelo), lista de pasajeros.",
@@ -2945,7 +2945,7 @@
         "id": "82",
         "titulo": "Mini red social con herencia, comentarios y likes en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Imagina que vas a desarrollar una mini red social donde los usuarios pueden publicar contenido, comentar publicaciones y dar 'likes' a publicaciones y comentarios. La aplicación debe ser orientada a objetos en Java y reflejar la estructura de herencia entre diferentes tipos de contenido. Se deben crear publicaciones de texto, imagen y vídeo, añadir comentarios, controlar likes evitando duplicados, y mostrar toda la información.",
         "tareas": [
             "Crear clase abstracta Contenido con atributos: id, autor, fecha, número de likes y lista de usuarios que dieron like.",
@@ -3026,7 +3026,7 @@
         "id": "83",
         "titulo": "Sistema bancario con cuentas, préstamos y cálculo de intereses en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Estás desarrollando el backend de un sistema bancario sencillo que simula operaciones comunes: abrir cuentas corrientes y de ahorro, depositar, retirar dinero y gestionar préstamos personales con cálculo de amortización. Se deben controlar límites de saldo, calcular intereses y mostrar resúmenes financieros para los clientes, siguiendo principios de programación orientada a objetos en Java.",
         "tareas": [
             "Crear clase base abstracta CuentaBancaria con métodos depositar(), retirar() y calcularInteres().",
@@ -3120,7 +3120,7 @@
         "id": "84",
         "titulo": "App Dieta Tracker con gestión de usuarios y comidas en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Imagina que desarrollas una aplicación para nutricionistas y personas que quieren seguir una dieta personalizada. Permite registrar usuarios con un objetivo calórico diario, agregar comidas clasificadas por tipo (desayuno, almuerzo, cena, merienda), calcular calorías totales diarias y mostrar alertas si se supera el objetivo, aplicando principios de POO en Java.",
         "tareas": [
             "Crear clase Usuario con atributos nombre, objetivoCalorias y lista de comidas.",
@@ -3199,7 +3199,7 @@
         "id": "85",
         "titulo": "Sistema de facturación con promociones y gestión de clientes en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Desarrolla un sistema para una tienda que gestiona productos, clientes y facturas. Permite registrar productos con nombre, precio y categoría; registrar clientes normales o frecuentes; crear facturas con múltiples productos; aplicar promociones automáticas según tipo de cliente o cantidad; y mostrar el total con descuentos aplicados. Se debe usar herencia para modelar promociones y mantener encapsulación y composición para gestionar la información correctamente.",
         "tareas": [
             "Crear clase Producto con atributos nombre, precio y categoría.",
@@ -3277,7 +3277,7 @@
         "id": "86",
         "titulo": "Juego de rol con personajes, habilidades y combate por turnos",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Implementa un sistema básico para un juego de rol en consola donde distintos tipos de personajes (guerreros, magos, etc.) tienen atributos como vida, ataque y defensa. Cada personaje posee una habilidad especial que puede aplicar durante un combate por turnos contra otro personaje. El sistema debe gestionar la aplicación de habilidades, modificar los estados de los personajes y determinar el ganador cuando uno queda sin vida. Usa herencia para los personajes y una interfaz para las habilidades, respetando el encapsulamiento.",
         "tareas": [
             "Crear clase abstracta Personaje con atributos nombre, vida, ataque, defensa y una habilidad.",
@@ -3341,7 +3341,7 @@
         "id": "87",
         "titulo": "Sistema de gestión de residuos urbanos con contenedores y camiones",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Desarrolla un sistema para gestionar residuos urbanos en una ciudad inteligente. El sistema debe controlar diferentes tipos de contenedores según el residuo que almacenan, su ubicación y capacidad máxima, y registrar la cantidad de residuos depositados. Además, debe gestionar una flota de camiones recolectores que asignan rutas y recogen residuos de los contenedores siguiendo criterios como tipo o zona, para evitar desbordamientos y mantener la eficiencia del sistema.",
         "tareas": [
             "Crear una clase abstracta Contenedor con atributos ID, ubicación, capacidad máxima y cantidad actual.",
@@ -3386,7 +3386,7 @@
         "id": "88",
         "titulo": "Sistema de gestión para una clínica psicológica",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una red de clínicas psicológicas necesita informatizar su sistema de atención y gestión de pacientes. Se debe desarrollar una aplicación orientada a objetos en Java para organizar consultas, gestionar pacientes, registrar sesiones terapéuticas y asignar psicólogos según especialidades como ansiedad, depresión o estrés laboral. El sistema permitirá llevar el historial de sesiones, asignar psicólogos y generar informes mensuales de actividad para cada profesional.",
         "tareas": [
             "Crear la clase abstracta Persona con atributos nombre, DNI y edad, y un método mostrarInformacion().",
@@ -3429,7 +3429,7 @@
         "id": "89",
         "titulo": "Sistema de alquiler de herramientas para ferretería",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una ferretería necesita un sistema para gestionar el alquiler de herramientas profesionales, disponible para particulares y empresas. El sistema debe controlar el estado de las herramientas, permisos especiales para alquilarlas, calcular costos según tiempo de uso, registrar devoluciones y mantener un historial de alquiler de cada herramienta.",
         "tareas": [
             "Crear la clase abstracta Herramienta con atributos nombre, código, estado, precioHora y requiereFormacion. Incluir métodos calcularPrecio(int horas), marcarEnUso() y marcarDisponible().",
@@ -3467,7 +3467,7 @@
         "id": "90",
         "titulo": "Sistema de gestión de acceso en parque de atracciones",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Un parque de atracciones quiere informatizar su sistema de control de acceso y gestión de visitantes. Los usuarios pueden ser visitantes normales o VIP, y cada uno accede a distintas atracciones según su tipo de entrada. Se deben controlar alturas mínimas, capacidad máxima, y restringir acceso a ciertas atracciones solo para VIP. El sistema registra entradas, salidas y genera reportes de uso.",
         "tareas": [
             "Crear la clase abstracta Visitante con atributos nombre, edad, altura, tipoEntrada y método puedeAcceder(Atraccion).",
@@ -3506,7 +3506,7 @@
         "id": "91",
         "titulo": "Gestión de obras digitales y coleccionistas en galería digital",
         "nivel": "dificil",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "En la era del arte digital y los NFTs (sin blockchain en este ejercicio), un colectivo artístico desea una aplicación para gestionar obras digitales únicas, registrar artistas, permitir a coleccionistas adquirir y revender obras, y mantener un historial completo de propiedad y exposiciones. Se deben controlar transferencias sólo si el vendedor es el propietario actual y mantener estadísticas de uso.",
         "tareas": [
             "Crear clase abstracta Obra con atributos título, año, formato, propietarioActual, historialPropietarios, exposiciones y métodos transferirPropiedad(Coleccionista), agregarExposicion(Exposicion), mostrarHistorial().",
@@ -3549,7 +3549,7 @@
         "id": "92",
         "titulo": "Implementación de interfaz Trabajador con clases EmpleadoFijo y EmpleadoPorHoras",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Crea una interfaz Trabajador con el método calcularSalario(). Implementa dos clases EmpleadoFijo y EmpleadoPorHoras que implementen esta interfaz. El primero tiene un salario fijo mensual, el segundo cobra por hora trabajada. Programa un ejemplo de uso que imprima el salario calculado para cada empleado.",
         "tareas": [
             "Crear interfaz Trabajador con método calcularSalario(): double.",
@@ -3579,7 +3579,7 @@
         "id": "93",
         "titulo": "Gestión básica de contactos con clase Agenda",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Crea una clase Contacto con atributos nombre, teléfono y email. Crea una clase Agenda que almacene una lista de contactos y permita añadir nuevos contactos, buscar por nombre y mostrar todos los contactos almacenados. La búsqueda debe devolver el contacto encontrado o un mensaje claro si no existe.",
         "tareas": [
             "Crear clase Contacto con atributos nombre, telefono y email, junto con sus métodos getters y setters.",
@@ -3613,7 +3613,7 @@
         "id": "94",
         "titulo": "Sistema de gestión de empleados y departamentos",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa necesita un sistema para gestionar sus empleados. Cada empleado tiene un nombre, ID, puesto y salario. Los empleados están asignados a un departamento que tiene un nombre y una lista de empleados. Se debe poder añadir y eliminar empleados, calcular el salario total, listar empleados y cambiar el puesto de un empleado, controlando casos de empleados inexistentes.",
         "tareas": [
             "Crear clase Empleado con atributos nombre, id, puesto y salario, incluyendo getters y setters.",
@@ -3656,7 +3656,7 @@
         "id": "95",
         "titulo": "Sistema de gestión de rutas, autobuses y conductores en transporte público",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una empresa de transporte público desea crear un sistema orientado a objetos en Java para gestionar sus rutas, autobuses y conductores. El sistema debe permitir registrar rutas, autobuses asignados a rutas y conductores que operan cada autobús. Cada ruta tiene un código único, una lista ordenada de paradas y una duración estimada. Cada autobús tiene un número de identificación, capacidad máxima y modelo. Cada conductor tiene un ID, nombre y licencia válida. El sistema debe ofrecer funcionalidades como registrar nuevas entidades, asignar autobuses y conductores a rutas, consultar y cambiar asignaciones, mostrar rutas con sus asignaciones, consultar rutas por conductor y mostrar estadísticas básicas. Se deben implementar validaciones y manejo de excepciones para garantizar la integridad del sistema, aplicando buenas prácticas de POO para modularidad y mantenibilidad.",
         "tareas": [
             "Crear clase Ruta con atributos código (String), lista de paradas (List<String>), duración estimada (int), autobús asignado y conductor asignado.",
@@ -3710,7 +3710,7 @@
         "id": "96",
         "titulo": "Sistema de gestión de Pokémon y entrenadores con POO en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una aplicación desea modelar un sistema para gestionar una colección de Pokémon y sus entrenadores usando programación orientada a objetos en Java. Cada Pokémon tiene un nombre, tipo (como Fuego, Agua, Planta, Eléctrico, etc.), nivel y lista de movimientos. Cada movimiento tiene un nombre, tipo y poder (int). Cada entrenador tiene un nombre y un equipo de Pokémon (máximo 6). El sistema debe permitir crear Pokémon, añadir movimientos, crear entrenadores y asignarles Pokémon, consultar equipos, subir niveles, mostrar movimientos, buscar Pokémon por tipo y nivel, cambiar Pokémon de entrenador y mostrar estadísticas básicas. Se requiere buen encapsulamiento, validaciones y uso adecuado de colecciones y enumeraciones.",
         "tareas": [
             "Crear clase Pokemon con atributos nombre (String), tipo (enumeración), nivel (int) y lista de movimientos.",
@@ -3771,7 +3771,7 @@
         "id": "97",
         "titulo": "Sistema de gestión de ninjas y misiones en Naruto con POO en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una aplicación debe modelar un sistema para gestionar ninjas y misiones en el mundo de Naruto utilizando programación orientada a objetos en Java. Cada ninja tiene un nombre, rango (Genin, Chunin, Jonin), especialidad (Ninjutsu, Taijutsu, Genjutsu), y un nivel de chakra (int). Cada misión tiene un código único, tipo (Investigación, Combate, Escolta), dificultad y estado (Pendiente, En progreso, Completada). El sistema debe permitir crear ninjas y misiones, asignar ninjas a misiones evitando duplicados, cambiar estados, consultar asignaciones, actualizar niveles de chakra, eliminar ninjas o misiones, y mostrar estadísticas.",
         "tareas": [
             "Crear clase Ninja con atributos nombre (String), rango (enumeración), especialidad (enumeración) y nivelChakra (int).",
@@ -3823,7 +3823,7 @@
         "id": "98",
         "titulo": "Gestión de clanes y miembros ninja en Konoha con POO en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "La aldea de Konoha quiere desarrollar un sistema orientado a objetos en Java para gestionar los clanes ninja y sus miembros. Cada clan tiene un nombre único, una técnica especial y una lista de miembros. Cada miembro es un ninja con nombre, rango (Genin, Chunin, Jonin) y un conjunto de misiones completadas. El sistema debe permitir crear clanes, añadir miembros a clanes, registrar misiones completadas, consultar miembros de un clan, misiones de un miembro, listar clanes según rango, eliminar elementos, validar exclusividad de miembros, y mostrar estadísticas básicas.",
         "tareas": [
             "Crear clase Clan con atributos nombre (String), tecnicaEspecial (String) y miembros (List<Ninja>).",
@@ -3880,7 +3880,7 @@
         "id": "99",
         "titulo": "Gestión de equipos y jugadores en academia de eSports con POO en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una academia de eSports desea crear un sistema orientado a objetos en Java para gestionar sus equipos y jugadores profesionales. Cada equipo tiene un nombre único, un juego en el que compite (como League of Legends, Valorant, Fortnite), un país de origen, y una lista de jugadores. Cada jugador tiene un alias, un rol (Support, Carry, Tank, Sniper) y un ranking basado en puntos obtenidos en torneos. El sistema debe permitir registrar equipos y jugadores, actualizar rankings, consultar y buscar jugadores, cambiar datos de equipos, eliminar elementos, evitar duplicados y mostrar estadísticas básicas.",
         "tareas": [
             "Crear clase Equipo con atributos nombre (String), juego (String), paisOrigen (String) y lista de jugadores (List<Jugador>).",
@@ -3943,7 +3943,7 @@
         "id": "100",
         "titulo": "Gestión de lenguajes de programación con POO en Java",
         "nivel": "medio",
-        "tipo": "programación orientada a objetos",
+        "tipo": "Programación orientada a objetos",
         "enunciado": "Una plataforma educativa quiere modelar un sistema para gestionar información sobre lenguajes de programación. Cada lenguaje tiene un nombre único, año de creación, un paradigma principal (enumeración) y una lista de características clave (como 'tipado estático', 'orientado a objetos', 'multiplataforma'). El sistema debe permitir crear lenguajes, añadir y eliminar características, consultar lenguajes por paradigma, buscar por rango de años, obtener resúmenes, actualizar datos, eliminar lenguajes, validar nombres únicos, contar por paradigma y estar preparado para futuras ampliaciones siguiendo buenas prácticas de programación orientada a objetos.",
         "tareas": [
             "Crear clase LenguajeProgramacion con atributos nombre (String), añoCreacion (int), paradigma (enumeración) y caracteristicas (List<String>).",
