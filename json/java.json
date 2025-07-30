@@ -4,34 +4,29 @@
         "titulo": "Calculadora básica interactiva",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Crea un programa llamado CalculadoraBasica.java que simule una calculadora básica capaz de realizar operaciones aritméticas elementales: suma, resta, multiplicación y división. El programa debe solicitar al usuario dos números enteros y un operador (+, -, *, /), y mostrar el resultado correspondiente. Si se intenta dividir entre cero, debe indicarse un error. El programa debe repetirse hasta que el usuario decida salir introduciendo un carácter especial (por ejemplo, 'q').",
+        "enunciado": "Crea un programa llamado CalculadoraBasica.java que simule una calculadora básica capaz de realizar operaciones aritméticas elementales: suma, resta, multiplicación y división. El programa debe solicitar al usuario dos números enteros y un operador (+, -, *, /), y mostrar el resultado correspondiente. Si se intenta dividir entre cero, debe indicarse un error.",
         "tareas": [
             "Pedir al usuario dos números enteros.",
             "Pedir al usuario el operador (+, -, *, /).",
             "Realizar la operación aritmética según el operador.",
-            "Mostrar el resultado o un mensaje de error si se divide entre cero.",
-            "Repetir todo el proceso hasta que el usuario indique que desea salir."
+            "Mostrar el resultado o un mensaje de error si se divide entre cero."
         ],
         "pistas": [
-            "Usa estructuras como if-else, while o do-while para controlar el flujo del programa.",
-            "Comprueba si el segundo número es cero antes de realizar la división.",
-            "Puedes usar un bucle para repetir las operaciones hasta que el usuario escriba 'n' o 'q'."
+            "Usa estructuras como if-else if-else o switch case para controlar el flujo del programa.",
+            "Comprueba si el segundo número es cero antes de realizar la división."
         ],
         "ejemplo": {
             "entrada": [
                 "Introduce el primer número: 10",
                 "Introduce el segundo número: 5",
                 "Introduce el operador (+, -, *, /): *",
-                "¿Quieres hacer otra operación? (s/n): s",
                 "Introduce el primer número: 8",
                 "Introduce el segundo número: 0",
-                "Introduce el operador (+, -, *, /): /",
-                "¿Quieres hacer otra operación? (s/n): n"
+                "Introduce el operador (+, -, *, /): /"
             ],
             "salida": [
                 "Resultado: 50",
-                "Error: División por cero no permitida.",
-                "Adiós"
+                "Error: División por cero no permitida."
             ]
         }
     },
@@ -40,7 +35,7 @@
         "titulo": "Reloj binario",
         "nivel": "medio",
         "tipo": "Elementos básicos",
-        "enunciado": "Crea un programa llamado RelojBinario.java que lea una hora del día en formato de 24 horas (por ejemplo, \"13:45\") y la convierta a una representación binaria separando las horas y minutos. La salida debe mostrar los bits correspondientes a cada número, alineados como si fuese un reloj binario visual. Es una práctica excelente para trabajar con enteros, divisiones y representación binaria en consola.",
+        "enunciado": "Crea un programa llamado RelojBinario.java que lea una hora del día en formato de 24 horas (por ejemplo, \"13:45\") y la convierta a una representación binaria separando las horas y minutos. La salida debe mostrar los bits correspondientes a cada número, alineados como si fuese un reloj binario visual.",
         "tareas": [
             "Leer una hora con el formato HH:mm.",
             "Separar la hora y los minutos.",
@@ -65,10 +60,10 @@
         "titulo": "Tabla del clima semanal",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Desarrolla un programa llamado TablaDelClima.java que pida al usuario registrar las temperaturas de los próximos 7 días y luego imprima una tabla mostrando cada día y su temperatura, así como el promedio final. Se busca practicar arreglos, bucles y entrada de datos.",
+        "enunciado": "Desarrolla un programa llamado TablaDelClima.java que pida al usuario registrar las temperaturas de los próximos 7 días y luego imprima una tabla mostrando cada día y su temperatura, así como el promedio final.",
         "tareas": [
             "Pedir al usuario ingresar 7 temperaturas, una por cada día de la semana.",
-            "Guardar las temperaturas en un arreglo.",
+            "Guardar las temperaturas en un array.",
             "Mostrar una tabla con los días (de lunes a domingo) y sus temperaturas.",
             "Calcular y mostrar el promedio semanal de las temperaturas."
         ],
@@ -98,7 +93,7 @@
         "titulo": "Patrón serpiente",
         "nivel": "medio",
         "tipo": "Elementos básicos",
-        "enunciado": "Crea un programa llamado PatronSerpiente.java que reciba como entrada un número entero positivo N e imprima un patrón de serpiente de NxN caracteres, donde cada fila se imprime de forma alternada: la primera fila de izquierda a derecha, la segunda de derecha a izquierda, y así sucesivamente. Se numeran las posiciones desde 1 hasta N×N.",
+        "enunciado": "Crea un programa llamado PatronSerpiente.java que reciba como entrada un número entero positivo N e imprima un patrón de serpiente de NxN valores, donde las filas pares se imprimen de izquierda a derecha y las impares de derecha a izquierda. Se numeran las posiciones desde 1 hasta N×N.",
         "tareas": [
             "Leer el tamaño N (entero positivo).",
             "Imprimir una tabla de NxN con números del 1 al N² en forma de serpiente.",
@@ -108,7 +103,8 @@
             "Valida que N sea un número positivo.",
             "Usa bucles anidados para generar e imprimir la matriz.",
             "Asegura la alineación correcta para números de varias cifras.",
-            "Evita el uso de librerías externas."
+            "Evita el uso de librerías externas.",
+            "Puede usar una matriz bidimensional para guardar los valores de NxN."
         ],
         "ejemplo": {
             "entrada": "Introduce el tamaño de la serpiente: 4",
@@ -199,10 +195,10 @@
         "titulo": "Clave intercalada",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Una técnica de codificación básica intercalaba una palabra con una clave del mismo tamaño, letra por letra. Por ejemplo, la palabra \"HOLA\" con la clave \"CLAV\" se convierte en \"HCLOALVA\". Crea un programa ClaveIntercalada.java que reciba dos palabras del mismo tamaño y genere la palabra intercalada como resultado.",
+        "enunciado": "Una técnica de codificación básica intercalaba una palabra con una clave del mismo tamaño, letra por letra. Por ejemplo, la palabra \"HOLA\" con la clave \"CLAV\" se convierte en \"HCLOLAVA\". Crea un programa ClaveIntercalada.java que reciba dos palabras del mismo tamaño y genere la palabra intercalada como resultado.",
         "tareas": [
             "Leer dos palabras de igual longitud.",
-            "Intercalar sus caracteres alternando uno de la primera, uno de la segunda, etc.",
+            "Intercalar sus caracteres alternando uno de la primera, uno de la segunda, otro de la segunda, otro de la primera, etc.",
             "Mostrar la palabra resultante."
         ],
         "pistas": [
@@ -216,7 +212,7 @@
                 "Introduce la segunda palabra: SOLA"
             ],
             "salida": [
-                "Resultado: RSANOALA"
+                "Resultado: RSOANLAA"
             ]
         }
     },
@@ -260,11 +256,12 @@
         "pistas": [
             "Considerar las vocales a, e, i, o, u.",
             "Convertir la palabra a minúsculas antes de procesar.",
-            "Solo contar pares completos, ignorar letra sobrante si la longitud es impar."
+            "Solo contar pares completos, ignorar letra sobrante si la longitud es impar.",
+            "Usar bucles anidados para dividir los pares."
         ],
         "ejemplo": {
             "entrada": "tomate",
-            "salida": "Sílabas abiertas: 2 (to, te)"
+            "salida": "Sílabas abiertas: 3 (to, ma, te)"
         }
     },
     {
@@ -307,7 +304,7 @@
         ],
         "ejemplo": {
             "entrada": "7",
-            "salida": "Factorial: 5040\nFactorial truncado: 504"
+            "salida": "Factorial: 5040\nFactorial truncado: 5"
         }
     },
     {
@@ -323,14 +320,15 @@
             "Repetir el menú hasta que el usuario elija salir."
         ],
         "pistas": [
-            "Para convertir decimal a sistema dúo, convertir primero a binario y luego reemplazar 0 por 'A' y 1 por 'B'.",
+            "Para convertir decimal a sistema dúo, convertir primero a binario con toBinaryString y luego reemplazar 0 por 'A' y 1 por 'B'.",
             "Para convertir de sistema dúo a decimal, validar que solo haya 'A' y 'B' y luego interpretar 'A' como 0 y 'B' como 1 para convertir a decimal.",
             "Usar bucles para el menú y validaciones."
         ],
         "ejemplo": {
             "entrada": [
+                "Sistema dúo\n1. Decimal a sistema dúo\n2. Sistema dúo a decimal\n3. Salir\n",
                 "1",
-                "5"
+                "Introduce el valor decimal: 5"
             ],
             "salida": "Resultado: BAB"
         }
@@ -354,8 +352,8 @@
         ],
         "ejemplo": {
             "entrada": [
-                "Roma",
-                "amor"
+                "Ingrese la primera palabra: Roma",
+                "Ingrese la segunda palabra: amor"
             ],
             "salida": "Resultado: Son palabras espejo."
         }
@@ -382,8 +380,8 @@
                 "Esto es una Prueba!"
             ],
             "salida": [
-                "Vocales: 7",
-                "Consonantes: 8"
+                "Vocales: 8",
+                "Consonantes: 7"
             ]
         }
     },
@@ -408,7 +406,7 @@
         ],
         "ejemplo": {
             "entrada": [
-                "Introduce el tamaño de la matriz: 3",
+                "Introduce el tamaño de la matriz (mínimo 3): 3",
                 "Fila 1: 0 2 3",
                 "Fila 2: 4 0 6",
                 "Fila 3: 7 8 0"
@@ -484,7 +482,6 @@
         "pistas": [
             "Usar split para separar las palabras.",
             "Mantener el orden del resto de palabras sin modificar.",
-            "Si la frase tiene una sola palabra, mostrarla igual.",
             "No usar estructuras de datos complejas ni librerías adicionales."
         ],
         "ejemplo": {
@@ -544,7 +541,7 @@
         "titulo": "Minero de Números Primos",
         "nivel": "medio",
         "tipo": "Elementos básicos",
-        "enunciado": "Un minero de datos quiere extraer todos los números primos dentro de un rango dado por el usuario. Crea un programa MineroPrimos.java que pida dos números enteros a y b (con a < b) y muestre todos los números primos entre ellos (incluidos). Además, debe mostrar cuántos primos hay en ese rango.",
+        "enunciado": "Un minero de datos quiere extraer todos los números primos dentro de un rango dado por el usuario. Crea un programa MineroPrimos.java que pida dos números enteros a y b (con a < b) y muestre todos los números primos entre ellos (incluidos).",
         "tareas": [
             "Pedir al usuario dos números enteros positivos, asegurando que el primero sea menor que el segundo.",
             "Implementar una función para determinar si un número es primo.",
@@ -567,12 +564,12 @@
         "titulo": "Calendario Mensual con Alineación Semanal",
         "nivel": "medio",
         "tipo": "Elementos básicos",
-        "enunciado": "Crea un programa CalendarioMes.java que pida al usuario un mes (como número entre 1 y 12) y un año, y muestre por pantalla el calendario completo de ese mes en formato semanal (de domingo a sábado). El programa debe tener en cuenta años bisiestos para febrero y mostrar correctamente el día de la semana en que empieza el mes.",
+        "enunciado": "Crea un programa CalendarioMes.java que pida al usuario un mes (como número entre 1 y 12) y un año, y muestre por pantalla el calendario completo de ese mes en formato semanal (de sábado a viernes). El programa debe tener en cuenta años bisiestos para febrero y mostrar correctamente el día de la semana en que empieza el mes.",
         "tareas": [
             "Leer un número para el mes entre 1 y 12 y un año válido.",
             "Determinar si el año es bisiesto para calcular los días de febrero.",
-            "Calcular el día de la semana en que comienza el mes (domingo=0, lunes=1, etc.).",
-            "Imprimir los días de la semana como encabezado (Dom Lun Mar Mié Jue Vie Sáb).",
+            "Calcular el día de la semana en que comienza el mes (sabado=0, domingo=1, etc.).",
+            "Imprimir los días de la semana como encabezado (Sáb Dom Lun Mar Mié Jue Vie).",
             "Mostrar los días del mes alineados bajo su día correspondiente, con espacios para los días previos al inicio."
         ],
         "pistas": [
@@ -584,7 +581,7 @@
         ],
         "ejemplo": {
             "entrada": "Introduce el mes (1-12): 2\nIntroduce el año: 2024",
-            "salida": "Dom Lun Mar Mié Jue Vie Sáb\n             1   2   3   4\n5   6   7   8   9  10  11\n12  13  14  15  16  17  18\n19  20  21  22  23  24  25\n26  27  28  29"
+            "salida": "Sáb Dom Lun Mar Mié Jue Vie\n                       1   2   3   4\n5   6   7   8   9  10  11\n12  13  14  15  16  17  18\n19  20  21  22  23  24  25\n26  27  28  29"
         }
     },
     {
@@ -634,7 +631,7 @@
         ],
         "ejemplo": {
             "entrada": "Número de días: 5\nDía 1: 23\nDía 2: 25\nDía 3: 20\nDía 4: 25\nDía 5: 22",
-            "salida": "Temperatura media: 23.0\nTemperatura máxima: 25 en días 2, 4\nTemperatura mínima: 20 en día 3"
+            "salida": "Temperatura media: 23.0\nTemperatura mínima: 20 en día 3\nTemperatura máxima: 25 en días 2, 4"
         }
     },
     {
@@ -667,11 +664,12 @@
         "titulo": "Juego Adivina el Número",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Crea un juego interactivo llamado AdivinaNumero.java en el que el programa genere un número aleatorio entre 1 y 100, y el usuario debe intentar adivinarlo. Por cada intento, el programa indicará si el número es mayor o menor que el intento. El juego termina cuando el usuario acierta y muestra el número de intentos usados.",
+        "enunciado": "Crea un juego interactivo llamado AdivinaNumero.java en el que el programa genere un número aleatorio entre 1 y 100, y el usuario debe intentar adivinarlo. Por cada intento, el programa indicará si el número es mayor o menor que el intento. El juego termina si el usuario en su intento introduce 0 o cuando acierta y muestra el número de intentos usados.",
         "tareas": [
             "Generar un número aleatorio entre 1 y 100.",
-            "Pedir al usuario que introduzca intentos hasta acertar.",
+            "Pedir al usuario que introduzca intentos hasta acertar o salir.",
             "Indicar si el número es mayor o menor que el intento dado.",
+            "Inidicar el número mínimo (1) y el número máximo (100)",
             "Contar los intentos y mostrar el total al acertar."
         ],
         "pistas": [
@@ -681,34 +679,31 @@
             "Mostrar mensajes claros para cada pista y al finalizar."
         ],
         "ejemplo": {
-            "entrada": "Adivina el número entre 1 y 100\nIntroduce tu intento: 50\nIntroduce tu intento: 75\nIntroduce tu intento: 62",
-            "salida": "El número es mayor\nEl número es menor\n¡Correcto! Lo has acertado en 3 intentos."
+            "entrada": "Adivina el número entre 1 y 100\nIntroduce tu intento: 50\nIntroduce tu intento: 75\nIntroduce tu intento: -1\nIntroduce tu intento: 101\nIntroduce tu intento: 62",
+            "salida": "El número es mayor\nEl número es menor\nComo mínimo 1\nComo máximo 100\n¡Correcto! Lo has acertado en 3 intentos."
         }
     },
     {
         "id": "28",
-        "titulo": "Validador de Contraseñas",
-        "nivel": "medio",
+        "titulo": "Suma de Dígitos Pares",
+        "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Es muy importante que las contraseñas sean seguras. Crea un programa ValidadorContrasenas.java que reciba una contraseña y verifique si cumple con los siguientes requisitos: mínimo 8 caracteres, al menos una letra mayúscula, una minúscula, un número y un carácter especial (como !@#$%). Indicar si la contraseña es válida o no, y si no, qué requisitos no cumple.",
+        "enunciado": "Crea un programa llamado SumaDigitosPares.java que reciba un número entero positivo como argumento desde la línea de comandos y calcule la suma de sus dígitos pares.",
         "tareas": [
-            "Leer una contraseña introducida por el usuario.",
-            "Comprobar que la contraseña tenga al menos 8 caracteres.",
-            "Verificar que contenga al menos una letra mayúscula.",
-            "Verificar que contenga al menos una letra minúscula.",
-            "Verificar que contenga al menos un número.",
-            "Verificar que contenga al menos un carácter especial de los permitidos.",
-            "Mostrar un mensaje indicando si la contraseña es válida o qué requisitos no cumple."
+            "Leer el número desde los argumentos del método main (args).",
+            "Validar que el número sea entero positivo.",
+            "Separar cada dígito del número.",
+            "Sumar únicamente los dígitos que sean pares (0, 2, 4, 6, 8).",
+            "Mostrar la suma final."
         ],
         "pistas": [
-            "Recorrer la cadena y evaluar carácter a carácter.",
-            "No usar expresiones regulares, sino comprobaciones con condicionales.",
-            "Crear variables booleanas para cada criterio y actualizar según el análisis.",
-            "Al final, imprimir los requisitos no cumplidos o que la contraseña es válida."
+            "Convierte el número a cadena para recorrerlo carácter por carácter.",
+            "Puedes usar Character.getNumericValue() para convertir un carácter en entero.",
+            "Usa el operador módulo (%) para saber si un dígito es par."
         ],
         "ejemplo": {
-            "entrada": "Introduce contraseña: hola123\nIntroduce contraseña: Hola123!",
-            "salida": "Contraseña no válida. Requisitos no cumplidos: mínimo 8 caracteres, al menos una mayúscula, al menos un carácter especial.\nContraseña válida."
+            "entrada": "java sumaDigitosPares \"483927\"",
+            "salida": "La suma de los dígitos pares en 483927 es 12."
         }
     },
     {
@@ -810,12 +805,12 @@
         ],
         "ejemplo": {
             "entrada": "Introduce cantidad en euros: 3.76",
-            "salida": "2€: 1\n1€: 1\n0.50€: 1\n0.20€: 1\n0.05€: 1\n0.01€: 1"
+            "salida": "1 moneda de 2€\n1 moneda de 1€\n1 moneda de 50 céntimos\n1 moneda de 20 céntimos\n1 moneda de 5 céntimos\n1 moneda de 1 céntimo"
         }
     },
     {
         "id": "33",
-        "titulo": "Contador de Vocales y Consonantes",
+        "titulo": "Contador de Vocales y Consonantes con Porcentajes",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
         "enunciado": "Crea un programa llamado ContadorVocalesConsonantes.java que pida una frase al usuario y cuente cuántas vocales y consonantes contiene. Se deben ignorar los espacios y cualquier otro carácter que no sea una letra del alfabeto. Además, el programa debe mostrar el porcentaje que representan las vocales y las consonantes respecto al total de letras.",
@@ -830,8 +825,8 @@
             "Convierte toda la frase a minúsculas para simplificar la comparación.",
             "Recorre cada carácter y verifica si es letra (entre 'a' y 'z').",
             "Distingue vocales y consonantes comprobando si el carácter está en 'aeiou'.",
-            "Para el porcentaje, usa: (cantidad / total letras) * 100.",
-            "Usa formato para mostrar el porcentaje con dos decimales."
+            "Para el porcentaje, usa: (cantidad de letras o consonantes * 100.0) / suma de vocales y consonantes",
+            "Usa formato para mostrar el porcentaje con dos decimales (.2f)."
         ],
         "ejemplo": {
             "entrada": "Introduce frase: Hola Mundo",
@@ -941,29 +936,26 @@
     },
     {
         "id": "37",
-        "titulo": "Números Primos en Rango",
-        "nivel": "medio",
+        "titulo": "Temperatura promedio válida",
+        "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Escribe un programa NumerosPrimosRango.java que solicite dos números enteros al usuario, un límite inferior y un límite superior, y luego muestre todos los números primos que existen entre esos dos límites, inclusive. El programa debe validar que el límite inferior sea menor que el superior y manejar correctamente los casos en que no haya números primos en el rango.",
+        "enunciado": "Escribe un programa llamado temperaturaPromedio.java que reciba una serie de temperaturas como argumentos en `args` (pueden ser números decimales positivos o negativos). El programa debe calcular el promedio de las temperaturas **válidas** (solo las que están entre -50 y 60 grados). Las temperaturas fuera de este rango deben ser ignoradas. Si no hay temperaturas válidas, se debe mostrar un mensaje indicándolo.",
         "tareas": [
-            "Pedir al usuario límite inferior y límite superior.",
-            "Validar que el límite inferior sea menor que el límite superior; si no, pedir nuevamente.",
-            "Recorrer el rango desde el límite inferior hasta el superior inclusive.",
-            "Determinar si cada número es primo usando una función específica.",
-            "Mostrar todos los números primos encontrados o un mensaje si no hay primos."
+            "Leer todos los valores de `args` como números decimales.",
+            "Ignorar los valores fuera del rango [-50, 60].",
+            "Sumar todas las temperaturas válidas.",
+            "Calcular el promedio solo si hay temperaturas válidas.",
+            "Mostrar el promedio con dos decimales o un mensaje si no hay datos válidos."
         ],
         "pistas": [
-            "Un número primo es mayor que 1 y no tiene divisores aparte de 1 y sí mismo.",
-            "Para comprobar si un número es primo, verifica divisibilidad desde 2 hasta la raíz cuadrada del número.",
-            "Validar entradas para evitar errores en la ejecución.",
-            "Si no hay números primos, muestra un mensaje adecuado."
+            "Usa `Double.parseDouble()` para convertir cada argumento.",
+            "Utiliza una variable para acumular la suma y otra para contar los valores válidos.",
+            "Recuerda que dividir entre cero no está permitido: verifica antes de calcular el promedio.",
+            "Puedes usar `String.format()` o `printf()` para mostrar el resultado con dos decimales."
         ],
         "ejemplo": {
-            "entrada": [
-                "Introduce límite inferior: 10",
-                "Introduce límite superior: 20"
-            ],
-            "salida": "Números primos entre 10 y 20: 11 13 17 19"
+            "entrada": "java temperaturaPromedio 22.5 -12.3 999 72 -55 0.0",
+            "salida": "Promedio de temperaturas válidas: 3.4"
         }
     },
     {
@@ -997,42 +989,32 @@
     },
     {
         "id": "39",
-        "titulo": "Juego del Número Secreto",
+        "titulo": "Palabra más larga",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Escribe un programa NumeroSecreto.java que genere un número aleatorio entre 1 y 100 y permita que el usuario intente adivinarlo. El programa debe dar pistas diciendo si el número ingresado es mayor o menor que el número secreto. El juego termina cuando el usuario adivine el número y mostrará el número de intentos realizados.",
+        "enunciado": "Crea un programa llamado palabraMasLarga.java que reciba varias palabras como argumentos en `args` y determine cuál es la palabra más larga. Si hay varias con la misma longitud máxima, debe mostrar la primera que aparece. El programa debe ignorar signos de puntuación comunes (como . , ; : ! ?).",
         "tareas": [
-            "Generar un número aleatorio entre 1 y 100.",
-            "Pedir al usuario que ingrese un número para adivinar.",
-            "Comparar el número ingresado con el número secreto y dar pista si es mayor o menor.",
-            "Contar el número de intentos realizados.",
-            "Cuando el usuario acierte, mostrar mensaje de felicitación y el número de intentos."
+            "Leer los argumentos de `args` como palabras.",
+            "Eliminar los signos de puntuación al inicio y final de cada palabra.",
+            "Determinar cuál es la palabra con mayor número de letras.",
+            "Mostrar la palabra más larga y su longitud."
         ],
         "pistas": [
-            "Usa la clase java.util.Random para generar números aleatorios.",
-            "Valida que el número ingresado esté dentro del rango 1 a 100.",
-            "Utiliza un bucle para repetir la petición hasta acertar.",
-            "Incrementa el contador de intentos en cada intento."
+            "Puedes usar `replaceAll(\"^[.,;:!?]+|[.,;:!?]+$\", \"\")` para limpiar los signos.",
+            "Usa un bucle para recorrer todas las palabras.",
+            "Guarda la palabra más larga encontrada y su longitud en cada iteración."
         ],
         "ejemplo": {
-            "entrada": [
-                "Adivina el número secreto entre 1 y 100: 50",
-                "Adivina el número secreto entre 1 y 100: 75",
-                "Adivina el número secreto entre 1 y 100: 63"
-            ],
-            "salida": [
-                "El número secreto es mayor.",
-                "El número secreto es menor.",
-                "¡Correcto! Número de intentos: 3"
-            ]
+            "entrada": "java palabraMasLarga \"hola mundo programación en-java increíble!\"",
+            "salida": "Palabra más larga: programación (13 letras)"
         }
     },
     {
         "id": "40",
         "titulo": "Frecuencia de Caracteres",
-        "nivel": "fácil",
+        "nivel": "medio",
         "tipo": "Elementos básicos",
-        "enunciado": "Crea un programa FrecuenciaCaracteres.java que reciba una cadena de texto del usuario y calcule la frecuencia de cada carácter que aparece en ella. El programa debe mostrar una lista con cada carácter y cuántas veces aparece en la cadena, ignorando mayúsculas y minúsculas (es decir, 'A' y 'a' se cuentan juntos). Además, los espacios y signos de puntuación también deben ser contados y mostrados.",
+        "enunciado": "Crea un programa FrecuenciaCaracteres.java que reciba una cadena de texto del usuario y calcule la frecuencia de cada carácter que aparece en ella. El programa debe mostrar cada carácter y cuántas veces aparece en la cadena, ignorando mayúsculas y minúsculas (es decir, 'A' y 'a' se cuentan juntos). Además, los espacios y signos de puntuación también deben ser contados y mostrados.",
         "tareas": [
             "Pedir al usuario que introduzca una frase o texto.",
             "Convertir todo el texto a minúsculas para evitar distinción entre mayúsculas y minúsculas.",
@@ -1040,17 +1022,17 @@
             "Mostrar los caracteres y sus frecuencias en orden de aparición o alfabético."
         ],
         "pistas": [
-            "Usa un array para almacenar los caracteres ya contados y sus frecuencias.",
+            "Usa HashMap para almacenar los caracteres ya contados y sus frecuencias.",
             "Recorre el texto caracter por caracter y actualiza las frecuencias.",
-            "No usar colecciones avanzadas, solo arrays o variables básicas.",
-            "Imprime cada carácter con su frecuencia, incluyendo espacios y signos."
+            "Imprime cada carácter con su frecuencia, incluyendo espacios y signos.",
+            "Para mostrar los caracteres ordenados usa List y uno de los algoritmos de ordenación (Burbuja o Selección)."
         ],
         "ejemplo": {
             "entrada": "Introduce texto: Hola, Mundo!",
             "salida": [
                 "' ' : 1",
-                "',' : 1",
                 "'!' : 1",
+                "',' : 1",
                 "'a' : 1",
                 "'d' : 1",
                 "'h' : 1",
@@ -1064,7 +1046,7 @@
     },
     {
         "id": "41",
-        "titulo": "Validador de Contraseñas Seguras",
+        "titulo": "Validador de Contraseñas Seguras (repetido)",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
         "enunciado": "Las contraseñas seguras son fundamentales para proteger la información personal en cualquier sistema. Debes crear un programa en Java llamado ValidadorContrasenaSeguras.java que solicite al usuario una contraseña y valide que esta cumpla con requisitos mínimos de seguridad. El programa debe verificar que la contraseña tenga al menos 8 caracteres, contenga al menos una letra mayúscula, una minúscula, un número y un carácter especial (como !, @, #, $, %, &). Si la contraseña no cumple alguno de estos requisitos, el programa debe indicarlo claramente para que el usuario pueda corregirla. Si cumple todos los requisitos, se debe mostrar un mensaje indicando que la contraseña es segura.",
@@ -1117,7 +1099,7 @@
         "titulo": "Inversor de Lista de Números",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Invertir el orden de una lista es un ejercicio clásico para comprender arreglos y algoritmos. En este ejercicio, debes crear un programa InversorLista.java que permita al usuario introducir una lista de números enteros separados por espacios. El programa debe invertir el orden de los números y mostrarlos, pero no puede usar métodos nativos como Collections.reverse(). La inversión debe hacerse mediante intercambio manual.",
+        "enunciado": "Invertir el orden de una lista es un ejercicio clásico para comprender arreglos y algoritmos. En este ejercicio, debes crear un programa InversorListaNumeros.java que permita al usuario introducir una lista de números enteros separados por espacios. El programa debe invertir el orden de los números y mostrarlos, pero no puede usar métodos nativos como Collections.reverse(). La inversión debe hacerse mediante intercambio manual.",
         "tareas": [
             "Leer la línea completa con números separados por espacios.",
             "Guardar los números en un array.",
@@ -1128,11 +1110,10 @@
             "Usar Scanner.nextLine() para leer la línea completa.",
             "Separar la cadena en partes con split(\" \").",
             "Convertir cada parte a entero y almacenarla en un array.",
-            "Usar un bucle para intercambiar elementos desde los extremos hacia el centro.",
-            "No usar Collections.reverse ni métodos similares."
+            "Usar un bucle para intercambiar elementos desde los extremos hacia el centro."
         ],
         "ejemplo": {
-            "entrada": "Introduce lista de números: 5 10 15 20",
+            "entrada": "Introduce lista de números separados por espacios: 5 10 15 20",
             "salida": "Lista invertida: 20 15 10 5"
         }
     },
@@ -1147,7 +1128,8 @@
             "Procesar la frase para eliminar signos de puntuación y pasar todo a minúsculas.",
             "Identificar palabras que sean palíndromas.",
             "Eliminar duplicados manualmente.",
-            "Mostrar la lista ordenada alfabéticamente."
+            "Mostrar la lista ordenada alfabéticamente.",
+            "No se pueden usar elementos externos, pero si crear las funciones que sean necesarias"
         ],
         "pistas": [
             "Usar expresiones regulares para eliminar signos de puntuación.",
@@ -1209,7 +1191,7 @@
     },
     {
         "id": "47",
-        "titulo": "Generador de Números Primos hasta N",
+        "titulo": "Generador de Números Primos",
         "nivel": "medio",
         "tipo": "Elementos básicos",
         "enunciado": "Diseña un programa Java llamado GeneradorPrimos.java que solicite un número entero positivo N y muestre todos los números primos menores o iguales a N. El programa debe validar que N sea positivo, y luego usar un método para determinar si un número es primo, mostrando la lista resultante en pantalla. La solución debe ser eficiente para N razonablemente grande (por ejemplo, hasta 10,000).",
@@ -1273,7 +1255,7 @@
         "tareas": [
             "Permitir ingresar productos con nombre, cantidad y precio.",
             "Validar que cantidad y precio sean positivos; repetir si no.",
-            "Permitir al usuario terminar la entrada escribiendo 'fin' como nombre.",
+            "Permitir al usuario terminar la entrada escribiendo 'salir' como nombre.",
             "Almacenar datos en arrays o listas (según preferencia).",
             "Mostrar listado completo con nombre, cantidad, precio unitario y valor total por producto.",
             "Calcular y mostrar el valor total acumulado del inventario."
@@ -1285,13 +1267,13 @@
         ],
         "ejemplo": {
             "entrada": [
-                "Introduce nombre del producto (o 'fin' para terminar): lápices",
+                "Introduce nombre del producto (o 'salir' para terminar): lápices",
                 "Introduce cantidad: 10",
                 "Introduce precio unitario: 0.5",
-                "Introduce nombre del producto (o 'fin' para terminar): cuadernos",
+                "Introduce nombre del producto (o 'salir' para terminar): cuadernos",
                 "Introduce cantidad: 5",
                 "Introduce precio unitario: 2.0",
-                "Introduce nombre del producto (o 'fin' para terminar): fin"
+                "Introduce nombre del producto (o 'salir' para terminar): salir"
             ],
             "salida": [
                 "Inventario:",
