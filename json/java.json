@@ -702,7 +702,7 @@
             "Usa el operador módulo (%) para saber si un dígito es par."
         ],
         "ejemplo": {
-            "entrada": "java sumaDigitosPares \"483927\"",
+            "entrada": "java SumaDigitosPares \"483927\"",
             "salida": "La suma de los dígitos pares en 483927 es 12."
         }
     },
@@ -939,7 +939,7 @@
         "titulo": "Temperatura promedio válida",
         "nivel": "fácil",
         "tipo": "Elementos básicos",
-        "enunciado": "Escribe un programa llamado temperaturaPromedio.java que reciba una serie de temperaturas como argumentos en `args` (pueden ser números decimales positivos o negativos). El programa debe calcular el promedio de las temperaturas **válidas** (solo las que están entre -50 y 60 grados). Las temperaturas fuera de este rango deben ser ignoradas. Si no hay temperaturas válidas, se debe mostrar un mensaje indicándolo.",
+        "enunciado": "Escribe un programa llamado TemperaturaPromedio.java que reciba una serie de temperaturas como argumentos en `args` (pueden ser números decimales positivos o negativos). El programa debe calcular el promedio de las temperaturas **válidas** (solo las que están entre -50 y 60 grados). Las temperaturas fuera de este rango deben ser ignoradas. Si no hay temperaturas válidas, se debe mostrar un mensaje indicándolo.",
         "tareas": [
             "Leer todos los valores de `args` como números decimales.",
             "Ignorar los valores fuera del rango [-50, 60].",
@@ -954,7 +954,7 @@
             "Puedes usar `String.format()` o `printf()` para mostrar el resultado con dos decimales."
         ],
         "ejemplo": {
-            "entrada": "java temperaturaPromedio 22.5 -12.3 999 72 -55 0.0",
+            "entrada": "java TemperaturaPromedio 22.5 -12.3 999 72 -55 0.0",
             "salida": "Promedio de temperaturas válidas: 3.4"
         }
     },
@@ -1005,7 +1005,7 @@
             "Guarda la palabra más larga encontrada y su longitud en cada iteración."
         ],
         "ejemplo": {
-            "entrada": "java palabraMasLarga \"hola mundo programación en-java increíble!\"",
+            "entrada": "java PalabraMasLarga \"hola mundo programación en-java increíble!\"",
             "salida": "Palabra más larga: programación (13 letras)"
         }
     },
