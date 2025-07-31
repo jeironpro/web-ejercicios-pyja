@@ -703,7 +703,7 @@
         ],
         "ejemplo": {
             "entrada": "java SumaDigitosPares 4 8 3 9 27",
-            "salida": "La suma de los dígitos pares en 4 8 3 9 27 es 12."
+            "salida": "La suma de los dígitos pares es 12."
         }
     },
     {
@@ -996,6 +996,7 @@
         "tareas": [
             "Leer los argumentos de `args` como palabras.",
             "Eliminar los signos de puntuación al inicio y final de cada palabra.",
+            "Crear una función auxiliar para intercambiar vocales con tilde por vocales normales del texto.",
             "Determinar cuál es la palabra con mayor número de letras.",
             "Mostrar la palabra más larga y su longitud."
         ],
@@ -1006,7 +1007,7 @@
         ],
         "ejemplo": {
             "entrada": "java PalabraMasLarga \"hola mundo programación en-java increíble!\"",
-            "salida": "Palabra más larga: programación (13 letras)"
+            "salida": "Palabra más larga: programacion (12 letras)"
         }
     },
     {
