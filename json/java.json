@@ -693,7 +693,7 @@
             "Leer el número desde los argumentos del método main (args).",
             "Validar que el número sea entero positivo.",
             "Separar cada dígito del número.",
-            "Sumar únicamente los dígitos que sean pares (0, 2, 4, 6, 8).",
+            "Sumar únicamente los dígitos que sean pares (0, 2, 4, 6, 8, etc).",
             "Mostrar la suma final."
         ],
         "pistas": [
@@ -702,8 +702,8 @@
             "Usa el operador módulo (%) para saber si un dígito es par."
         ],
         "ejemplo": {
-            "entrada": "java SumaDigitosPares \"483927\"",
-            "salida": "La suma de los dígitos pares en 483927 es 12."
+            "entrada": "java SumaDigitosPares 4 8 3 9 27",
+            "salida": "La suma de los dígitos pares en 4 8 3 9 27 es 12."
         }
     },
     {
