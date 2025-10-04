@@ -1,0 +1,478 @@
+/* --------- globales--------- */
+* {
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    margin: 0;
+    user-select: none;
+}
+
+/* --------- Estructura principal (root) --------- */
+html,
+body {
+    background-color: #f5f7fa;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --------- Header --------- */
+header {
+    background-color: transparent;
+    padding: 30px 20px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .titulo-principal {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+header .titulo-principal .info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+header .titulo-principal .info .texto-info {
+    background-color: #88e684;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    color: #000;
+    font-size: 18px;
+    left: 50%;
+    margin-top: 15px;
+    max-width: 300px;
+    opacity: 0;
+    padding: 5px 10px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+    width: max-content;
+}
+
+header .titulo-principal .info .texto-info a {
+    color: #776d11;
+}
+
+header .titulo-principal .info:hover .texto-info {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+header h1,
+header .titulo-paginacion {
+    color: #333;
+    font-size: 2.5rem;
+    transition: transform 0.2s ease;
+}
+
+header .titulo-paginacion {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .titulo-paginacion span {
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+
+header .titulo-paginacion span:hover {
+    background-color: #a1a1a1;
+}
+
+/* --------- Contenido principal --------- */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    height: 100vh;
+}
+
+/* --------- Contenedor de tarjetas --------- */
+.contenedor-principal {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    max-width: 1000px;
+}
+
+/* --------- Tarjetas --------- */
+.card {
+    align-items: center;
+    background-color: #88e684;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+}
+
+/* --------- Contenido de tarjeta --------- */
+.card .lenguaje {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.card h2 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card .imagen {
+    transition: transform 0.3s ease;
+    width: 150px;
+}
+
+.card:hover .imagen {
+    transform: scale(1.1);
+}
+
+.card img {
+    height: auto;
+    width: 100%;
+}
+
+/* --------- Ejercicios --------- */
+.ejercicio {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
+    margin-bottom: 40px;
+    padding: 25px;
+}
+
+.ejercicio:last-child {
+    margin-bottom: 0;
+}
+
+.titulo-ejercicio {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.detalles-ejercicio {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.dificultad,
+.tipo {
+    display: inline-block;
+    border-radius: 12px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 6px 6px 6px 0;
+    padding: 4px 12px;
+}
+
+.nivel-facil {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.nivel-medio {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.nivel-dificil {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.tipo.elementos-basicos {
+    background-color: #c2ffc4;
+}
+
+.tipo.programacion-orientada-a-objetos {
+    background-color: #bde1ff;
+}
+
+.tipo.funcional {
+    background-color: #ff9800;
+}
+
+.tipo.avanzado {
+    background-color: #9c27b0;
+}
+
+.tareas-programa,
+.pistas {
+    margin-top: 20px;
+}
+
+.pistas {
+    background-color: #fdf6e3;
+    border-left: 4px solid #f0ad4e;
+    color: #664d03;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+
+ul {
+    margin: 0 20px;
+}
+
+.ejemplo-codigo {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    color: #303028;
+    font-size: 14px;
+    overflow-x: auto;
+    padding: 15px;
+}
+
+.uml-diagrama {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.uml-diagrama img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --------- Paginación --------- */
+#paginacion {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#paginacion button {
+    background: #333;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(78, 78, 78, 0.3);
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 6px;
+    padding: 10px 16px;
+    transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+#paginacion button:hover:not(:disabled) {
+    background: #636363;
+    transform: translateY(-2px);
+}
+
+#paginacion button:disabled {
+    background: #808080;
+    box-shadow: none;
+    cursor: default;
+    transform: none;
+}
+
+#paginacion button:disabled:hover {
+    background: #969696;
+    cursor: default;
+}
+
+/* --------- Footer --------- */
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 12px 0;
+    text-align: center;
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    header .titulo-principal {
+        font-size: 2rem;
+    }
+
+    header .titulo-principal .info .texto-info {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .contenedor-principal {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    header .titulo-paginacion {
+        font-size: 1.5rem;
+    }
+
+    header .titulo-paginacion span {
+        padding: 2px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .card .imagen {
+        width: 140px;
+    }
+
+    main {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .ejercicio {
+        padding: 22px 18px;
+        margin-bottom: 35px;
+    }
+
+    .titulo-ejercicio {
+        font-size: 24px;
+    }
+
+    .detalles-ejercicio {
+        font-size: 15px;
+    }
+
+    .dificultad,
+    .tipo {
+        font-size: 14px;
+    }
+
+    .uml-diagrama {
+        width: 100%;
+        max-width: 480px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+    header .titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    header .titulo-principal .info .texto-info {
+        font-size: 12px;
+        margin-top: 7px;
+    }
+    
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .card {
+        border-radius: 10px;
+        height: 35vh;
+    }
+
+    .card .lenguaje {
+        padding: 20px 15px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .card .imagen {
+        width: 120px;
+    }
+
+    main {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    header .titulo-paginacion {
+        font-size: 1.2rem;
+    }
+
+    header .titulo-paginacion span {
+        padding: 0;
+    }
+
+    .ejercicio {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+
+    .titulo-ejercicio {
+        font-size: 22px;
+    }
+
+    .detalles-ejercicio {
+        font-size: 14px;
+    }
+
+    .dificultad,
+    .tipo {
+        font-size: 12px;
+    }
+
+    .uml-diagrama {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #paginacion {
+        padding: 5px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #paginacion button {
+        min-width: 30px;
+        font-size: 10px;
+        padding: 5px;
+        margin: 5px;
+        white-space: nowrap;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}

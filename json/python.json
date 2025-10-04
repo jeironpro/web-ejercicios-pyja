@@ -1,0 +1,3313 @@
+[
+    {
+        "id": "01",
+        "titulo": "Generador de patrones binarios",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un investigador quiere analizar cómo se distribuyen los patrones binarios en secuencias. Para ello, desea generar todas las cadenas binarias posibles de una longitud determinada n, pero no le interesan todas, sino solo aquellas que no tienen dos unos consecutivos. Por ejemplo, para n = 3, las cadenas válidas son: \"000\", \"001\", \"010\", \"100\", \"101\". Quedan descartadas cadenas como \"011\" o \"110\" porque contienen al menos dos unos seguidos.",
+        "tareas": [
+            "Pedir al usuario un número entero n mayor o igual a 1.",
+            "Generar todas las cadenas binarias posibles de longitud n sin dos unos seguidos.",
+            "Mostrar cuántas cadenas válidas se han generado.",
+            "Mostrar las cadenas, una por línea."
+        ],
+        "pistas": [
+            "Se puede usar recursividad o generación combinatoria.",
+            "Se trata de evitar las secuencias que tengan \"11\" como subcadena."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "3"
+            ],
+            "salida": [
+                "\"000\"",
+                "\"001\"",
+                "\"010\"",
+                "\"100\"",
+                "\"101\"",
+                "Total: 5 cadenas"
+            ]
+        }
+    },
+    {
+        "id": "02",
+        "titulo": "Cifrado escalonado",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un antiguo sistema de cifrado utilizado por mensajeros rebeldes consiste en convertir cada letra de un mensaje en su equivalente numérico ASCII, pero aplicando una transformación escalonada:\n· La primera letra se convierte a su código ASCII.\n· La segunda letra suma 1 al código ASCII.\n· La tercera suma 2, la cuarta suma 3, etc.\n\nAsí, el mensaje \"hola\" se transformaría en:\n· 'h' -> ord('h') = 104\n· 'o' -> ord('o') + 1 = 112\n· 'l' -> ord('l') + 2 = 110\n· 'a' -> ord('a') + 3 = 100.\n\nEl mensaje cifrado sería: \"104 112 110 100.\"\n\nAhora bien, también se puede descifrar aplicando la operación inversa. Dado el mensaje \"104 112 110 100\", restando 0, 1, 2, 3... se obtienen los valores ASCII originales:\n· 104 - 0 = 104 -> 'h'\n· 112 - 1 = 111 -> 'o'\n· 110 - 2 = 108 -> 'l'\n· 100 - 3 = 97  -> 'a'\n\nCrea un programa cifrado_escalonado.py que implemente un menú interactivo con dos opciones:\n1. Cifrar mensaje\n2. Descifrar mensaje\n3. Salir\n\n· Si se elige 1, se pedirá un mensaje al usuario y se mostrará la versión cifrada en números separados por espacios.\n· Si se elige 2, se pedirá una lista de números separados por espacios y se mostrará el mensaje original.\n· El programa se repetirá hasta que el usuario seleccione la opción 3.",
+        "tareas": [
+            "Implementar un menú interactivo con las opciones 1, 2 y 3.",
+            "Cifrar mensajes ignorando espacios y sin cifrar caracteres no letras.",
+            "Descifrar mensajes numéricos aplicando la operación inversa.",
+            "Repetir el menú hasta que el usuario elija salir."
+        ],
+        "pistas": [
+            "Ignorar espacios en el mensaje original durante el cifrado.",
+            "No cifrar caracteres que no sean letras.",
+            "Usar solo operaciones básicas de cadenas y listas.",
+            "No usar funciones avanzadas ni bibliotecas externas."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "--- CIFRADO ESCALONADO ---",
+                "1. Cifrar mensaje",
+                "2. Descifrar mensaje",
+                "3. Salir",
+                "Opción: 1",
+                "Introduce mensaje a cifrar: hola mundo",
+                "",
+                "--- CIFRADO ESCALONADO ---",
+                "1. Cifrar mensaje",
+                "2. Descifrar mensaje",
+                "3. Salir",
+                "Opción: 2",
+                "Introduce mensaje cifrado: 104 112 110 100 109 119 112 104 111",
+                "",
+                "--- CIFRADO ESCALONADO ---",
+                "1. Cifrar mensaje",
+                "2. Descifrar mensaje",
+                "3. Salir",
+                "Opción: 3"
+            ],
+            "salida": [
+                "Mensaje cifrado: 104 112 110 100 109 119 112 104 111",
+                "Mensaje original: holamundo",
+                "Adiós"
+            ]
+        }
+    },
+    {
+        "id": "03",
+        "titulo": "Anagramas",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un anagrama es una palabra o frase formada reorganizando las letras de otra. Crea un programa que reciba pares de palabras separados por un espacio y determine si son anagramas. El programa debe ignorar mayúsculas, espacios y tildes.\n\nEl programa termina cuando se introduce una línea vacía.",
+        "tareas": [
+            "Leer pares de palabras hasta que se introduzca una línea vacía.",
+            "Los espacios en las palabras deben eliminarse antes de comprobar.",
+            "Ignorar mayúsculas, espacios, caracteres especiales y tildes para comparar las palabras.",
+            "Solo se aceptan pares de palabras por línea.",
+            "Determinar si las palabras son anagramas.",
+            "Mostrar el resultado \"Son anagramas\" o \"No son anagramas\"."
+        ],
+        "pistas": [
+            "Crear un algoritmo de seleccion o burbuja para ordenar antes de comparar.",
+            "Finalizar el programa con línea vacía."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce un par de palabras: roma amor",
+                "Introduce un par de palabras: gato gota",
+                "Introduce un par de palabras: casa saco",
+                "Introduce un par de palabras: "
+            ],
+            "salida": [
+                "Resultado: Son anagramas",
+                "Resultado: Son anagramas",
+                "Resultado: No son anagramas",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "04",
+        "titulo": "Calculadora imprecisa",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una empresa construyó una calculadora defectuosa. Aunque sus operaciones parecen normales, todas devuelven resultados ligeramente alterados, como si tuviera un margen de error o un sesgo \"caprichoso\".\n\nEl comportamiento es el siguiente:\n· Suma (+): el resultado siempre es 1 más de lo correcto.\n· Resta (-): el resultado siempre es 2 menos de lo correcto.\n· Multiplicación (*): el resultado es un 10% más del valor real, redondeado a 2 decimales.\n· División (/): el resultado es un 5% menos del valor real, redondeado a 2 decimales.\n· División por 0 debe devolver el mensaje \"¡Error! División por cero.\"\n\nEscribe un programa llamado calculadora_imprecisa que:\n· Permita al usuario ingresar una operación en el formato: num1 operador num2, por ejemplo: 4 + 5 o 10 / 2.\n· Evalúe la operación aplicando las reglas defectuosas.\n· Permita repetir la operación hasta que el usuario ingrese una línea vacía.",
+        "tareas": [
+            "Leer la operación ingresada por el usuario en formato 'num1 operador num2'.",
+            "Aplicar la regla de cálculo impreciso según el operador.",
+            "Controlar errores de formato y división por cero.",
+            "Repetir el proceso hasta que el usuario ingrese una línea vacía."
+        ],
+        "pistas": [
+            "Usar split() para separar la entrada en tres partes.",
+            "Usa condicionales para aplicar cada tipo de operación.",
+            "Convertir los operandos a números enteros antes de operar.",
+            "Aplicar redondeo a 2 decimales para multiplicación y división.",
+            "Imprimir mensajes de error claros para formatos incorrectos y división por cero."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce operación (vacía para salir): 4 + 5",
+                "Introduce operación (vacía para salir): 10 - 3",
+                "Introduce operación (vacía para salir): 7 * 3",
+                "Introduce operación (vacía para salir): 20 / 4",
+                "Introduce operación (vacía para salir): 7 / 0",
+                "Introduce operación (vacía para salir): "
+            ],
+            "salida": [
+                "Resultado impreciso: 10",
+                "Resultado impreciso: 5",
+                "Resultado impreciso: 23.1",
+                "Resultado impreciso: 4.75",
+                "Resultado impreciso: ¡Error! División por cero.",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "05",
+        "titulo": "Análisis de frases",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Diseña un programa que almacene todas las frases que introduce el usuario. El usuario puede escribir frases libremente, una por línea. Cuando introduzca una línea vacía, el programa debe finalizar y mostrar:\n\n· La frase con menos caracteres.\n\n· La frase con más caracteres.\n\n· La frase con más palabras.\n\n· La frase con más vocales (considera solo a, e, i, o, u).",
+        "tareas": [
+            "Leer frases una por una hasta recibir una línea vacía.",
+            "Las comparaciones deben ser insensibles a mayúsculas/minúsculas.",
+            "Permitir que la frase contenga cualquier tipo de puntuación o carácter.",
+            "Almacenar todas las frases introducidas.",
+            "Determinar la frase con menos caracteres.",
+            "Determinar la frase con más caracteres.",
+            "Determinar la frase con más palabras.",
+            "Determinar la frase con más vocales (a, e, i, o, u).",
+            "Mostrar los resultados al final."
+        ],
+        "pistas": [
+            "Usar funciones len() para contar caracteres y palabras (split()).",
+            "Contar vocales comprobando cada carácter.",
+            "Almacenar las frases en una lista para procesarlas al final."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce frase: Python mola",
+                "Introduce frase: Me encanta resolver problemas con código",
+                "Introduce frase: Hola",
+                "Introduce frase: "
+            ],
+            "salida": [
+                "Frase más corta: Hola",
+                "Frase más larga: Me encanta resolver problemas con código",
+                "Frase con más palabras: Me encanta resolver problemas con código",
+                "Frase con más vocales: Me encanta resolver problemas con código"
+            ]
+        }
+    },
+    {
+        "id": "06",
+        "titulo": "Oráculo de números mágicos",
+        "nivel": "medio",
+        "tipo": "Elementos básicos con sys.argv",
+        "enunciado": "Imagina que tu programa es un 'oráculo' que recibe números desde la línea de comandos y revela un destino misterioso. Debe realizar lo siguiente:\n\n1. Mostrar todos los números recibidos.\n2. Calcular la suma total y el promedio.\n3. Encontrar el número más alto y el más bajo.\n4. Generar un 'número mágico' tomando el producto de los dígitos del número mayor.\n5. Si el promedio es par → el destino es 'Prosperidad'. Si es impar → el destino es 'Aventura'.\n6. Mostrar todo en un formato místico, como si fueran profecías.\n\nNo se piden datos durante la ejecución, solo se usan los valores de sys.argv.",
+        "tareas": [
+            "Leer los números desde sys.argv (excluyendo el nombre del script).",
+            "Convertir los argumentos a enteros.",
+            "Calcular suma, promedio, máximo y mínimo.",
+            "Crear el 'número mágico' multiplicando los dígitos del número más grande.",
+            "Determinar el destino según si el promedio es par o impar.",
+            "Mostrar el resultado con frases estilo 'oráculo'."
+        ],
+        "pistas": [
+            "Usa map(int, sys.argv[1:]) para convertir los argumentos.",
+            "El promedio se obtiene dividiendo la suma entre la cantidad de números.",
+            "Para multiplicar dígitos puedes convertir el número en cadena y recorrerlo."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "python oraculo.py 7 12 5 9"
+            ],
+            "salida": [
+                "El oráculo ha recibido los números: 7, 12, 5, 9",
+                "La suma total es: 33",
+                "El promedio es: 8",
+                "El más alto es: 12",
+                "El más bajo es: 5",
+                "El número mágico revelado es: 2",
+                "El destino marcado por los astros es: Prosperidad",
+                "[Fin de la profecía]"
+            ]
+        }
+    },
+    {
+        "id": "07",
+        "titulo": "Combinaciones de vocales",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Imagina que tienes una cadena de texto larga, pero las vocales son las únicas que nos interesan. Tu tarea será construir un programa que, a partir de una cadena, extraiga todas las vocales que se encuentren separadas por cualquier cantidad de caracteres entre ellas, y construya todas las combinaciones posibles con esas vocales en el mismo orden en el que aparecen.\n\nPor ejemplo, si la entrada es \"h3e!!l9l&o\", las vocales son e, o. La única combinación posible será \"eo\".\n\nPero si la entrada es \"c4a*b#a@e\", las vocales extraídas son a, a, e. Las combinaciones posibles serían:\n· \"aae\"\n· \"aae\" (repetida, por las mismas vocales repetidas)\n\nPero solo se debe mostrar una única vez cada combinación.",
+        "tareas": [
+            "Solicitar una cadena de texto al usuario.",
+            "Extraer solo las vocales (mayúsculas y minúsculas).",
+            "Generar todas las combinaciones posibles de las vocales manteniendo el orden original.",
+            "Eliminar combinaciones repetidas y mostrarlas una única vez.",
+            "Imprimir todas las combinaciones únicas encontradas, una por línea."
+        ],
+        "pistas": [
+            "Usa recursividad o backtracking si lo ves conveniente.",
+            "Convierte la lista de combinaciones a un conjunto para eliminar duplicados.",
+            "Asegúrate de mantener el orden original de las vocales.",
+            "Para detectar vocales, compara con 'aeiouAEIOU'."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce un texto: t3r@a##i*o9u"
+            ],
+            "salida": [
+                "Combinaciones posibles:",
+                "aio",
+                "aiu",
+                "aou",
+                "iou",
+                "ao",
+                "ai",
+                "io",
+                "iu",
+                "ou",
+                "a",
+                "i",
+                "o",
+                "u"
+            ]
+        }
+    },
+    {
+        "id": "08",
+        "titulo": "Hora más tardía posible",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Imagina que tienes un reloj digital muy especial: muestra la hora en formato 24 horas (por ejemplo, \"14:25\"), pero está descompuesto. Por alguna razón, algunos dígitos han dejado de verse y han sido reemplazados por el carácter ?.\n\nEjemplos de horas descompuestas serían:\n· \"1?:3?\"\n· \"?4:5?\"\n· \"??:??\"\n\nTu misión es escribir un programa que encuentre la hora más tardía posible que se pueda formar a partir de la hora descompuesta recibida. Por ejemplo:\n· Si el reloj muestra \"1?:3?\", deberías interpretar los signos de pregunta de manera que formes la hora más tardía posible válida. En este caso: \"19:39\".\n\n· Si el reloj muestra \"2?:??\", la hora más tardía que podrías formar sería \"23:59\" (recordando que el formato 24h va de 00:00 a 23:59).\n\n· Si muestra \"??:??\", entonces debe devolver \"23:59\".",
+        "tareas": [
+            "Solicitar al usuario la hora con signos ? incluidos.",
+            "Validar que la entrada tenga exactamente 5 caracteres, con el formato HH:MM.",
+            "Reemplazar los signos ? de forma que la hora resultante sea la mayor válida posible.",
+            "Imprimir la hora corregida."
+        ],
+        "pistas": [
+            "Verifica que el formato sea correcto y la posición de los caracteres.",
+            "Considera las restricciones del formato 24 horas para cada dígito.",
+            "Para cada signo ?, elige el dígito máximo posible que mantenga la hora válida.",
+            "No olvides que las horas van de 00 a 23 y los minutos de 00 a 59."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce la hora descompuesta (formato HH:MM): 1?:3?",
+                "Introduce la hora descompuesta (formato HH:MM): ?4:5?",
+                "Introduce la hora descompuesta (formato HH:MM): 2?:??",
+                "Introduce la hora descompuesta (formato HH:MM): ??:??"
+            ],
+            "salida": [
+                "Hora más tardía posible: 19:39",
+                "Hora más tardía posible: 14:59",
+                "Hora más tardía posible: 23:59",
+                "Hora más tardía posible: 23:59"
+            ]
+        }
+    },
+    {
+        "id": "09",
+        "titulo": "Diccionario corrupto",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Imagina que tienes un archivo de definiciones en un diccionario digital. Cada entrada tiene una palabra y su definición. Sin embargo, un virus ha infectado el sistema, y las definiciones están mezcladas:\n\n· Cada definición tiene las letras de la palabra desordenadas.\n\n· Tienes que detectar qué definiciones podrían corresponder a qué palabra... si ambas fueran anagramas (mismo contenido, distinto orden).\n\nDesarrolla el programa diccionario_corrupto que, dado un conjunto de palabras y un conjunto de definiciones, detecte cuáles podrían estar emparejadas como anagramas.\n\nEl programa debe pedir al usuario una lista de palabras y una lista de definiciones, separadas por coma, y luego mostrar las parejas palabra-definición posibles, si ambas son anagramas (ignorando mayúsculas, espacios y acentos).\n\nAdemás, la salida debe estar ordenada alfabéticamente por palabra.",
+        "tareas": [
+            "Pedir al usuario una lista de palabras separadas por coma.",
+            "Pedir al usuario una lista de definiciones separadas por coma.",
+            "Normalizar palabras y definiciones ignorando mayúsculas, espacios y acentos (áéíóúàèìòùäëïöüâêîôû → aeiou).",
+            "Detectar anagramas entre palabras y definiciones.",
+            "Asignar definiciones a palabras sin reutilizar definiciones.",
+            "Las coincidencias deben tener exactamente las mismas letras (sin extras, ni faltantes)",
+            "No se permite usar collections.Counter",
+            "Mostrar resultados ordenados alfabéticamente por palabra."
+        ],
+        "pistas": [
+            "Crear función para eliminar acentos y normalizar cadenas.",
+            "Comparar anagramas ordenando las letras de cada palabra y definición.",
+            "Llevar control de definiciones usadas para no reutilizarlas.",
+            "Utilizar listas o diccionarios para organizar pares y ordenar la salida."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce las palabras separadas por coma:\nroma, amor, radar, duermo, mudo\n",
+                "Introduce las definiciones separadas por coma:\ndumo, dormir, roma, darar, roma\n"
+            ],
+            "salida": [
+                "\"amor\" no tiene definición válida",
+                "\"duermo\" no tiene definición válida",
+                "\"mudo\" <-> \"dumo\"",
+                "\"radar\" <-> \"darar\"",
+                "\"roma\" <-> \"roma\""
+            ]
+        }
+    },
+    {
+        "id": "10",
+        "titulo": "Cifrado espejo",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un agente secreto necesita comunicar mensajes ocultos. Para ello, utiliza una técnica llamada \"cifrado espejo\": toma el mensaje original, lo divide en palabras, invierte cada palabra individualmente y luego reconstruye el mensaje.\n\nPor ejemplo, el mensaje \"python es genial\" se transforma en \"nohtyp se laineg\".\n\nSin embargo, debido a errores humanos, algunos mensajes tienen puntuación mal colocada, espacios extra o incluso símbolos especiales que no deberían procesarse.",
+        "tareas": [
+            "Leer mensajes hasta que se introduzca una cadena vacía.",
+            "Invertir cada palabra individualmente sin alterar su posición.",
+            "Mantener la posición exacta de caracteres que no sean letras o números.",
+            "Todo carácter que no sea una letra o un número debe mantenerse tal como está en su lugar.",
+            "Mantener signos de puntuación fuera del proceso de inversión.",
+            "No usar split() ni replace().",
+            "Usar str.isalnum() para detectar letras y números."
+        ],
+        "pistas": [
+            "Procesar el mensaje carácter a carácter para identificar palabras.",
+            "Guardar los caracteres especiales en su posición sin modificar.",
+            "Invertir solo las letras y números de cada palabra.",
+            "Utilizar bucles para construir palabras y luego invertirlas.",
+            "No separar usando métodos de cadena comunes."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce un mensaje (vacío para salir): Hola mundo!",
+                "Introduce un mensaje (vacío para salir): ¡Python 3.11 es fácil!",
+                "Introduce un mensaje (vacío para salir): "
+            ],
+            "salida": [
+                "Resultado: aloH odnum!",
+                "Resultado: ¡nohtyP 11.3 se licáf!",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "11",
+        "titulo": "Suma de diagonales en matriz cuadrada",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Dada una matriz cuadrada de tamaño n x n de números enteros, escribe un programa que calcule la suma de los elementos de la diagonal principal y la diagonal secundaria. Finalmente, devuelve la suma total de ambas diagonales, sin contar el elemento central dos veces en caso de que n sea impar.",
+        "tareas": [
+            "Solicitar al usuario el tamaño n de la matriz cuadrada.",
+            "Leer los elementos de la matriz fila a fila, separados por espacios.",
+            "Calcular la suma de los elementos en la diagonal principal (de arriba izquierda a abajo derecha).",
+            "Calcular la suma de los elementos en la diagonal secundaria (de arriba derecha a abajo izquierda).",
+            "Si n es impar, restar el elemento central una vez para no contarlo doble.",
+            "Mostrar la suma total de ambas diagonales."
+        ],
+        "pistas": [
+            "Para la diagonal principal, sumar los elementos donde fila == columna.",
+            "Para la diagonal secundaria, sumar los elementos donde columna == n - fila - 1.",
+            "Cuando n es impar, el elemento central es matriz[n//2][n//2].",
+            "Usa bucles para recorrer las filas y columnas adecuadamente."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce el tamaño de la matriz: 3",
+                "Introduce los elementos fila a fila (separados por espacios):\n1 2 3\n4 5 6\n7 8 9"
+            ],
+            "salida": [
+                "La suma de ambas diagonales es: 25"
+            ]
+        }
+    },
+    {
+        "id": "12",
+        "titulo": "Detección de palíndromos",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que reciba una lista de palabras y devuelva solo aquellas que sean palíndromos (se leen igual de izquierda a derecha y viceversa)",
+        "tareas": [
+            "Solicitar al usuario una lista de palabras separadas por comas.",
+            "Eliminar espacios y normalizar a minúsculas cada palabra.",
+            "Comprobar si cada palabra es un palíndromo.",
+            "Almacenar las palabras que cumplen la condición.",
+            "Mostrar la lista con los palíndromos encontrados."
+        ],
+        "pistas": [
+            "Para comprobar palíndromos, compara la palabra con su reverso.",
+            "Usar str.lower() y str.replace() para normalizar palabras.",
+            "Ten en cuenta que pueden existir espacios internos en las palabras.",
+            "El resultado debe mostrar las palabras originales, no normalizadas."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce palabras separadas por comas: Ana, radar, python, oso, casa\n"
+            ],
+            "salida": [
+                "Palíndromos encontrados: ['Ana', 'radar', 'oso']"
+            ]
+        }
+    },
+    {
+        "id": "13",
+        "titulo": "Caminos en una cuadrícula",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Dada una cuadrícula de tamaño m x n, cuenta de cuántas maneras diferentes puedes llegar desde la esquina superior izquierda a la esquina inferior derecha moviéndote solo hacia la derecha o hacia abajo.",
+        "tareas": [
+            "Solicitar al usuario el número de filas (m).",
+            "Solicitar al usuario el número de columnas (n).",
+            "Implementar una función recursiva que calcule el número de caminos posibles desde la posición inicial hasta la final.",
+            "Mostrar el número de caminos posibles."
+        ],
+        "pistas": [
+            "La función recursiva debe considerar dos movimientos posibles: derecha y abajo.",
+            "El caso base es cuando se llega a la última fila o última columna.",
+            "Evitar usar memoización para mantener la recursión pura.",
+            "Considera que el número de caminos es la suma de caminos moviéndose a la derecha y caminos moviéndose hacia abajo."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce el número de filas: 3",
+                "Introduce el número de columnas: 3"
+            ],
+            "salida": [
+                "Número de caminos posibles: 6"
+            ]
+        }
+    },
+    {
+        "id": "14",
+        "titulo": "Clase Agenda de contactos",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Crea una clase Agenda que permita guardar contactos con nombre y número de teléfono. Debe tener métodos para añadir un contacto, eliminarlo por nombre y mostrar todos los contactos ordenados alfabéticamente.",
+        "tareas": [
+            "Definir la clase Agenda con un atributo para almacenar contactos.",
+            "Implementar el método añadir para agregar un nuevo contacto con nombre y teléfono.",
+            "Implementar el método eliminar para borrar un contacto dado su nombre, sin errores si no existe.",
+            "Implementar el método mostrar para imprimir todos los contactos ordenados alfabéticamente por nombre."
+        ],
+        "pistas": [
+            "Utiliza un diccionario o lista para almacenar los contactos.",
+            "En el método mostrar, ordena los contactos por nombre antes de imprimir.",
+            "En el método eliminar, comprueba si el contacto existe para evitar errores.",
+            "Los nombres de los métodos pueden ser añadir, eliminar y mostrar."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "agenda = Agenda()",
+                "agenda.añadir(\"Juan\", \"123456\")",
+                "agenda.añadir(\"Ana\", \"987654\")",
+                "agenda.mostrar()",
+                "agenda.eliminar(\"Juan\")",
+                "agenda.mostrar()"
+            ],
+            "salida": [
+                "Ana: 987654",
+                "Juan: 123456",
+                "Ana: 987654"
+            ]
+        }
+    },
+    {
+        "id": "15",
+        "titulo": "Conteo de palabras en archivo",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Escribe un programa que lea un archivo de texto y cuente la frecuencia de cada palabra, mostrando las 10 más frecuentes.",
+        "tareas": [
+            "Abrir y leer un archivo de texto.",
+            "Normalizar el texto: pasar a minúsculas y eliminar signos de puntuación.",
+            "Contar la frecuencia de cada palabra usando un diccionario.",
+            "Mostrar las 10 palabras más frecuentes junto con su frecuencia."
+        ],
+        "pistas": [
+            "Utiliza métodos de cadenas para normalizar el texto.",
+            "Puedes usar expresiones regulares o filtrar caracteres para eliminar símbolos.",
+            "Ordena las palabras por frecuencia para mostrar las 10 primeras.",
+            "Para contar, incrementa el valor asociado a cada palabra en el diccionario."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "texto.txt"
+            ],
+            "salida": [
+                "Las 10 palabras más frecuentes son:",
+                "python: 15",
+                "es: 12",
+                "un: 10"
+            ]
+        }
+    },
+    {
+        "id": "16",
+        "titulo": "Ordenación por selección",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Implementa el algoritmo de ordenación por selección para ordenar una lista de números enteros de forma ascendente.\n\nEl algoritmo debe recorrer la lista para seleccionar el menor elemento y colocarlo al inicio, repetir para toda la lista.",
+        "tareas": [
+            "Pedir al usuario una lista de números separados por espacios.",
+            "Implementar el algoritmo de selección para ordenar la lista sin usar métodos incorporados.",
+            "Mostrar la lista ordenada.",
+            "Agregar comentarios que expliquen brevemente el algoritmo."
+        ],
+        "pistas": [
+            "El algoritmo de selección encuentra el menor elemento en el subarreglo restante y lo intercambia con el primero.",
+            "Usa dos bucles: uno para recorrer la lista y otro para buscar el menor elemento.",
+            "No usar la función sort() ni sorted()."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce números separados por espacios: 5 3 8 1 2"
+            ],
+            "salida": [
+                "Lista ordenada: [1, 2, 3, 5, 8]"
+            ]
+        }
+    },
+    {
+        "id": "17",
+        "titulo": "Eliminador de acentos",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Escribe una función que reciba una cadena y devuelva la misma cadena pero sin acentos, diéresis o caracteres especiales (por ejemplo, 'á' -> 'a', 'ü' -> 'u').\n\nPuedes utilizar el módulo unicodedata para normalizar y eliminar acentos.",
+        "tareas": [
+            "Pedir al usuario una cadena de texto.",
+            "Crear una función que elimine acentos, diéresis y caracteres especiales usando unicodedata.",
+            "Mostrar la cadena normalizada sin acentos."
+        ],
+        "pistas": [
+            "Usa unicodedata.normalize con la forma 'NFD' para separar caracteres base y diacríticos.",
+            "Filtra los caracteres cuya categoría no sea 'Mn' (marcas de acento).",
+            "Concatena los caracteres filtrados para obtener el texto sin acentos."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce texto: Canción de año nuevo"
+            ],
+            "salida": [
+                "Texto normalizado: Cancion de ano nuevo"
+            ]
+        }
+    },
+    {
+        "id": "18",
+        "titulo": "Torre de Hanoi",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Escribe un programa que resuelva el problema de la Torre de Hanoi para n discos, mostrando los movimientos necesarios para trasladarlos desde la torre A a la torre C usando la torre B como auxiliar.",
+        "tareas": [
+            "Pedir al usuario el número de discos.",
+            "Implementar la función recursiva para mover discos entre torres.",
+            "Mostrar cada movimiento en pantalla.",
+            "Calcular el número mínimo de movimientos posibles (2^n - 1)."
+        ],
+        "pistas": [
+            "La función debe llamar a sí misma para mover n-1 discos.",
+            "Usar una torre auxiliar para mover los discos intermedios.",
+            "Cada llamada imprime el movimiento de un disco.",
+            "Revisar que la recursión termine cuando n = 1."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce número de discos: 3"
+            ],
+            "salida": [
+                "Mueve disco de torre A a torre C",
+                "Mueve disco de torre A a torre B",
+                "Mueve disco de torre C a torre B",
+                "Mueve disco de torre A a torre C",
+                "Mueve disco de torre B a torre A",
+                "Mueve disco de torre B a torre C",
+                "Mueve disco de torre A a torre C"
+            ]
+        }
+    },
+    {
+        "id": "19",
+        "titulo": "Decorador medir_tiempo",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un decorador medir_tiempo que mida el tiempo que tarda en ejecutarse una función y lo imprima por pantalla.",
+        "tareas": [
+            "Crear el decorador medir_tiempo que registre el tiempo antes y después de ejecutar la función.",
+            "Imprimir el tiempo transcurrido en segundos con formato legible.",
+            "Usar functools.wraps para conservar metadata de la función original.",
+            "Probar el decorador en una función que calcule factorial de un número grande."
+        ],
+        "pistas": [
+            "Importar time y functools.",
+            "Usar time.perf_counter() para medir el tiempo con alta precisión.",
+            "El decorador debe envolver la función original y devolver su resultado.",
+            "La función decorada debe conservar nombre y docstring originales."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "@medir_tiempo\ndef factorial(n):\n    # cálculo factorial\n\nfactorial(10000)"
+            ],
+            "salida": [
+                "Tiempo de ejecución: 0.0234 segundos"
+            ]
+        }
+    },
+    {
+        "id": "20",
+        "titulo": "El espíritu que persigue vocales",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "En una remota aldea se cuenta la historia de un espíritu que persigue únicamente las vocales de los mensajes escritos. El escriba real, obsesionado con esta leyenda, decidió crear un software para encontrar y mostrar todas las vocales de un mensaje, junto a su posición exacta dentro del texto. El programa debe permitir al usuario introducir una frase y mostrar una lista con las vocales encontradas en orden, indicando el carácter y su índice correspondiente en el texto.\n\nPor ejemplo, para el mensaje \"Bienvenido al valle encantado\", el programa debe indicar que en la posición 1 está la vocal 'i', en la 2 la 'e', y así sucesivamente, excluyendo las consonantes y signos de puntuación.",
+        "tareas": [
+            "Pedir al usuario que introduzca una frase.",
+            "Debe ignorar mayúsculas/minúsculas",
+            "Convertir la frase a minúsculas para el análisis.",
+            "Recorrer la frase y detectar las vocales (a, e, i, o, u).",
+            "Mostrar cada vocal encontrada con su posición en la frase original.",
+            "Repetir el proceso hasta que el usuario introduzca una cadena vacía."
+        ],
+        "pistas": [
+            "Usar un bucle while para repetir la lectura de frases.",
+            "Recorrer la cadena con un índice para conocer la posición de cada carácter.",
+            "Comparar cada carácter con el conjunto de vocales en minúsculas.",
+            "Mostrar resultados solo para caracteres que sean vocales."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce una frase: Bienvenido al valle encantado\n"
+            ],
+            "salida": [
+                "Vocal en posición 1: i",
+                "Vocal en posición 2: e",
+                "Vocal en posición 4: e",
+                "Vocal en posición 6: i",
+                "Vocal en posición 8: o",
+                "..."
+            ]
+        }
+    },
+    {
+        "id": "21",
+        "titulo": "El experimento de duplicación de objetos",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un científico loco está realizando un experimento con cajas que duplican su contenido al azar. Para ello, introduce una serie de objetos (representados como palabras) en una caja. Sin embargo, al final del experimento necesita saber exactamente qué objetos se duplicaron. Tu programa debe leer una lista de elementos separados por espacios y mostrar únicamente aquellos que aparezcan más de una vez, sin repeticiones en la salida.\n\nPor ejemplo, si se introducen \"llave martillo sierra martillo clavo sierra clavo\".",
+        "tareas": [
+            "Leer una línea con objetos separados por espacios.",
+            "Detectar los objetos que aparecen más de una vez.",
+            "Eliminar duplicados en la salida.",
+            "Ordenar alfabéticamente la lista de objetos duplicados.",
+            "Mostrar la lista de objetos duplicados.",
+            "Repetir el proceso hasta que se introduzca una línea vacía."
+        ],
+        "pistas": [
+            "Usar un diccionario para contar apariciones.",
+            "Guardar en una lista solo aquellos con más de una aparición.",
+            "Usar set para evitar repeticiones en la salida.",
+            "Ordenar la lista antes de imprimir.",
+            "Usar un bucle while para repetir hasta línea vacía."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce objetos: clavo martillo clavo sierra sierra llave\n"
+            ],
+            "salida": [
+                "Duplicados encontrados: clavo, sierra"
+            ]
+        }
+    },
+    {
+        "id": "22",
+        "titulo": "Generador de patrón binario alternante",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "En una simulación computacional, se necesita generar un patrón binario específico para analizar respuestas de redes neuronales artificiales. El patrón consiste en una cadena binaria que alterna entre 1s y 0s en función de un número de longitud introducido por el usuario. Si se introduce 7, el patrón sería \"1010101\". Si se introduce 6, entonces \"101010\".\n\nTu tarea es crear un programa que reciba un número entero positivo y devuelva el patrón alternante empezando siempre con 1.",
+        "tareas": [
+            "Pedir al usuario un número entero positivo.",
+            "Validar que el número sea positivo (mayor que 0) o 0 para salir.",
+            "Si el número es inválido, mostrar un mensaje de error.",
+            "Generar un patrón binario alternante empezando con '1' y que tenga la longitud indicada.",
+            "Mostrar el patrón generado.",
+            "Repetir hasta que se introduzca 0 para terminar."
+        ],
+        "pistas": [
+            "Usar un bucle para generar el patrón alternante, por ejemplo alternando entre 1 y 0 según el índice.",
+            "Convertir el patrón generado a cadena para mostrar.",
+            "Usar un bucle while para permitir múltiples ejecuciones.",
+            "Controlar la entrada para que sea un entero válido.",
+            "El programa debe aceptar únicamente enteros positivos o 0 para terminar.",
+            "El patrón debe empezar siempre con '1'.",
+            "Mostrar un mensaje claro cuando la entrada sea inválida."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce longitud del patrón: 6\nIntroduce longitud del patrón: 5"
+            ],
+            "salida": [
+                "Patrón generado: 101010\nPatrón generado: 10101"
+            ]
+        }
+    },
+    {
+        "id": "23",
+        "titulo": "Contador de consonantes en palabra secreta",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "En un sistema de codificación ultrasónico, se requiere analizar la cantidad de letras consonantes utilizadas en una palabra secreta, ignorando vocales y otros caracteres.",
+        "tareas": [
+            "Pedir al usuario una palabra o cadena.",
+            "Ignorar cualquier número, símbolo, signos de puntuación, espacio o vocal (mayúscula o minúscula).",
+            "Contar solo las consonantes presentes en la palabra.",
+            "Mostrar el número total de consonantes.",
+            "Repetir el proceso hasta que el usuario introduzca la palabra \"salir\" para terminar."
+        ],
+        "pistas": [
+            "Usar una lista con las vocales para facilitar la comprobación.",
+            "Convertir la entrada a minúsculas para evitar diferencias entre mayúsculas y minúsculas.",
+            "Usar métodos para filtrar caracteres alfabéticos.",
+            "Implementar un bucle que termine con la palabra \"salir\".",
+            "Se deben ignorar números, espacios, signos de puntuación y vocales.",
+            "El conteo debe ser insensible a mayúsculas y minúsculas.",
+            "El programa debe continuar hasta que el usuario escriba \"salir\"."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce una palabra: Explorador\n"
+            ],
+            "salida": [
+                "Número de consonantes: 6"
+            ]
+        }
+    },
+    {
+        "id": "24",
+        "titulo": "Análisis de tiempo invertido en tareas",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una empresa de análisis de productividad quiere saber cuánto tiempo invierte un empleado en diferentes tareas. El programa debe permitir introducir varias actividades con su duración en minutos (por ejemplo, \"leer:30\"), y al final mostrar el total de tiempo invertido y cuál fue la tarea que más tiempo tomó.\n\nSi se introducen \"leer:30\", \"escribir:45\", \"descansar:20\", el resultado debe indicar un total de 95 minutos y que la tarea más larga fue \"escribir\".",
+        "tareas": [
+            "Permitir al usuario introducir tareas en formato nombre:minutos por línea.",
+            "Validar que los minutos sean enteros positivos.",
+            "Acabar la entrada cuando el usuario introduzca una línea vacía.",
+            "Calcular el tiempo total sumando los minutos de todas las tareas.",
+            "Determinar la tarea con mayor duración.",
+            "Mostrar el resultado con dos print: uno para el total de minutos y otra con el nombre y duración de la tarea más larga."
+        ],
+        "pistas": [
+            "Para separar el nombre y los minutos, usa el método split(':').",
+            "Convierte la parte de minutos a entero y valida que sea positivo.",
+            "Guarda las tareas en un diccionario o lista para manejar nombre y duración.",
+            "Al finalizar, suma todos los minutos y busca la tarea con el valor máximo."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce tarea (nombre:minutos): leer:30",
+                "Introduce tarea (nombre:minutos): escribir:45",
+                "Introduce tarea (nombre:minutos): descansar:20",
+                "Introduce tarea (nombre:minutos): "
+            ],
+            "salida": [
+                "Total de minutos: 95",
+                "Tarea más larga: escribir 45 minutos"
+            ]
+        }
+    },
+    {
+        "id": "25",
+        "titulo": "Casas visibles desde la torre",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "En una antigua ciudad amurallada, un vigía se encuentra en lo alto de una torre observando las posiciones de las casas alineadas en una recta. Cada casa tiene una altura distinta, y el vigía sólo puede ver aquellas casas que no quedan ocultas tras otras más altas que estén antes en la línea de visión.\nSe te pide que, dado un listado de alturas de casas, determines cuántas casas puede ver el vigía desde su posición inicial (que equivale a observar desde el primer elemento hacia el final de la lista).\n\nPor ejemplo, si la lista de alturas es [3, 2, 4, 1, 5, 2], el vigía verá las casas de altura 3, 4 y 5, ya que las demás quedan ocultas por otras más altas antes de ellas.",
+        "tareas": [
+            "Pedir al usuario una línea con alturas de casas separadas por espacios.",
+            "Convertir la entrada a una lista de enteros positivos.",
+            "Recorrer la lista y contar cuántas casas son visibles, según que sean más altas que todas las anteriores.",
+            "La primera casa siempre se cuenta como visible.",
+            "Mostrar el número total de casas visibles y la altura de cada casa visible."
+        ],
+        "pistas": [
+            "Al recorrer la lista, lleva una variable para almacenar la altura máxima vista hasta ahora.",
+            "Compara cada casa con la altura máxima actual para decidir si es visible.",
+            "Incrementa el contador solo si la casa actual es más alta que el máximo anterior.",
+            "Actualiza la altura máxima cuando encuentres una casa más alta."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce alturas de casas separadas por espacio: 3 2 4 1 5 2"
+            ],
+            "salida": [
+                "El vigía puede ver 3 casas (3, 4, 5)."
+            ]
+        }
+    },
+    {
+        "id": "26",
+        "titulo": "Detección de contenedores duplicados",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una empresa logística está revisando los contenedores que ha transportado. Cada contenedor tiene un identificador numérico. Sin embargo, a veces por error de inventario, se duplican registros de contenedores. Tu tarea consiste en pedir al usuario una lista de identificadores de contenedores y mostrar cuáles están duplicados.\n\nEl programa debe analizar la lista y devolver un conjunto de todos los identificadores que aparecen más de una vez, en orden creciente.",
+        "tareas": [
+            "Pedir al usuario identificadores de contenedores separados por espacios.",
+            "Convertir la entrada a una lista de enteros.",
+            "Detectar qué identificadores aparecen más de una vez usando estructuras como set o dict.",
+            "Ordenar la lista de identificadores duplicados.",
+            "Mostrar los duplicados separados por coma o un mensaje si no hay ninguno."
+        ],
+        "pistas": [
+            "Usa un diccionario para contar cuántas veces aparece cada identificador.",
+            "Otra opción es usar dos conjuntos: uno para identificadores vistos y otro para duplicados.",
+            "Finalmente ordena los duplicados antes de mostrarlos.",
+            "Si no hay duplicados, imprime el mensaje 'No hay duplicados.'"
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce los identificadores de contenedores: 102 55 83 102 55 90 14"
+            ],
+            "salida": [
+                "Contenedores duplicados: 55, 102"
+            ]
+        }
+    },
+    {
+        "id": "27",
+        "titulo": "Cuenta regresiva personalizada",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una cuenta regresiva puede ser útil en múltiples contextos: juegos, lanzamientos, alarmas, etc. En este ejercicio, vas a crear un programa que simule una cuenta regresiva personalizada. El usuario debe introducir el número inicial y el programa mostrará los números descendiendo hasta 0, con un segundo de pausa entre cada número.",
+        "tareas": [
+            "Pedir al usuario un número entero inicial para la cuenta regresiva.",
+            "Comprobar que el número sea positivo; si no, mostrar 'Valor no válido'.",
+            "Usar un bucle para contar desde el número inicial hasta 0, imprimiendo cada número.",
+            "Usar time.sleep(1) para pausar un segundo entre cada número.",
+            "Al finalizar, mostrar un mensaje final personalizado como '¡Despegue!'."
+        ],
+        "pistas": [
+            "Importa el módulo time para usar time.sleep(1).",
+            "Controla que el número sea positivo antes de empezar la cuenta regresiva.",
+            "Utiliza un bucle que recorra desde el número inicial hasta 0 decrementando de uno en uno.",
+            "Imprime cada número en cada iteración y usa sleep para esperar un segundo.",
+            "Finalmente, muestra el mensaje de finalización."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce número inicial de la cuenta atrás: 5"
+            ],
+            "salida": [
+                "5",
+                "4",
+                "3",
+                "2",
+                "1",
+                "0",
+                "¡Despegue!"
+            ]
+        }
+    },
+    {
+        "id": "28",
+        "titulo": "Secuencia Fibonacci modificada",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "La famosa secuencia Fibonacci se define sumando los dos términos anteriores para obtener el siguiente. En esta variante, deberás generar una secuencia similar, pero con la siguiente regla:\n\n    Los dos primeros términos son 1 y 2.\n\n    Cada término siguiente es la suma de los dos anteriores menos 1.\n\nPor ejemplo, los primeros términos serían: 1, 2, 2 (1+2-1), 3 (2+2-1), 4 (2+3-1), 6 (3+4-1), …\n\nTu programa debe pedir al usuario cuántos términos quiere generar y mostrar la secuencia completa.",
+        "tareas": [
+            "Pedir al usuario el número de términos a generar.",
+            "Validar que el número sea un entero positivo mayor que 0.",
+            "Usar una lista para almacenar la secuencia.",
+            "Inicializar la lista con los primeros dos términos: 1 y 2.",
+            "Generar los términos siguientes usando la regla: suma de los dos anteriores menos 1.",
+            "Mostrar la secuencia completa separada por comas."
+        ],
+        "pistas": [
+            "La lista debe comenzar con [1, 2].",
+            "Usa un bucle desde el tercer término hasta el número solicitado.",
+            "Cada nuevo término se calcula con lista[i-2] + lista[i-1] - 1.",
+            "Asegúrate de validar la entrada para evitar errores.",
+            "Imprime la lista completa como una cadena separada por comas."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce el número de términos a generar: 7"
+            ],
+            "salida": [
+                "Secuencia generada: 1, 2, 2, 3, 4, 6, 9"
+            ]
+        }
+    },
+    {
+        "id": "29",
+        "titulo": "Detección de palabras palíndromas",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un palíndromo es una palabra que se lee igual de izquierda a derecha y de derecha a izquierda, como “ana” o “reconocer”. Para ayudar a un grupo de lingüistas, debes crear un programa que reciba un texto completo, lo divida en palabras y muestre todas las palabras palíndromas que contenga (sin repetirlas).",
+        "tareas": [
+            "Pedir al usuario que introduzca un texto completo.",
+            "Eliminar signos de puntuación comunes como . , ; : ! ?",
+            "Ignorar mayúsculas y minúsculas.",
+            "Dividir el texto en palabras.",
+            "Detectar qué palabras son palíndromas.",
+            "Guardar las palíndromas sin repetir.",
+            "Ordenar alfabéticamente la lista de palabras palíndromas.",
+            "Mostrar la lista de palabras palíndromas encontradas."
+        ],
+        "pistas": [
+            "Para eliminar signos de puntuación, usa str.replace o expresiones regulares.",
+            "Una palabra es palíndroma si se lee igual invertida: palabra == palabra[::-1].",
+            "Usa un conjunto para evitar palabras repetidas.",
+            "Ordena la lista antes de imprimir.",
+            "Convierte todas las palabras a minúsculas antes de comparar."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce el texto: Ana y Otto fueron al radar en la noche."
+            ],
+            "salida": [
+                "Palabras palíndromas encontradas: ana, otto, radar"
+            ]
+        }
+    },
+    {
+        "id": "30",
+        "titulo": "Cálculo de precio de entradas de cine",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "En un cine, la taquilla ofrece distintos tipos de entradas con precios diferentes según la edad del cliente y la función a la que desea asistir. Las reglas son:\n    · Niños menores de 12 años pagan 5€.\n    · Jóvenes entre 12 y 18 años pagan 7€.\n    · Adultos entre 19 y 64 años pagan 10€.\n    · Mayores de 65 años pagan 6€.\n    Además, si la función es en horario de tarde (después de las 18:00), se aplica un descuento del 10% sobre el precio final.\n\nCrea un programa que reciba la edad del cliente y el horario de la función (mañana o tarde), y calcule el precio final de la entrada aplicando las reglas anteriores.",
+        "tareas": [
+            "Pedir al usuario la edad del cliente.",
+            "Pedir al usuario el horario de la función (mañana o tarde).",
+            "Validar que la edad sea un número positivo.",
+            "Validar que el horario sea 'mañana' o 'tarde'.",
+            "Determinar el precio base según la edad del cliente.",
+            "Aplicar un descuento del 10% si el horario es 'tarde'.",
+            "Mostrar el precio final con dos decimales."
+        ],
+        "pistas": [
+            "Usa condicionales para determinar el precio base según la edad.",
+            "Para aplicar el descuento, multiplica el precio por 0.9 si es horario tarde.",
+            "Convierte el número a cadena y verifica si el primer elemento es un número entero positivo.",
+            "El programa debe terminar si se introduce una línea vacía para la edad.",
+            "Utiliza format o f-strings para mostrar el precio con dos decimales."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce la edad: 15",
+                "Introduce el horario (mañana/tarde): tarde",
+                "Introduce la edad: 70",
+                "Introduce el horario (mañana/tarde): mañana",
+                "Introduce la edad: -5"
+            ],
+            "salida": [
+                "Precio de la entrada: 6.30€",
+                "Precio de la entrada: 6.00€",
+                "Edad no válida."
+            ]
+        }
+    },
+    {
+        "id": "31",
+        "titulo": "Cálculo de nota final ponderada",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "En una asignatura, las notas finales se calculan con distintas ponderaciones según el tipo de evaluación:\n    · Examen final: 50%\n    · Exámenes parciales: 30% (promedio de todos los parciales)\n    · Tareas y prácticas: 20% (promedio de todas)\n\nCrea un programa que pida al usuario:\n    · La nota del examen final.\n    · Las notas de los exámenes parciales (pueden ser varias, terminando con un valor vacío).\n    · Las notas de las tareas/prácticas (pueden ser varias, terminando con un valor vacío).\n\nCalcula la nota final ponderada y muestra el resultado.",
+        "tareas": [
+            "Pedir la nota del examen final y validar que esté entre 0 y 10.",
+            "Pedir las notas de los exámenes parciales, una por línea, hasta que el usuario introduzca una línea vacía.",
+            "Pedir las notas de las tareas/prácticas, una por línea, hasta que el usuario introduzca una línea vacía.",
+            "Validar que todas las notas de parciales y tareas estén entre 0 y 10.",
+            "Calcular el promedio de las notas parciales (0 si no hay ninguna).",
+            "Calcular el promedio de las notas de tareas/prácticas (0 si no hay ninguna).",
+            "Calcular la nota final ponderada con las proporciones indicadas.",
+            "Mostrar la nota final con dos decimales."
+        ],
+        "pistas": [
+            "Usa listas para almacenar las notas parciales y las de tareas.",
+            "Para validar notas, usa condicionales para asegurar que estén en el rango 0 a 10.",
+            "Calcula el promedio sumando las notas y dividiendo entre la cantidad; si la lista está vacía, el promedio es 0.",
+            "Usa float para manejar los números y f-strings para mostrar el resultado con dos decimales."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Nota examen final: 7.5",
+                "Introduce notas parciales (vacío para terminar): 6",
+                "Introduce notas parciales (vacío para terminar): 8",
+                "Introduce notas parciales (vacío para terminar): ",
+                "Introduce notas tareas/prácticas (vacío para terminar): 9",
+                "Introduce notas tareas/prácticas (vacío para terminar): 7",
+                "Introduce notas tareas/prácticas (vacío para terminar): "
+            ],
+            "salida": [
+                "Nota final ponderada: 7.35"
+            ]
+        }
+    },
+    {
+        "id": "32",
+        "titulo": "Verificación de seguridad de contraseña",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Diseña un programa que verifique si una contraseña introducida por el usuario es segura. Para considerarla segura, debe cumplir al menos 4 de los 5 criterios siguientes:\n    · Tener al menos 8 caracteres.\n    · Contener al menos una letra mayúscula.\n    · Contener al menos una letra minúscula.\n    · Contener al menos un número.\n    · Contener al menos un carácter especial (por ejemplo: !, @, #, $, %, &, etc.)\n\nEl programa debe mostrar qué criterios cumple y si la contraseña es segura o no.",
+        "tareas": [
+            "Pedir al usuario que introduzca una contraseña.",
+            "Verificar cada uno de los 5 criterios para la contraseña.",
+            "Contar cuántos criterios se cumplen.",
+            "Mostrar cuántos criterios cumple la contraseña.",
+            "Indicar si la contraseña es segura (cumple 4 o más) o insegura."
+        ],
+        "pistas": [
+            "Usa funciones o expresiones para verificar cada criterio.",
+            "Para detectar mayúsculas y minúsculas, puedes usar métodos de cadenas como isupper() e islower().",
+            "Para detectar números, puedes usar str.isdigit() en cada carácter.",
+            "Define un conjunto o lista con los caracteres especiales permitidos.",
+            "Usa un contador para sumar los criterios cumplidos."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce una contraseña: Abc123!",
+                "Introduce una contraseña: password",
+                "Introduce una contraseña: "
+            ],
+            "salida": [
+                "Cumple 4 criterios. Contraseña segura.",
+                "Cumple 2 criterios. Contraseña insegura.",
+                "Contraseña vacía"
+            ]
+        }
+    },
+    {
+        "id": "33",
+        "titulo": "Simulación de lanzamientos de moneda y dado",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que simule lanzamientos de monedas y dados para juegos de mesa. El programa debe permitir al usuario elegir entre:\n    · Lanzar una moneda (cara o cruz).\n    · Lanzar un dado de 6 caras (números del 1 al 6).\n\nEl programa pedirá al usuario qué lanzamiento desea realizar y cuántas veces. Luego mostrará los resultados de todos los lanzamientos. El programa se repetirá hasta que el usuario decida salir.",
+        "tareas": [
+            "Pedir al usuario el tipo de lanzamiento: moneda, dado o salir.",
+            "Validar la opción introducida.",
+            "Pedir el número de lanzamientos (debe ser un entero positivo).",
+            "Usar funciones separadas para simular lanzamientos de moneda y dado.",
+            "Generar y mostrar los resultados separados por comas.",
+            "Repetir el proceso hasta que el usuario elija salir."
+        ],
+        "pistas": [
+            "Usa el módulo random para generar resultados aleatorios.",
+            "Para la moneda, usa random.choice(['cara', 'cruz']).",
+            "Para el dado, usa random.randint(1, 6).",
+            "Controla la entrada del usuario y valida que el número sea positivo.",
+            "Usa un bucle para repetir el programa hasta salir."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Elige lanzamiento: moneda / dado / salir: moneda",
+                "Número de lanzamientos: 5",
+                "Elige lanzamiento: moneda / dado / salir: dado",
+                "Número de lanzamientos: 3",
+                "Elige lanzamiento: moneda / dado / salir: salir"
+            ],
+            "salida": [
+                "Resultados: cara, cruz, cara, cara, cruz",
+                "Resultados: 4, 1, 6"
+            ]
+        }
+    },
+    {
+        "id": "34",
+        "titulo": "Análisis de frase con conteo y signos de puntuación",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Dada una frase introducida por el usuario, el programa debe analizar y mostrar:\n    · Número total de palabras.\n    · Número total de caracteres (sin contar espacios).\n    · Número de signos de puntuación (.,;:!?).\n    · La palabra más larga y su longitud.\n\nEl programa debe ser capaz de procesar cualquier frase con signos de puntuación y mayúsculas/minúsculas.",
+        "tareas": [
+            "Pedir al usuario que introduzca una frase.",
+            "Contar el número de palabras.",
+            "Contar el número de caracteres sin espacios.",
+            "Contar el número de signos de puntuación (.,;:!?) en la frase.",
+            "Encontrar la palabra más larga considerando solo caracteres alfabéticos (sin signos).",
+            "Mostrar los resultados."
+        ],
+        "pistas": [
+            "Usa str.split() para separar palabras.",
+            "Para contar caracteres, elimina espacios y cuenta el resto.",
+            "Usa un conjunto de signos para contar ocurrencias en la frase.",
+            "Limpia signos de las palabras para encontrar la más larga.",
+            "Considera el manejo de mayúsculas y minúsculas."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce una frase: Hola, mundo! ¿Cómo estás?"
+            ],
+            "salida": [
+                "Palabras: 4",
+                "Caracteres (sin espacios): 18",
+                "Signos de puntuación: 3",
+                "Palabra más larga: Cómo (4 caracteres)"
+            ]
+        }
+    },
+    {
+        "id": "35",
+        "titulo": "Reserva de salas en biblioteca según tamaño de grupo",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una biblioteca permite reservar salas de estudio para grupos de estudiantes. Las salas tienen una capacidad máxima y se asignan según el número de personas del grupo. Las reglas son:\n    · Grupos de 1 a 2 personas: sala pequeña (capacidad 2).\n    · Grupos de 3 a 5 personas: sala mediana (capacidad 5).\n    · Grupos de 6 a 10 personas: sala grande (capacidad 10).\n    · Si el grupo supera las 10 personas, no se puede reservar.\n\nEl programa debe pedir el número de personas del grupo, indicar qué sala corresponde, o informar si no se puede reservar.",
+        "tareas": [
+            "Pedir al usuario el número de personas del grupo.",
+            "Validar que el número sea positivo mayor a cero.",
+            "Determinar la sala asignada según el número de personas.",
+            "Mostrar un mensaje indicando la sala asignada y su capacidad.",
+            "Informar si no es posible reservar por superar las 10 personas.",
+            "Repetir el proceso hasta que el usuario introduzca 0."
+        ],
+        "pistas": [
+            "Usa condicionales encadenados para elegir la sala.",
+            "Mostrar mensajes claros para cada caso.",
+            "El programa termina cuando el usuario introduce 0."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Número de personas del grupo: 4",
+                "Número de personas del grupo: 11",
+                "Número de personas del grupo: 0"
+            ],
+            "salida": [
+                "Sala asignada: mediana (hasta 5 personas)",
+                "No es posible reservar sala para más de 10 personas.",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "36",
+        "titulo": "Cálculo de días entre dos fechas",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que calcule el número de días que hay entre dos fechas introducidas por el usuario. Las fechas se pedirán en formato “DD/MM/AAAA”. El programa debe validar que las fechas sean correctas (mes entre 1 y 12, día válido para cada mes, año positivo) y luego mostrar el número de días entre ellas.",
+        "tareas": [
+            "Pedir al usuario las fechas en formato DD/MM/AAAA.",
+            "Validar que las fechas tenga el formato correcto y valores válidos.",
+            "Calcular la diferencia absoluta en días entre las dos fechas.",
+            "Mostrar el resultado."
+        ],
+        "pistas": [
+            "Usa el módulo datetime para validar y calcular diferencias.",
+            "Maneja excepciones al convertir cadenas a fechas.",
+            "Para validar, comprueba que el día, mes y año sean válidos.",
+            "La diferencia de fechas debe ser absoluta para evitar valores negativos."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce la fecha 1 (DD/MM/AAAA): 15/05/2023",
+                "Introduce la fecha 2 (DD/MM/AAAA): 20/05/2023",
+                "Introduce la fecha 1 (DD/MM/AAAA): "
+            ],
+            "salida": [
+                "Días entre fechas: 5",
+                "Fecha no válida"
+            ]
+        }
+    },
+    {
+        "id": "37",
+        "titulo": "Generador de contraseñas aleatorias",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que genere contraseñas aleatorias con las siguientes características: longitud definida por el usuario (mínimo 8 caracteres); puede incluir letras mayúsculas, minúsculas, números y símbolos especiales; el usuario puede elegir si quiere incluir cada tipo de carácter (sí/no para mayúsculas, minúsculas, números y símbolos). El programa debe generar y mostrar la contraseña resultante con las opciones seleccionadas.",
+        "tareas": [
+            "Pedir la longitud de la contraseña, validar que sea al menos 8.",
+            "Preguntar al usuario si desea incluir mayúsculas, minúsculas, números y símbolos.",
+            "Validar que al menos un tipo de carácter esté seleccionado.",
+            "Generar una contraseña mezclando bien los caracteres seleccionados.",
+            "Mostrar la contraseña generada.",
+            "Repetir el proceso hasta que el usuario decida salir."
+        ],
+        "pistas": [
+            "Usa el módulo random para seleccionar caracteres aleatorios.",
+            "Utiliza los conjuntos de caracteres del módulo string (ascii_uppercase, ascii_lowercase, digits, punctuation).",
+            "Mezcla los caracteres para que la contraseña sea segura.",
+            "Controla entradas del usuario para evitar errores."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Longitud contraseña: 10",
+                "Incluir mayúsculas (s/n): s",
+                "Incluir minúsculas (s/n): s",
+                "Incluir números (s/n): n",
+                "Incluir símbolos (s/n): s",
+                "¿Generar otra? (s/n): n"
+            ],
+            "salida": [
+                "Contraseña generada: Aq#Zr!TmPu",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "38",
+        "titulo": "Cálculo de nota final con bono y penalización según asistencia",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un profesor quiere calcular la nota final de un alumno teniendo en cuenta que la nota base es la media de sus exámenes. Se añade una bonificación del 5% si la asistencia es mayor o igual al 90%, se penaliza un 3% si la asistencia es menor al 70%, y en cualquier otro caso no hay bonificación ni penalización.",
+        "tareas": [
+            "Pedir al usuario las notas de los exámenes una a una, hasta que introduzca vacío.",
+            "Validar que cada nota esté entre 0 y 10.",
+            "Calcular la nota base como la media de las notas; si no hay notas, la base es 0.",
+            "Pedir el porcentaje de asistencia y validar que esté entre 0 y 100.",
+            "Aplicar la bonificación o penalización sobre la nota base según el porcentaje de asistencia.",
+            "Mostrar la nota final con dos decimales.",
+            "Preguntar si desea calcular otra nota y repetir o finalizar."
+        ],
+        "pistas": [
+            "Para calcular la media, suma todas las notas y divide por la cantidad de notas.",
+            "Para aplicar el porcentaje, multiplica la nota base por 1.05 o 0.97 según corresponda.",
+            "Usa un bucle para solicitar las notas y otro para repetir el proceso completo.",
+            "Controla entradas inválidas con mensajes claros."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce nota examen (vacío para terminar): 7",
+                "Introduce nota examen (vacío para terminar): 8",
+                "Introduce nota examen (vacío para terminar): 6",
+                "Introduce nota examen (vacío para terminar): ",
+                "Asistencia (%): 92",
+                "¿Calcular otra nota? (s/n): n"
+            ],
+            "salida": [
+                "Nota final: 7.58",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "39",
+        "titulo": "Juego: Adivina el número entre 1 y 100",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que genere un número aleatorio entre 1 y 100 y permita al usuario intentar adivinarlo. Después de cada intento, el programa debe indicar si el número es mayor o menor que el intento, o si ha acertado. El usuario tiene un máximo de 10 intentos. Al finalizar, se debe mostrar un mensaje con el resultado y el número de intentos usados.",
+        "tareas": [
+            "Generar un número aleatorio entre 1 y 100.",
+            "Pedir al usuario un intento y validar que esté entre 1 y 100.",
+            "Indicar si el número es mayor, menor o si se ha acertado.",
+            "Limitar a 10 intentos el número de pruebas.",
+            "Permitir jugar de nuevo al finalizar el juego."
+        ],
+        "pistas": [
+            "Usa el módulo random para generar el número.",
+            "Controla que el usuario no supere los 10 intentos.",
+            "Usa bucles para los intentos y para repetir el juego.",
+            "Muestra mensajes claros y precisos después de cada intento."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "¡Adivina el número entre 1 y 100!",
+                "Intento 1: 50",
+                "Intento 2: 75",
+                "Intento 3: 62",
+                "¿Jugar otra vez? (s/n): n"
+            ],
+            "salida": [
+                "El número es mayor.",
+                "El número es menor.",
+                "¡Correcto! Has adivinado en 3 intentos.",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "40",
+        "titulo": "Análisis de sentimientos básico",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un pequeño sistema de análisis de sentimientos clasifica un texto como positivo, negativo o neutral basándose en la cantidad de palabras positivas y negativas que contiene. Se dispone de dos listas predefinidas: una con palabras positivas (ejemplo: \"bueno\", \"feliz\", \"genial\") y otra con palabras negativas (ejemplo: \"malo\", \"triste\", \"horrible\"). El programa debe recibir un texto del usuario, contar cuántas palabras positivas y negativas contiene (ignorando mayúsculas y signos de puntuación), y determinar: si hay más palabras positivas que negativas, el texto es positivo; si hay más palabras negativas, es negativo; si hay igual número o ninguna de las dos, es neutral.",
+        "tareas": [
+            "Normalizar el texto para evitar problemas con mayúsculas y signos.",
+            "Mostrar el conteo de palabras positivas y negativas.",
+            "Repetir el proceso hasta que el usuario decida salir."
+        ],
+        "pistas": [
+            "Puedes usar listas simples para las palabras positivas y negativas.",
+            "No es necesario un análisis avanzado, solo contar coincidencias."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce un texto: Hoy es un día genial y feliz",
+                "¿Analizar otro texto? (s/n): s",
+                "Introduce un texto: Estoy triste y el día es horrible",
+                "¿Analizar otro texto? (s/n): s",
+                "Introduce un texto: No está mal ni bien",
+                "¿Analizar otro texto? (s/n): n"
+            ],
+            "salida": [
+                "Palabras positivas: 2",
+                "Palabras negativas: 0",
+                "Sentimiento: positivo",
+                "Palabras positivas: 0",
+                "Palabras negativas: 2",
+                "Sentimiento: negativo",
+                "Palabras positivas: 0",
+                "Palabras negativas: 0",
+                "Sentimiento: neutral",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "41",
+        "titulo": "Conversor de temperaturas entre Celsius, Fahrenheit y Kelvin",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que permita convertir temperaturas entre grados Celsius, Fahrenheit y Kelvin. El usuario debe introducir el valor numérico de la temperatura, la unidad de origen (C, F o K) y la unidad de destino (C, F o K). El programa realizará la conversión correspondiente y mostrará el resultado con dos decimales.",
+        "tareas": [
+            "Validar que las unidades introducidas sean válidas (C, F, K).",
+            "Permitir conversiones entre cualquier par de unidades.",
+            "Repetir el proceso hasta que el usuario quiera salir."
+        ],
+        "pistas": [
+            "Fórmulas:",
+            "  °F = °C × 9/5 + 32",
+            "  K = °C + 273.15",
+            "La inversa aplicable para cada caso.",
+            "Mostrar mensajes claros de entrada y salida."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce la temperatura: 100",
+                "Unidad origen (C/F/K): C",
+                "Unidad destino (C/F/K): F"
+            ],
+            "salida": [
+                "Resultado: 100.00 °C = 212.00 °F"
+            ]
+        }
+    },
+    {
+        "id": "42",
+        "titulo": "Reordenador de argumentos misterioso",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos con sys.argv",
+        "enunciado": "Escribe un programa que tome desde la línea de comandos una lista de palabras (mínimo 3) y realice las siguientes operaciones:\n1. Muestre los argumentos originales en el orden recibido.\n2. Cree una nueva cadena donde coloque las palabras en orden inverso, separadas por un guion medio (-).\n3. Calcule la 'clave secreta' de la lista: se forma tomando la primera letra de cada argumento, concatenadas en mayúsculas.\n4. Si el número de argumentos es impar, muestre también la palabra central duplicada 3 veces.\n\nEl programa no debe pedir datos al usuario durante la ejecución, únicamente trabajar con sys.argv.",
+        "tareas": [
+            "Acceder a los argumentos pasados en la ejecución (excluyendo el nombre del script).",
+            "Mostrar los argumentos originales.",
+            "Generar la cadena invertida con guiones.",
+            "Construir la 'clave secreta' con las primeras letras.",
+            "Si la cantidad de argumentos es impar, imprimir la palabra central repetida tres veces."
+        ],
+        "pistas": [
+            "Recuerda que sys.argv[0] es el nombre del script y no cuenta.",
+            "Puedes usar slicing [::-1] para invertir listas.",
+            "El índice de la palabra central se obtiene con len(lista)//2."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "python misterioso.py gato perro loro tortuga",
+                "python misterioso.py sol luna estrella"
+            ],
+            "salida": [
+                "Argumentos originales: gato perro loro tortuga",
+                "Cadena invertida: tortuga-loro-perro-gato",
+                "Clave secreta: GPLT",
+                "[Fin del programa]",
+                "Argumentos originales: sol luna estrella",
+                "Cadena invertida: estrella-luna-sol",
+                "Clave secreta: SLE",
+                "Palabra central duplicada: luna luna luna",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "43",
+        "titulo": "Cálculo de impuesto sobre la renta progresivo",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "En un país imaginario, el impuesto sobre la renta se calcula de forma progresiva según los siguientes tramos:\n    · Hasta 10,000 unidades monetarias: 0%.\n    · De 10,001 a 20,000: 10%.\n    · De 20,001 a 35,000: 15%.\n    · De 35,001 a 50,000: 20%.\n    · Más de 50,000: 25%.\n\nEl programa debe pedir al usuario su ingreso anual y calcular el total a pagar en impuestos según estos tramos.",
+        "tareas": [
+            "Validar que el ingreso sea un número positivo.",
+            "Mostrar el impuesto total con dos decimales."
+        ],
+        "pistas": [
+            "El impuesto es acumulativo: por ejemplo, en 30,000 se paga 0% hasta 10,000, 10% por los siguientes 10,000, y 15% por los últimos 10,000.",
+            "Explica cómo se calcula para claridad."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce ingreso anual: 30000"
+            ],
+            "salida": [
+                "Impuesto a pagar: 2750.00"
+            ]
+        }
+    },
+    {
+        "id": "44",
+        "titulo": "Gestor de inventario para tienda pequeña",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una pequeña tienda quiere controlar su inventario de productos. El programa debe permitir al usuario: añadir un producto con su cantidad, mostrar la lista completa de productos con sus cantidades, actualizar la cantidad de un producto existente y eliminar un producto. El programa mostrará un menú con opciones y se repetirá hasta que el usuario decida salir.",
+        "tareas": [
+            "Usar un diccionario para almacenar productos y cantidades.",
+            "Validar entradas y mostrar mensajes adecuados.",
+            "El menú debe ser claro y permitir elegir opciones fácilmente."
+        ],
+        "pistas": [
+            "Las cantidades deben ser enteros positivos.",
+            "Mostrar mensajes de error si el producto no existe para actualizar o eliminar."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "1. Añadir producto",
+                "2. Mostrar inventario",
+                "3. Actualizar producto",
+                "4. Eliminar producto",
+                "5. Salir",
+                "Opción: 1",
+                "Nombre producto: manzanas",
+                "Cantidad: 50",
+                "1. Añadir producto",
+                "2. Mostrar inventario",
+                "3. Actualizar producto",
+                "4. Eliminar producto",
+                "5. Salir",
+                "Opción: 2",
+                "1. Añadir producto",
+                "2. Mostrar inventario",
+                "3. Actualizar producto",
+                "4. Eliminar producto",
+                "5. Salir",
+                "Opción: 5"
+            ],
+            "salida": [
+                "Producto añadido.",
+                "Inventario:",
+                "manzanas: 50",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "45",
+        "titulo": "Generador de contraseñas seguras",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que genere contraseñas aleatorias y seguras con las siguientes características:\n    · Longitud indicada por el usuario (mínimo 8 caracteres).\n    · La contraseña debe contener al menos una letra mayúscula, una minúscula, un número y un símbolo especial (por ejemplo: !, @, #, $, %, &).\n    · Mostrar la contraseña generada al usuario.",
+        "tareas": [
+            "Validar que la longitud sea un número entero y mayor o igual a 8.",
+            "Utilizar funciones para separar la lógica (generar contraseña, validar requisitos).",
+            "Permitir generar nuevas contraseñas hasta que el usuario decida salir."
+        ],
+        "pistas": [
+            "Puedes usar el módulo random para generar caracteres aleatorios.",
+            "Asegúrate de que la contraseña cumpla con todos los requisitos antes de mostrarla."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce la longitud deseada para la contraseña (mínimo 8): 12",
+                "¿Generar otra contraseña? (s/n): n"
+            ],
+            "salida": [
+                "Contraseña generada: T3#pa9kL@zQ2",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "46",
+        "titulo": "Simulador de lanzamiento de dados",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un juego de mesa utiliza dados de 6 caras. Crea un programa que permita simular el lanzamiento de varios dados al mismo tiempo. El usuario debe ingresar:\n    · Número de dados a lanzar (entre 1 y 10).\n\nEl programa mostrará el resultado de cada dado y la suma total de todos los dados.",
+        "tareas": [
+            "Validar que el número de dados sea un entero entre 1 y 10.",
+            "Mostrar los resultados individuales y la suma total.",
+            "Repetir el proceso hasta que el usuario decida salir."
+        ],
+        "pistas": [
+            "Utiliza el módulo random para simular los dados.",
+            "Puedes mostrar los resultados en una línea para mejor claridad."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Número de dados a lanzar (1-10): 4",
+                "¿Lanzar dados otra vez? (s/n): n"
+            ],
+            "salida": [
+                "Resultados: 3 6 2 5",
+                "Suma total: 16",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "47",
+        "titulo": "Comprobador de palíndromos",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un palíndromo es una palabra o frase que se lee igual de izquierda a derecha que de derecha a izquierda, ignorando espacios, signos de puntuación y mayúsculas.\nCrea un programa que reciba una frase del usuario y determine si es un palíndromo o no.",
+        "tareas": [
+            "Ignorar mayúsculas, espacios y signos de puntuación.",
+            "Mostrar un mensaje indicando si la frase es o no un palíndromo."
+        ],
+        "pistas": [
+            "Puedes usar métodos de string para limpiar la frase antes de comprobarla.",
+            "Considera solo letras y números para la comparación."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce una frase: Ana lava lana",
+                "Introduce una frase: Esto no es un palíndromo"
+            ],
+            "salida": [
+                "La frase es un palíndromo.",
+                "La frase no es un palíndromo."
+            ]
+        }
+    },
+    {
+        "id": "48",
+        "titulo": "Agenda telefónica",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea una agenda telefónica que permita almacenar nombres y números de teléfono. El programa debe ofrecer un menú para:\n    · Añadir un contacto.\n    · Buscar un contacto por nombre (imprimir número o mensaje si no existe).\n    · Mostrar todos los contactos.\n    · Salir.",
+        "tareas": [
+            "Usar un diccionario para almacenar contactos (clave: nombre, valor: número).",
+            "Validar entradas y mostrar mensajes adecuados.",
+            "El programa debe continuar hasta que el usuario elija salir."
+        ],
+        "pistas": [
+            "No debe permitirse añadir un contacto con nombre vacío.",
+            "Puedes permitir actualización si un contacto ya existe."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "1- Añadir un contacto",
+                "2- Buscar un contacto por nombre",
+                "3- Mostrar todos los contactos",
+                "4 - Salir",
+                "Opción: 1",
+                "Nombre: Carlos",
+                "Teléfono: 654321987",
+                "1- Añadir un contacto",
+                "2- Buscar un contacto por nombre",
+                "3- Mostrar todos los contactos",
+                "4 - Salir",
+                "Opción: 2",
+                "Nombre: Carlos",
+                "1- Añadir un contacto",
+                "2- Buscar un contacto por nombre",
+                "3- Mostrar todos los contactos",
+                "4 - Salir",
+                "Opción: 4"
+            ],
+            "salida": [
+                "Contacto añadido.",
+                "Teléfono: 654321987",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "49",
+        "titulo": "Cálculo de factorial",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "El factorial de un número entero positivo n se define como el producto de todos los enteros desde 1 hasta n (n!).\nCrea un programa que pida al usuario un número entero no negativo y calcule su factorial.\nSi el usuario introduce un número negativo, debe mostrar un error y finalizar el programa.",
+        "tareas": [
+            "Validar que el número sea entero y no negativo.",
+            "Utilizar un bucle o recursión para calcular el factorial."
+        ],
+        "pistas": [
+            "El factorial de 0 es 1.",
+            "Puedes usar funciones para organizar el código."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce un número entero no negativo: 5",
+                "Introduce un número entero no negativo: -3"
+            ],
+            "salida": [
+                "El factorial de 5 es 120.",
+                "Error: número negativo."
+            ]
+        }
+    },
+    {
+        "id": "50",
+        "titulo": "Análisis de texto",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Escribe un programa que permita al usuario ingresar un texto completo, que puede incluir varias frases y párrafos. El programa debe calcular y mostrar:\n    · El número total de palabras que contiene el texto.\n    · El número total de caracteres, excluyendo espacios.\n    · La palabra más larga encontrada en el texto.",
+        "tareas": [
+            "Considerar palabras separadas por espacios.",
+            "Ignorar signos de puntuación al contar palabras y caracteres.",
+            "Mostrar los resultados claramente.",
+            "Validar entrada para evitar textos vacíos."
+        ],
+        "pistas": [
+            "Puedes usar métodos de string para manipular el texto.",
+            "La palabra más larga debe ignorar signos de puntuación adjuntos."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce un texto: La programación es un arte y una ciencia."
+            ],
+            "salida": [
+                "Total palabras: 8",
+                "Total caracteres (sin espacios): 28",
+                "Palabra más larga: programación"
+            ]
+        }
+    },
+    {
+        "id": "51",
+        "titulo": "Cajero automático básico",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Desarrolla un programa que simule un cajero automático básico. El usuario comienza con un saldo inicial de 1000 unidades monetarias. El programa debe permitir:\n    · Consultar saldo.\n    · Realizar ingresos.\n    · Realizar retiros, siempre que el saldo sea suficiente.\n    · Salir del programa.",
+        "tareas": [
+            "Mostrar un menú interactivo con las opciones.",
+            "Validar entradas numéricas (positivas y en rango).",
+            "Actualizar saldo tras cada operación.",
+            "Repetir hasta que el usuario decida salir."
+        ],
+        "pistas": [
+            "El saldo nunca debe ser negativo.",
+            "Puedes usar funciones para cada acción del menú."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Saldo actual: 1000",
+                "1. Consultar saldo",
+                "2. Ingresar dinero",
+                "3. Retirar dinero",
+                "4. Salir",
+                "Opción: 3",
+                "Cantidad a retirar: 1500",
+                "Opción: 2",
+                "Cantidad a ingresar: 500",
+                "Opción: 4"
+            ],
+            "salida": [
+                "¡Saldo insuficiente!",
+                "Ingreso realizado. Nuevo saldo: 1500",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "52",
+        "titulo": "Media y mediana de una lista",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que permita al usuario introducir una lista de números enteros separados por espacios y calcule:\n    · La media aritmética de los números.\n    · La mediana (el valor central cuando los números están ordenados).",
+        "tareas": [
+            "Validar que se introduzcan números enteros válidos.",
+            "Mostrar la media con dos decimales.",
+            "Calcular correctamente la mediana para listas pares e impares."
+        ],
+        "pistas": [
+            "Puedes usar funciones para separar tareas.",
+            "La mediana para listas pares es el promedio de los dos números centrales."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce números separados por espacios: 5 3 8 7 2",
+                "Introduce números separados por espacios:"
+            ],
+            "salida": [
+                "Media: 5.00",
+                "Mediana: 5",
+                "Valor invalido"
+            ]
+        }
+    },
+    {
+        "id": "53",
+        "titulo": "Frecuencia de palabras en un texto",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Se desea analizar un texto para conocer qué palabras se repiten y cuántas veces lo hacen. El programa debe solicitar al usuario que introduzca un texto (una frase o párrafo). Luego, debe procesar el texto para contar la frecuencia de cada palabra, ignorando mayúsculas/minúsculas y signos de puntuación (como comas, puntos, signos de exclamación o interrogación). Finalmente, mostrará una lista ordenada por frecuencia descendente, indicando cada palabra junto con su número de apariciones.",
+        "tareas": [
+            "Ignorar diferencias entre mayúsculas y minúsculas.",
+            "Quitar signos de puntuación comunes antes del análisis.",
+            "Mostrar la lista ordenada de mayor a menor frecuencia.",
+            "Puedes usar solo funciones básicas y estructuras de datos propias de Python sin librerías externas."
+        ],
+        "pistas": [
+            "Es importante limpiar el texto antes de contar para obtener resultados precisos.",
+            "Puedes usar métodos de cadenas y diccionarios para contar y ordenar."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce un texto: Hola, hola, ¿cómo estás? Estoy bien, gracias. ¿Y tú?"
+            ],
+            "salida": [
+                "Palabra: 'hola' - 2 veces",
+                "Palabra: 'estoy' - 1 vez",
+                "Palabra: 'bien' - 1 vez",
+                "Palabra: 'gracias' - 1 vez",
+                "Palabra: 'cómo' - 1 vez",
+                "Palabra: 'tú' - 1 vez",
+                "Palabra: 'y' - 1 vez"
+            ]
+        }
+    },
+    {
+        "id": "54",
+        "titulo": "Estadísticas de una lista de números",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Escribe un programa que permita al usuario introducir una lista de números enteros separados por espacios. A partir de esos números, el programa debe calcular y mostrar las siguientes estadísticas:\n\n    El valor mínimo.\n\n    El valor máximo.\n\n    La suma total.\n\n    La media aritmética con dos decimales.\n\n    La mediana.\n\nEl programa debe validar la entrada, asegurarse que se introducen números válidos.",
+        "tareas": [
+            "La lista puede contener cualquier cantidad de números, al menos uno.",
+            "La mediana debe calcularse ordenando la lista y encontrando el valor del medio (o el promedio de los dos del medio si la lista es par).",
+            "Mostrar mensajes claros para el usuario.",
+            "No usar librerías externas; solo funciones nativas de Python."
+        ],
+        "pistas": [
+            "Asegúrate de manejar errores si el usuario introduce valores no numéricos.",
+            "Usa funciones para mantener el código organizado."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce números separados por espacios: 4 8 15 16 23 42"
+            ],
+            "salida": [
+                "Mínimo: 4",
+                "Máximo: 42",
+                "Suma: 108",
+                "Media: 18.00",
+                "Mediana: 15.50"
+            ]
+        }
+    },
+    {
+        "id": "55",
+        "titulo": "Clasificación de archivos por extensión",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Simula un explorador de archivos básico. El usuario introducirá nombres de archivos con su extensión separados por espacios (ej. foto.jpg documento.pdf informe.docx). El programa debe clasificar los archivos según su tipo de extensión y mostrar cuántos archivos hay por cada tipo. Si el archivo no tiene extensión, se contará como \"desconocido\".",
+        "tareas": [
+            "La extensión es lo que viene después del último punto (.).",
+            "Archivos sin punto se consideran sin extensión.",
+            "Contar cuántos archivos hay por tipo.",
+            "El programa debe seguir funcionando hasta que el usuario no introduzca nada."
+        ],
+        "pistas": [
+            "Puedes usar diccionarios para almacenar y contar los tipos.",
+            "Ten en cuenta casos con nombres sin extensión."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce nombres de archivos: foto.jpg documento.pdf informe.docx archivo otro archivo.txt"
+            ],
+            "salida": [
+                "Tipo 'jpg': 1 archivo(s)",
+                "Tipo 'pdf': 1 archivo(s)",
+                "Tipo 'docx': 1 archivo(s)",
+                "Tipo 'desconocido': 2 archivo(s)",
+                "Tipo 'txt': 1 archivo(s)"
+            ]
+        }
+    },
+    {
+        "id": "56",
+        "titulo": "Conversor de números a texto (0-99)",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Crea un programa que convierta números enteros entre 0 y 99 a su equivalente en texto en español. Por ejemplo, el número 42 se convertirá en \"cuarenta y dos\". El usuario introduce un número en cada línea y el programa devuelve la versión en palabras.",
+        "tareas": [
+            "Aceptar solo números entre 0 y 99.",
+            "Rechazar y notificar entradas no válidas.",
+            "El programa debe repetirse hasta que se introduzca una línea vacía.",
+            "No usar librerías externas."
+        ],
+        "pistas": [
+            "Usa condicionales para manejar los diferentes rangos (0-15, decenas, unidades).",
+            "Gestiona los casos especiales de números entre 10 y 19.",
+            "Considera separar la lógica en funciones para mayor claridad."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce un número: 0",
+                "Introduce un número: 73",
+                "Introduce un número: 105",
+                "Introduce un número:"
+            ],
+            "salida": [
+                "Texto: cero",
+                "Texto: setenta y tres",
+                "Número fuera de rango. Solo se aceptan entre 0 y 99.",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "57",
+        "titulo": "Eliminar duplicados en una lista",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "El usuario introducirá una lista de elementos separados por comas (pueden ser palabras, números, etc.). El programa eliminará los duplicados respetando el orden original y mostrará el resultado como una nueva lista sin repeticiones.",
+        "tareas": [
+            "Conservar el orden original.",
+            "Eliminar repeticiones exactas (considerar minúsculas/mayúsculas como diferentes).",
+            "Repetir hasta que el usuario introduzca una línea vacía."
+        ],
+        "pistas": [
+            "Puedes usar una lista auxiliar para controlar los elementos ya vistos.",
+            "Separa la entrada por comas y limpia espacios en blanco."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce una lista separada por comas: sol, luna, sol, estrella, luna, sol",
+                "Introduce una lista separada por comas:"
+            ],
+            "salida": [
+                "Lista sin duplicados: sol, luna, estrella",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "58",
+        "titulo": "Días impares de un mes",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Desarrolla un programa que, dado un mes (en número del 1 al 12) y un año, genere una lista de los días impares del mes. El programa debe tener en cuenta si el mes tiene 28, 30 o 31 días, y en el caso de febrero considerar si el año es bisiesto.",
+        "tareas": [
+            "Calcular correctamente los días según el mes y si es bisiesto.",
+            "Mostrar únicamente los días impares.",
+            "El programa se repite hasta que el usuario escriba \"salir\"."
+        ],
+        "pistas": [
+            "Recuerda que un año es bisiesto si es divisible por 4, pero no por 100, salvo que también sea divisible por 400.",
+            "Genera la lista de días y luego filtra los impares."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce mes (1-12): 2",
+                "Introduce año: 2024",
+                "Introduce mes (1-12): 2",
+                "Introduce año: 2023",
+                "Introduce mes (1-12): salir"
+            ],
+            "salida": [
+                "Días impares: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29",
+                "Días impares: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "59",
+        "titulo": "Generador automático de etiquetas de productos",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una empresa de logística utiliza un sistema automático que recibe nombres de productos como entradas de texto, y debe generar etiquetas que cumplan el siguiente formato:\n<NOMBRE_EN_MAYÚSCULAS> - <CATEGORÍA>\n\nLa categoría se asigna de forma automática en base a palabras clave que contenga el nombre:\n    · Si contiene \"botella\", \"vaso\" o \"taza\" → categoría: BEBIDAS\n    · Si contiene \"camisa\", \"pantalón\" o \"chaqueta\" → categoría: ROPA\n    · Si contiene \"cable\", \"adaptador\" o \"cargador\" → categoría: ELECTRÓNICA\n    · Si no se encuentra ninguna coincidencia → categoría: OTROS\n\nEl programa pedirá nombres de productos y generará sus etiquetas correspondientes hasta que se introduzca una línea vacía.",
+        "tareas": [
+            "La búsqueda de palabras clave no distingue mayúsculas/minúsculas.",
+            "Solo se evalúa si la palabra clave aparece en alguna parte del nombre.",
+            "Mostrar la etiqueta generada por cada producto en una línea."
+        ],
+        "pistas": [
+            "Convierte la entrada a minúsculas para facilitar la búsqueda.",
+            "Usa condicionales para determinar la categoría.",
+            "La función str.upper() puede ayudarte a poner el nombre en mayúsculas."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce nombre del producto: botella térmica negra",
+                "Introduce nombre del producto: camisa azul",
+                "Introduce nombre del producto: microondas",
+                "Introduce nombre del producto:"
+            ],
+            "salida": [
+                "BOTELLA TÉRMICA NEGRA - BEBIDAS",
+                "CAMISA AZUL - ROPA",
+                "MICROONDAS - OTROS",
+                "[Fin del programa]"
+            ]
+        }
+    },
+    {
+        "id": "60",
+        "titulo": "Detectar alumnos ausentes totales",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una academia guarda una lista de alumnos inscritos en un curso. Cada semana se registra una lista de asistentes. El programa debe identificar a los alumnos que no han asistido ninguna vez en las últimas tres semanas. Primero se introducen los nombres de todos los inscritos separados por comas, y luego tres listas semanales de asistentes. El programa muestra los ausentes totales.",
+        "tareas": [
+            "Comparar nombres sin distinguir mayúsculas/minúsculas.",
+            "Conservar la forma original para mostrar.",
+            "No usar conjuntos (sets), solo listas y bucles."
+        ],
+        "pistas": [
+            "Convierte las cadenas a minúsculas para comparar.",
+            "Usa listas auxiliares para buscar coincidencias.",
+            "Recuerda preservar el formato original para la salida."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Inscritos: Ana López, Carlos, Mariana, Joaquín, Diego",
+                "Semana 1: Ana López, Carlos",
+                "Semana 2: Mariana",
+                "Semana 3: Carlos, Ana López"
+            ],
+            "salida": [
+                "Ausentes: Joaquín, Diego"
+            ]
+        }
+    },
+    {
+        "id": "61",
+        "titulo": "Rango de tiempo con margen de error",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un cronómetro experimental registra tiempos en segundos para tareas, pero todos los tiempos están alterados por más o menos un 10%. El programa recibe una lista de tiempos reales estimados separados por comas y muestra para cada tarea el rango posible de tiempo con el margen de error aplicado, redondeando a dos decimales.",
+        "tareas": [
+            "Calcular el rango de más o menos un 10% para cada tiempo.",
+            "Redondear los valores a 2 decimales.",
+            "Mostrar una línea por cada tarea con el formato especificado."
+        ],
+        "pistas": [
+            "Multiplica por 0.9 y 1.1 para calcular los límites.",
+            "Usa round() para redondear.",
+            "Divide la cadena de entrada y procesa cada tiempo."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce tiempos: 120, 75, 200"
+            ],
+            "salida": [
+                "Tarea 1: [108.0, 132.0]",
+                "Tarea 2: [67.5, 82.5]",
+                "Tarea 3: [180.0, 220.0]"
+            ]
+        }
+    },
+    {
+        "id": "62",
+        "titulo": "Clave inversa para caja fuerte",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un sistema de seguridad tiene una caja fuerte que se abre solo con la combinación de palabras clave en orden inverso. El usuario introduce la combinación original como una lista de palabras separadas por guiones. El programa debe mostrar la clave invertida, también separada por guiones.",
+        "tareas": [
+            "No usar [::-1] ni reverse() para invertir.",
+            "Conservar ortografía y espacios exactos."
+        ],
+        "pistas": [
+            "Construye la lista invertida con bucles manualmente.",
+            "Separa la entrada por guiones.",
+            "Une la lista invertida con guiones para mostrar."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce clave: sol-luna-estrella",
+                "Introduce clave:"
+            ],
+            "salida": [
+                "Clave de apertura: estrella-luna-sol",
+                "Clave vacía"
+            ]
+        }
+    },
+    {
+        "id": "63",
+        "titulo": "Detección de eventos sospechosos en sensores",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "En una lista de resultados de sensores, cada número representa un tipo de evento. Si un número aparece más de dos veces seguidas, se considera sospechoso.\nEl programa debe detectar y marcar las repeticiones de eventos sospechosos, mostrando el número y cuántas veces seguidas se repitió.",
+        "tareas": [
+            "Leer una secuencia de números separados por espacios.",
+            "Detectar solo repeticiones consecutivas de un número que ocurran más de dos veces.",
+            "Mostrar el número y el conteo de repeticiones en formato claro.",
+            "Ignorar repeticiones de dos o menos."
+        ],
+        "pistas": [
+            "Recorre la lista con un contador para repeticiones consecutivas.",
+            "Cuando cambie el número, evalúa si la cuenta es > 2.",
+            "Mostrar los resultados tras procesar toda la lista."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce eventos: 3 3 3 1 2 2 2 2 5 5 3"
+            ],
+            "salida": [
+                "Sospechoso: 3 (3 veces)",
+                "Sospechoso: 2 (4 veces)"
+            ]
+        }
+    },
+    {
+        "id": "64",
+        "titulo": "Clasificación de puntos geográficos por cuadrantes",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una expedición geográfica toma notas de coordenadas registradas como cadenas con el formato \"(x,y)\", donde x e y son enteros positivos o negativos. El programa debe interpretar estas coordenadas y determinar:\n    · Cuántos puntos están en cada uno de los cuatro cuadrantes.\n    · Cuántos están exactamente sobre algún eje.\n\nEl programa validará la sintaxis y avisará si alguna coordenada es inválida para evitar errores.",
+        "tareas": [
+            "Leer una lista de coordenadas separadas por comas.",
+            "Validar que cada coordenada esté entre paréntesis y tenga una coma interna.",
+            "Convertir x e y a enteros y detectar errores.",
+            "Contar cuántos puntos caen en Q1 (+,+), Q2 (-,+), Q3 (-,-), Q4 (+,-) o sobre los ejes (x=0 o y=0).",
+            "Mostrar advertencias para entradas inválidas."
+        ],
+        "pistas": [
+            "Usa str.strip() para limpiar espacios y paréntesis.",
+            "Usa try-except para convertir números.",
+            "Comprueba condiciones para asignar cuadrante o eje.",
+            "Imprime advertencias para valores no válidos."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce coordenadas: (3,4), (-2,5), (0,7), (5,-3), (-3,-3), (7,0), hola, (3,3)"
+            ],
+            "salida": [
+                "Advertencia: coordenada inválida 'hola'",
+                "Q1: 2",
+                "Q2: 1",
+                "Q3: 1",
+                "Q4: 1",
+                "Ejes: 2"
+            ]
+        }
+    },
+    {
+        "id": "65",
+        "titulo": "Filtro de palabras prohibidas en mensajes",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una red social ha implementado un sistema de moderación que filtra mensajes con ciertas palabras prohibidas. El sistema carga una lista de palabras censuradas introducidas por el moderador, y luego verifica si un mensaje contiene alguna de ellas. Si se detecta alguna palabra censurada, se debe mostrar una advertencia y las palabras encontradas.\n\nEl programa detectará si alguna palabra prohibida aparece de forma exacta (no por partes) y mostrará las palabras detectadas o un mensaje de aprobado.",
+        "tareas": [
+            "Pedir las palabras prohibidas separadas por comas y crear una lista limpia sin espacios.",
+            "Pedir un mensaje y separar en palabras limpiando signos de puntuación.",
+            "Comparar palabras ignorando mayúsculas/minúsculas.",
+            "Detectar y listar las palabras prohibidas encontradas sin repeticiones.",
+            "Mostrar mensaje de advertencia con las palabras detectadas o mensaje de aprobado.",
+            "No usar expresiones regulares ni librerías externas."
+        ],
+        "pistas": [
+            "Usa str.translate() y str.maketrans() para eliminar puntuación.",
+            "Convierta todo a minúsculas para comparar.",
+            "Para separar el mensaje, usa split() después de limpiar.",
+            "Evita contar varias veces la misma palabra prohibida."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce palabras prohibidas: guerra, odio, censura",
+                "Introduce mensaje: Estoy cansado de tanta guerra y odio, ¡basta ya!"
+            ],
+            "salida": [
+                "Palabras prohibidas detectadas: guerra, odio"
+            ]
+        }
+    },
+    {
+        "id": "66",
+        "titulo": "Etiquetado ecológico según emisiones de CO₂",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una empresa quiere etiquetar sus productos con un sello ecológico basado en las emisiones estimadas de CO₂ por unidad producida. El sistema categoriza el nivel de impacto de cada producto según el valor ingresado (en gramos de CO₂):\n    · Menor a 100 → \"Excelente\"\n    · Entre 100 y 250 → \"Bueno\"\n    · Entre 251 y 500 → \"A mejorar\"\n    · Más de 500 → \"Impacto alto\"\n\nEl programa debe permitir ingresar varias emisiones de productos (separadas por comas) y mostrar la etiqueta correspondiente para cada una.",
+        "tareas": [
+            "Leer la lista de emisiones separadas por comas.",
+            "El orden de entrada debe mantenerse",
+            "Validar que sean números positivos; ignorar o avisar si no lo son.",
+            "Para cada valor, determinar la etiqueta según el rango.",
+            "Mostrar cada producto con su número, valor redondeado y etiqueta."
+        ],
+        "pistas": [
+            "Usa int() o float() para convertir y validar.",
+            "Mantén el orden con un bucle enumerado.",
+            "Redondea con round() antes de mostrar."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce emisiones en gramos: 80, 120, 450, 620"
+            ],
+            "salida": [
+                "Producto 1: 80 g → Excelente",
+                "Producto 2: 120 g → Bueno",
+                "Producto 3: 450 g → A mejorar",
+                "Producto 4: 620 g → Impacto alto"
+            ]
+        }
+    },
+    {
+        "id": "67",
+        "titulo": "Detector de frases con todas las vocales",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un programa lingüístico debe analizar si una frase contiene todas las vocales (a, e, i, o, u) al menos una vez. Esto se utiliza para detectar frases pangramáticas en ciertas pruebas de idioma. El usuario introduce una frase y el programa verifica si contiene todas las vocales sin distinguir mayúsculas. Si es válida, se debe mostrar cuántas veces aparece cada vocal.",
+        "tareas": [
+            "Solicitar la frase al usuario.",
+            "Ignorar mayúsculas y descartar letras con tilde u otros símbolos.",
+            "Detectar si contiene todas las vocales (a, e, i, o, u).",
+            "Si es válida, mostrar el conteo de cada vocal.",
+            "Si no lo es, mostrar un mensaje indicando que no contiene todas las vocales."
+        ],
+        "pistas": [
+            "Usa `.lower()` para convertir a minúsculas.",
+            "Ignora caracteres que no sean exactamente las vocales.",
+            "Utiliza un diccionario para contar las vocales.",
+            "Comprueba si el conjunto de vocales está contenido en la frase procesada."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce frase: Aquí vemos un ejemplo curioso"
+            ],
+            "salida": [
+                "¡Frase válida!",
+                "a: 1",
+                "e: 3",
+                "i: 1",
+                "o: 2",
+                "u: 2"
+            ]
+        }
+    },
+    {
+        "id": "68",
+        "titulo": "Números ausentes en una secuencia discontinua",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "En una secuencia de números que se supone consecutiva, algunos valores pueden faltar. La tarea del programa es identificar qué números están ausentes para que la secuencia sea continua desde el menor hasta el mayor. El usuario introduce los números desordenados, separados por comas, y el programa mostrará cuáles faltan dentro del rango completo y la lista ordenada completa.",
+        "tareas": [
+            "Pedir al usuario una lista de números separados por comas.",
+            "Eliminar duplicados y convertirlos a enteros.",
+            "Ordenar la lista de menor a mayor usando algún algoritmo (Selección o Burbuja).",
+            "Detectar qué números faltan en la secuencia completa.",
+            "Mostrar los valores ausentes dentro del rango y la lista ordena completa.."
+        ],
+        "pistas": [
+            "Usa `set()` para eliminar duplicados.",
+            "Convierte con `int()` tras eliminar espacios.",
+            "Crea un rango desde el mínimo al máximo valor.",
+            "Resta el conjunto original al rango completo."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce números: 5, 2, 4, 8, 2"
+            ],
+            "salida": [
+                "Números faltantes: 3, 6, 7",
+                "Lista ordenada: 2, 3, 4, 5, 6, 7, 8"
+            ]
+        }
+    },
+    {
+        "id": "69",
+        "titulo": "Verificador de palabras piramidales",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una palabra se considera piramidal si sus letras pueden ordenarse de forma que la primera aparezca una vez, la segunda dos veces, la tercera tres veces, y así sucesivamente. Por ejemplo, \"abbccc\" es piramidal.",
+        "tareas": [
+            "Solicitar una palabra al usuario.",
+            "Ignorar mayúsculas y caracteres no alfabéticos.",
+            "Contar la frecuencia de cada letra.",
+            "Ordenar las frecuencias de menor a mayor usando un algoritmo como selection sort o bubble sort.",
+            "Verificar si las frecuencias corresponden a los números naturales consecutivos desde 1.",
+            "Mostrar el resultado y las frecuencias encontradas."
+        ],
+        "pistas": [
+            "Usa un diccionario para contar letras.",
+            "Descarta los caracteres que no sean letras (`str.isalpha()`).",
+            "Ordena las frecuencias y compáralas con `range(1, n+1)`.",
+            "Convierte el texto a minúsculas antes de analizar."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce palabra: abbccc"
+            ],
+            "salida": [
+                "Frecuencias: a(1), b(2), c(3) -> es piramidal"
+            ]
+        }
+    },
+    {
+        "id": "70",
+        "titulo": "Descompresor de cadenas antiguas",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "En ciertas bases de datos antiguas, se utilizaba una técnica de compresión sencilla para ahorrar espacio: en vez de repetir caracteres iguales, se almacenaban como pares letra+número, indicando cuántas veces se repite. Por ejemplo: 'A3B1C2' representa 'AAABCC'. El sistema que vas a construir debe permitir al usuario introducir una cadena comprimida y devolver la versión original expandida, conservando el orden original.",
+        "tareas": [
+            "Solicitar al usuario una cadena comprimida formada por pares letra+número.",
+            "Verificar que la cadena alterna correctamente letras y números (mayores que 0).",
+            "Expandir cada letra tantas veces como indique su número.",
+            "Mostrar la cadena descomprimida resultante."
+        ],
+        "pistas": [
+            "Recorre la cadena de dos en dos: primero la letra, luego el número.",
+            "Usa `isdigit()` para comprobar si un carácter es un número.",
+            "Puedes usar try/except si decides convertir con `int()`.",
+            "Con `letra * n` puedes repetir fácilmente caracteres en Python."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce cadena comprimida: A3B1C2"
+            ],
+            "salida": [
+                "Cadena descomprimida: AAABCC"
+            ]
+        }
+    },
+    {
+        "id": "71",
+        "titulo": "Organizador de días del mes",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una agenda electrónica almacenó los días del mes en una lista desordenada, y el usuario desea visualizarlos ordenados por número de día. Pero además, quiere que los fines de semana (sábado y domingo) aparezcan al final. Dado un listado de días en el formato 'día-número' (por ejemplo, 'lunes-5', 'domingo-12').",
+        "tareas": [
+            "Pedir al usuario una lista de hasta 31 entradas separadas por comas con el formato 'día-número'.",
+            "Ignorar mayúsculas y validar que el formato sea correcto.",
+            "Ordenar las entradas por número de día de forma ascendente.",
+            "Mover los fines de semana (sábado, domingo) al final de la lista manteniendo su orden relativo.",
+            "Mostrar el listado ordenado correctamente."
+        ],
+        "pistas": [
+            "Usa `.lower()` para uniformizar los nombres de los días.",
+            "Divide cada entrada con `.split('-')` para separar el día del número.",
+            "Separa la lista en dos: días laborables y fines de semana.",
+            "Puedes ordenar con `sorted()` usando `key=lambda` sobre el número."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce días: jueves-10, lunes-1, sábado-3, martes-2, domingo-4"
+            ],
+            "salida": [
+                "Días ordenados:",
+                "lunes-1",
+                "martes-2",
+                "jueves-10",
+                "sábado-3",
+                "domingo-4"
+            ]
+        }
+    },
+    {
+        "id": "72",
+        "titulo": "Fusión alterna de listas numéricas",
+        "nivel": "fácil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Una función muy útil en procesamiento de datos es la fusión alterna de dos listas. Es decir, dadas dos listas de elementos, se deben entrelazar sus elementos uno por uno, tomando un elemento de cada una de forma sucesiva. Si una lista es más larga que la otra, los elementos restantes deben añadirse al final sin modificar su orden.",
+        "tareas": [
+            "Solicitar dos listas de números separados por comas al usuario.",
+            "Validar que ambas listas contengan sólo números enteros válidos.",
+            "Fusionar ambas listas de forma alterna, respetando el orden.",
+            "Agregar los elementos sobrantes de la lista más larga al final.",
+            "Mostrar la lista resultante correctamente formateada."
+        ],
+        "pistas": [
+            "Divide las listas usando `.split(',')` y convierte los elementos a `int`.",
+            "Puedes recorrer ambas listas simultáneamente usando `zip()`.",
+            "Para añadir los restantes, recurre a slicing (`lista[min_len:]`)."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce primera lista: 1, 3, 5",
+                "Introduce segunda lista: 2, 4, 6, 7, 8"
+            ],
+            "salida": [
+                "Lista mezclada: 1, 2, 3, 4, 5, 6, 7, 8"
+            ]
+        }
+    },
+    {
+        "id": "73",
+        "titulo": "Descodificador de contraseñas ASCII",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un sistema bancario en fase de pruebas utiliza una codificación simple de contraseñas: cada letra se transforma por el carácter cuyo valor ASCII se incrementa en 2. Por ejemplo, la letra 'a' se convierte en 'c', 'b' en 'd', y así sucesivamente. Tu tarea consiste en revertir ese proceso, es decir, recuperar la contraseña original a partir de la versión codificada.",
+        "tareas": [
+            "Pedir al usuario una contraseña codificada sin tildes ni caracteres especiales.",
+            "Ignorar los espacios en blanco en la entrada.",
+            "Por cada carácter, restar 2 unidades a su valor ASCII para obtener el original.",
+            "Concatenar los caracteres decodificados para formar la contraseña original.",
+            "Mostrar el resultado correctamente."
+        ],
+        "pistas": [
+            "Usa `ord(caracter)` para obtener el valor ASCII.",
+            "Aplica `chr(valor)` para convertir de vuelta a carácter.",
+            "Elimina los espacios con `.replace(' ', '')` si es necesario."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce contraseña codificada: jgneq"
+            ],
+            "salida": [
+                "Contraseña original: helpm"
+            ]
+        }
+    },
+    {
+        "id": "74",
+        "titulo": "Gestor de inventario alfabético",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Imagina una caja de inventario con múltiples objetos, cada uno identificado por su nombre y cantidad, separados por dos puntos (:). Todo el inventario se guarda como una línea de texto, donde los objetos están separados por comas.",
+        "tareas": [
+            "Solicitar una línea con varios objetos en el formato nombre:cantidad.",
+            "Analizar la entrada y validar que los datos sean",
+            "Separar los elementos por comas y luego cada objeto por dos puntos.",
+            "Validar que cada cantidad sea un número entero positivo.",
+            "Ignorar cualquier entrada mal formada o con datos inválidos.",
+            "Ordenar los objetos alfabéticamente y mostrar su cantidad.",
+            "Calcular y mostrar el total acumulado de unidades válidas."
+        ],
+        "pistas": [
+            "Usa `.split(',')` para separar cada objeto.",
+            "Luego `.split(':')` para separar nombre y cantidad.",
+            "Convierte la cantidad a `int` y verifica que sea positiva.",
+            "Utiliza `sorted()` para ordenar alfabéticamente por nombre."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce inventario: plátano:7, pera:3, manzana:5"
+            ],
+            "salida": [
+                "Inventario ordenado:",
+                "manzana: 5",
+                "pera: 3",
+                "plátano: 7",
+                "",
+                "Total de unidades: 15"
+            ]
+        }
+    },
+    {
+        "id": "75",
+        "titulo": "Depurador de fórmulas químicas",
+        "nivel": "dificil",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un científico trabaja con fórmulas químicas representadas como cadenas de texto, pero ha comenzado a perder la capacidad de distinguir elementos importantes. Cada vez que aparece un símbolo químico que empieza por vocal (como 'O' o 'I'), debe eliminarlo de la fórmula, junto con el número inmediatamente después, si existe. Además, si una letra es minúscula pero no forma parte de un símbolo válido, también debe ser eliminada.\n\nPor ejemplo, dado el string 'H2O2NaClI3Fe': 'O2' e 'I3' serán eliminados porque 'O' e 'I' empiezan por vocal. 'H2', 'Na', 'Cl' y 'Fe' se mantienen.",
+        "tareas": [
+            "Pedir al usuario una fórmula química como cadena de texto.",
+            "Recorrer la cadena identificando símbolos químicos válidos: mayúscula seguida opcionalmente de minúscula y número.",
+            "Eliminar los símbolos cuyo primer carácter sea una vocal (A, E, I, O, U).",
+            "Eliminar también cualquier letra minúscula que no esté en un símbolo válido.",
+            "Construir y mostrar la fórmula depurada."
+        ],
+        "pistas": [
+            "Recorre la cadena con un índice manual (`i`) y ve extrayendo símbolo por símbolo.",
+            "Comprueba con `isupper()` y `islower()` si una letra es mayúscula o minúscula.",
+            "Para verificar vocales, usa `in 'AEIOU'`.",
+            "Puedes añadir los símbolos válidos a una lista y unirlos al final."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce fórmula química: H2O2NaClI3Fe"
+            ],
+            "salida": [
+                "Fórmula depurada: H2NaClFe"
+            ]
+        }
+    },
+    {
+        "id": "76",
+        "titulo": "La vela que renace de sus cenizas",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un monasterio budista tiene una vela que se regenera sola. Cada vez que se consume completamente, deja un pequeño residuo del que pueden fundirse nuevas velas. Por cada 3 residuos acumulados, se puede crear una vela nueva. Dado un número inicial de velas, implementa un programa que calcule cuántas velas pueden encenderse en total, incluyendo las que se regeneran a partir de los residuos.",
+        "tareas": [
+            "Pedir al usuario un número entero positivo que represente las velas iniciales.",
+            "Simular el consumo de velas y acumulación de residuos.",
+            "Por cada 3 residuos, generar una nueva vela y continuar el proceso.",
+            "Suma todas las velas encendidas, incluyendo las recicladas.",
+            "Mostrar el total final."
+        ],
+        "pistas": [
+            "Usa un bucle `while` para seguir mientras tengas al menos 3 residuos.",
+            "Divide los residuos entre 3 usando `//` para saber cuántas velas nuevas puedes crear.",
+            "Actualiza los residuos con el sobrante de residuos más los nuevos residuos generados."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce el número inicial de velas: 9"
+            ],
+            "salida": [
+                "Total de velas encendidas: 13"
+            ]
+        }
+    },
+    {
+        "id": "77",
+        "titulo": "Fragmentación de texto por longitudes",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Escribe un programa que divida una cadena en fragmentos de longitud variable. El usuario introducirá un texto y luego una lista de longitudes separadas por comas. El programa debe mostrar cada fragmento consecutivamente según las longitudes indicadas. Si la suma de las longitudes excede la longitud de la cadena, se ignora el exceso. Si no alcanza, se corta hasta donde se pueda.",
+        "tareas": [
+            "Usar split para dividir la lista de longitudes.",
+            "Manejar correctamente cadenas cortas o divisiones desiguales.",
+            "Recortar el texto según las longitudes indicadas.",
+            "No utilizar librerías externas."
+        ],
+        "pistas": [
+            "Convierte las longitudes a enteros y recórrelas en orden.",
+            "Utiliza slicing de cadenas y un índice acumulativo.",
+            "Controla si el índice sobrepasa el texto original."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce el texto: abecedario",
+                "Introduce longitudes separadas por coma: 2,3,1,4"
+            ],
+            "salida": [
+                "Fragmentos: ['ab', 'ece', 'd', 'ario']"
+            ]
+        }
+    },
+    {
+        "id": "78",
+        "titulo": "Conteo de números distintos sin set",
+        "nivel": "medio",
+        "tipo": "Elementos básicos",
+        "enunciado": "Un programa debe leer una lista de números enteros introducidos por el usuario, separados por espacios. Luego, debe contar cuántos números distintos hay, es decir, cuántos valores únicos se han ingresado. Tu tarea es mostrar ese número de elementos distintos y luego imprimirlos en orden ascendente.",
+        "tareas": [
+            "Leer los números separados por espacios.",
+            "Eliminar duplicados sin usar set.",
+            "Contar cuántos elementos únicos hay.",
+            "Imprimir los elementos únicos en orden."
+        ],
+        "pistas": [
+            "Usa una lista auxiliar para ir añadiendo los elementos que no se repiten.",
+            "Para saber si un número ya está, puedes usar el operador 'in'.",
+            "Recuerda convertir los elementos a enteros antes de trabajar con ellos."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce números: 5 3 2 5 3 8 2 9"
+            ],
+            "salida": [
+                "Números únicos: 2",
+                "[8, 9]"
+            ]
+        }
+    },
+    {
+        "id": "79",
+        "titulo": "Conteo de consonantes entre vocales",
+        "nivel": "dificil",
+        "tipo": "Elementos básicos",
+        "enunciado": "En una agencia de inteligencia artificial, se está entrenando a un modelo para detectar patrones de pronunciación inusuales en frases escritas. Uno de los algoritmos de prueba requiere contar cuántas consonantes hay entre cada vocal en una frase dada. Para ello, se deben identificar los bloques de texto que comienzan y terminan con vocal y determinar cuántas consonantes hay dentro de ese bloque (sin contar las vocales delimitadoras). La tarea consiste en procesar la frase, detectar estos bloques y mostrar el número de consonantes en cada uno.",
+        "tareas": [
+            "Solicitar una frase al usuario.",
+            "Detectar los bloques que comienzan y terminan en vocal.",
+            "Contar cuántas consonantes hay dentro de cada bloque.",
+            "Ignorar mayúsculas, acentos y espacios.",
+            "Descartar bloques que no tengan al menos dos vocales."
+        ],
+        "pistas": [
+            "Convierte toda la frase a minúsculas para simplificar.",
+            "Revisa carácter por carácter y detecta vocales como delimitadores.",
+            "Solo considera letras del alfabeto español.",
+            "Puedes recorrer la cadena con dos punteros para detectar bloques."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Introduce una frase: la computadora canta"
+            ],
+            "salida": [
+                "Bloques detectados:",
+                "1 consonantes",
+                "4 consonantes",
+                "1 consonantes",
+                "1 consonantes",
+                "2 consonantes"
+            ]
+        }
+    },
+    {
+        "id": "80",
+        "titulo": "Clase Pila LIFO",
+        "nivel": "fácil",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Implementa una clase Pila que simule una estructura LIFO (Last In, First Out) con métodos push, pop y es_vacia.\n\nDebes crear la clase con la lista interna para almacenar elementos, implementar los métodos indicados y probar la clase con una secuencia de operaciones.",
+        "tareas": [
+            "Definir la clase Pila con un atributo interno para la lista de elementos.",
+            "Implementar el método push para añadir elementos.",
+            "Implementar el método pop para eliminar y devolver el último elemento añadido.",
+            "Implementar el método es_vacia para verificar si la pila está vacía.",
+            "Probar la clase con una serie de llamadas a los métodos."
+        ],
+        "pistas": [
+            "Usa una lista para almacenar los elementos internamente.",
+            "El método pop debe controlar el caso de pila vacía devolviendo None o lanzando excepción.",
+            "Recuerda que en LIFO el último elemento añadido es el primero en salir."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "p = Pila()",
+                "p.push(10)",
+                "p.push(20)",
+                "print(p.pop())",
+                "print(p.es_vacia())",
+                "print(p.pop())",
+                "print(p.es_vacia())"
+            ],
+            "salida": [
+                "20\nFalse\n10\nTrue"
+            ]
+        }
+    },
+    {
+        "id": "81",
+        "titulo": "Gestión sencilla de libros en biblioteca",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Una biblioteca quiere un sistema sencillo para gestionar sus libros usando programación orientada a objetos. Cada libro tiene un título, un autor, un año de publicación y un estado que indica si está prestado o disponible. El sistema debe permitir crear libros, consultar su información y cambiar su estado de préstamo. Además, debe impedir prestar un libro que ya esté prestado y devolver un libro que no esté prestado.",
+        "tareas": [
+            "Define una clase Libro con los atributos: título, autor, año, y estado (prestado o no).",
+            "Implementa un método para mostrar la información completa del libro.",
+            "Implementa un método prestar() que cambie el estado a prestado, solo si no está prestado.",
+            "Implementa un método devolver() que cambie el estado a disponible, solo si está prestado.",
+            "Crea al menos dos objetos Libro y prueba todos los métodos."
+        ],
+        "pistas": [
+            "Usa atributos privados o protegidos para el estado y métodos públicos para acceder o modificar.",
+            "Implementa controles para no cambiar el estado erróneamente.",
+            "El programa debe estar organizado y legible."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Libro: \"1984\" por George Orwell (1949) - Disponible",
+                "Prestando libro \"1984\"...",
+                "Intentando prestar de nuevo \"1984\"...",
+                "Devolviendo libro \"1984\"...",
+                "Intentando devolver de nuevo \"1984\"..."
+            ],
+            "salida": [
+                "Libro prestado con éxito.",
+                "El libro ya está prestado.",
+                "Libro devuelto con éxito.",
+                "El libro no está prestado."
+            ]
+        }
+    },
+    {
+        "id": "82",
+        "titulo": "Reloj digital parlante en español",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Estás desarrollando un sistema de reloj digital parlante para personas con discapacidad visual. El sistema debe representar la hora y los minutos en palabras, no en números. Se debe crear una clase Reloj que almacene hora y minutos, permita avanzar el tiempo minuto a minuto y mostrar la hora en texto legible en español, diferenciando mañana y tarde.",
+        "tareas": [
+            "Crea una clase Reloj con los atributos hora y minuto.",
+            "Implementa un método avanzar_minuto() que avance un minuto.",
+            "Implementa un método decir_hora() que muestre la hora en texto en español, en formato 12 horas y con indicación de mañana o tarde.",
+            "Implementa un método fijar_hora(h, m) para establecer la hora y los minutos.",
+            "Convierte números a palabras manualmente, sin usar librerías externas.",
+            "Aplica la expresión 'en punto' solo si los minutos son 0."
+        ],
+        "pistas": [
+            "Usa listas o diccionarios para convertir números a palabras.",
+            "El reloj maneja internamente formato 24 horas pero muestra en formato 12 horas con mañana o tarde.",
+            "La salida debe ser clara, legible y en español."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "reloj = Reloj(14, 25)",
+                "print(reloj.decir_hora())",
+                "reloj.avanzar_minuto()",
+                "print(reloj.decir_hora())",
+                "reloj.fijar_hora(9, 0)",
+                "print(reloj.decir_hora())"
+            ],
+            "salida": [
+                "Son las dos y veinticinco de la tarde",
+                "Son las dos y veintiséis de la tarde",
+                "Son las nueve en punto de la mañana"
+            ]
+        }
+    },
+    {
+        "id": "83",
+        "titulo": "Gestión de caja de herramientas con control de usos",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Un inventor tiene una caja de herramientas especial. Cada herramienta tiene un nombre, usos máximos y un contador de usos actuales. Al usarla, el contador aumenta y cuando alcanza el máximo la herramienta se rompe. Debes crear dos clases para gestionar estas herramientas, permitiendo agregarlas, usarlas y mostrar su estado.",
+        "tareas": [
+            "Implementa la clase Herramienta con atributos nombre, usos_maximos, usos_actuales y método usar() que aumente usos actuales y marque si está rota.",
+            "Implementa la clase CajaHerramientas con una lista de herramientas, métodos agregar_herramienta(herramienta), usar_herramienta(nombre) y estado() para mostrar todas las herramientas.",
+            "Marca la herramienta como rota cuando usos_actuales >= usos_maximos.",
+            "Opcional: elimina automáticamente herramientas rotas de la caja."
+        ],
+        "pistas": [
+            "No uses librerías externas ni archivos, todo en memoria.",
+            "El programa debe ser claro y organizado."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "martillo = Herramienta(\"Martillo\", 5)",
+                "destornillador = Herramienta(\"Destornillador\", 10)",
+                "caja = CajaHerramientas()",
+                "caja.agregar_herramienta(martillo)",
+                "caja.agregar_herramienta(destornillador)",
+                "for _ in range(6):",
+                "    caja.usar_herramienta(\"Martillo\")",
+                "caja.estado()"
+            ],
+            "salida": [
+                "Destornillador – Usos: 0/10",
+                "Martillo – Usos: 5/5 (rota)"
+            ]
+        }
+    },
+    {
+        "id": "84",
+        "titulo": "Gestión de biblioteca digital con control de préstamos",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Imagina que trabajas en una biblioteca digital donde se almacenan libros en formato electrónico. Cada libro tiene título, autor, año de publicación y estado de préstamo (disponible o prestado). El sistema debe permitir administrar la colección de libros y controlar qué libros están prestados y cuáles disponibles.\n\nDebes crear dos clases: Libro y Biblioteca.\n    · La clase Libro contiene la información básica de cada libro y métodos para prestar y devolver un libro.\n    · La clase Biblioteca debe manejar una colección de libros, añadir libros nuevos, buscar libros por título o autor, prestar libros si están disponibles y mostrar el estado completo de la biblioteca.",
+        "tareas": [
+            "Implementa la clase Libro con atributos: titulo, autor, anio, prestado (booleano).",
+            "Métodos en Libro:\n    · prestar() cambia el estado a prestado solo si está disponible.",
+            "devolver() cambia el estado a disponible.",
+            "La clase Biblioteca debe tener una lista de libros y métodos para:\n    · Añadir libros.",
+            "Buscar libros por título o autor (que contengan la palabra clave).",
+            "Prestar un libro por título.",
+            "Devolver un libro por título.",
+            "Mostrar todos los libros con su estado (prestado/disponible)."
+        ],
+        "pistas": [
+            "La clase Libro debe manejar un atributo booleano para controlar si está prestado o disponible.",
+            "Los métodos prestar() y devolver() deben cambiar el estado solo si la acción tiene sentido (por ejemplo, no prestar un libro ya prestado).",
+            "La clase Biblioteca debe buscar libros que contengan la palabra clave en el título o autor.",
+            "Al mostrar el estado, imprime la información completa de cada libro con su estado actual."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "libro1 = Libro(\"Cien años de soledad\", \"Gabriel García Márquez\", 1967)",
+                "libro2 = Libro(\"1984\", \"George Orwell\", 1949)",
+                "biblio = Biblioteca()",
+                "biblio.agregar_libro(libro1)",
+                "biblio.agregar_libro(libro2)",
+                "biblio.prestar_libro(\"1984\")",
+                "biblio.mostrar_estado()",
+                "biblio.devolver_libro(\"1984\")",
+                "biblio.mostrar_estado()"
+            ],
+            "salida": [
+                "Libro: Cien años de soledad - Autor: Gabriel García Márquez - Año: 1967 - Estado: Disponible",
+                "Libro: 1984 - Autor: George Orwell - Año: 1949 - Estado: Prestado",
+                "",
+                "Libro: Cien años de soledad - Autor: Gabriel García Márquez - Año: 1967 - Estado: Disponible",
+                "Libro: 1984 - Autor: George Orwell - Año: 1949 - Estado: Disponible"
+            ]
+        }
+    },
+    {
+        "id": "85",
+        "titulo": "Gestión básica de cuentas bancarias",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Estás desarrollando un sistema simple para gestionar cuentas bancarias. Cada cuenta debe guardar información sobre el titular, número de cuenta y saldo actual. Además, debe permitir realizar operaciones básicas: depósito, retiro y consulta de saldo.\n\nSe requiere que diseñes una clase CuentaBancaria que tenga los atributos y métodos necesarios para administrar estas operaciones, garantizando que no se pueda retirar más dinero del que hay disponible y que los depósitos sean siempre positivos.\n\nAdemás, crea un programa que permita interactuar con varias cuentas, agregando nuevas cuentas y seleccionando cuál operar, mostrando un menú con opciones para depositar, retirar o consultar saldo, hasta que el usuario decida salir.",
+        "tareas": [
+            "Crear la clase CuentaBancaria con atributos: titular (str), numero_cuenta (str) y saldo (float).",
+            "Implementar métodos:\n    · depositar(cantidad) que aumenta el saldo si la cantidad es positiva.",
+            "    · retirar(cantidad) que disminuye el saldo si hay suficiente dinero; si no, muestra error.",
+            "    · consultar_saldo() que devuelve el saldo actual.",
+            "Crear una clase o función para gestionar múltiples cuentas, que permita:\n    · Agregar nuevas cuentas.",
+            "    · Seleccionar una cuenta por número.",
+            "    · Realizar operaciones sobre la cuenta seleccionada.",
+            "    · Mostrar un menú con las opciones hasta que el usuario salga."
+        ],
+        "pistas": [
+            "Verifica que las cantidades para depósito y retiro sean siempre positivas y mayores que cero.",
+            "No permitas retiros que excedan el saldo disponible; muestra mensajes claros de error.",
+            "Para gestionar múltiples cuentas, puedes usar una lista o diccionario donde se guarden las instancias de CuentaBancaria.",
+            "El menú debe repetirse hasta que el usuario decida salir, usando bucles y condicionales.",
+            "Organiza el código con métodos claros y evita repetir lógica en el menú."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "1. Agregar cuenta",
+                "2. Seleccionar cuenta",
+                "3. Salir",
+                "Opción: 1",
+                "Titular: Ana López",
+                "Número cuenta: 123456",
+                "",
+                "1. Agregar cuenta",
+                "2. Seleccionar cuenta",
+                "3. Salir",
+                "Opción: 2",
+                "Número cuenta: 123456",
+                "",
+                "1. Depositar",
+                "2. Retirar",
+                "3. Consultar saldo",
+                "4. Volver",
+                "Opción: 1",
+                "Cantidad a depositar: 500",
+                "",
+                "1. Depositar",
+                "2. Retirar",
+                "3. Consultar saldo",
+                "4. Volver",
+                "Opción: 3",
+                "",
+                "1. Depositar",
+                "2. Retirar",
+                "3. Consultar saldo",
+                "4. Volver",
+                "Opción: 4",
+                "",
+                "1. Agregar cuenta",
+                "2. Seleccionar cuenta",
+                "3. Salir",
+                "Opción: 3"
+            ],
+            "salida": [
+                "Cuenta creada.",
+                "Cuenta: Ana López - 123456",
+                "Depósito realizado. Saldo actual: 500.0",
+                "Saldo actual: 500.0",
+                "Fin del programa."
+            ]
+        }
+    },
+    {
+        "id": "86",
+        "titulo": "Gestión de tareas diarias con prioridad y estado",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Estás desarrollando una aplicación para gestionar tareas diarias donde cada tarea tiene un título, una descripción, una prioridad (baja, media, alta) y un estado (pendiente, en progreso, completada). Se debe implementar un sistema que permita agregar tareas, modificar su estado, listar tareas filtrando por prioridad o estado, y eliminar tareas completadas.\n\nCrea una clase Tarea que contenga los atributos mencionados y métodos para cambiar el estado de la tarea. Además, crea una clase GestorTareas que mantenga una lista de tareas y métodos para añadir, eliminar tareas completadas, actualizar estados y listar tareas según filtros.",
+        "tareas": [
+            "Crear la clase Tarea con atributos:\n    · titulo (str)\n    · descripcion (str)\n    · prioridad (str, valores: \"baja\", \"media\", \"alta\")\n    · estado (str, valores: \"pendiente\", \"en progreso\", \"completada\")\nAñadir método para actualizar el estado de la tarea.",
+            "Crear la clase GestorTareas con una colección para almacenar las tareas.",
+            "Implementar métodos en GestorTareas para:\n    · Añadir nueva tarea.",
+            "    · Cambiar el estado de una tarea dada por su título.",
+            "    · Listar todas las tareas, o filtradas por prioridad o estado.",
+            "    · Eliminar todas las tareas que estén completadas.",
+            "Crear un menú interactivo para que el usuario realice estas operaciones repetidamente hasta salir."
+        ],
+        "pistas": [
+            "Valida que los valores para prioridad y estado sean solo los permitidos.",
+            "Los títulos de tareas deben ser únicos para evitar confusiones.",
+            "Muestra mensajes claros ante errores como título no encontrado o valores inválidos.",
+            "Usa bucles para mantener el menú activo hasta que el usuario elija salir.",
+            "Organiza el código usando métodos claros y evita repetir lógica."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "--- Gestor de Tareas ---",
+                "1. Añadir tarea",
+                "2. Cambiar estado de tarea",
+                "3. Listar tareas",
+                "4. Eliminar tareas completadas",
+                "5. Salir",
+                "Opción: 1",
+                "Título: Comprar comida",
+                "Descripción: Comprar verduras y frutas frescas",
+                "Prioridad (baja/media/alta): alta",
+                "",
+                "--- Gestor de Tareas ---",
+                "1. Añadir tarea",
+                "2. Cambiar estado de tarea",
+                "3. Listar tareas",
+                "4. Eliminar tareas completadas",
+                "5. Salir",
+                "Opción: 3",
+                "Filtrar por (ninguno/prioridad/estado): prioridad",
+                "Prioridad (baja/media/alta): alta",
+                "",
+                "--- Gestor de Tareas ---",
+                "1. Añadir tarea",
+                "2. Cambiar estado de tarea",
+                "3. Listar tareas",
+                "4. Eliminar tareas completadas",
+                "5. Salir",
+                "Opción: 2",
+                "Título de la tarea a modificar: Comprar comida",
+                "Nuevo estado (pendiente/en progreso/completada): en progreso",
+                "",
+                "--- Gestor de Tareas ---",
+                "1. Añadir tarea",
+                "2. Cambiar estado de tarea",
+                "3. Listar tareas",
+                "4. Eliminar tareas completadas",
+                "5. Salir",
+                "Opción: 5"
+            ],
+            "salida": [
+                "Tarea añadida.",
+                "Tareas:",
+                "- Comprar comida | alta | pendiente",
+                "Estado actualizado.",
+                "Fin del programa."
+            ]
+        }
+    },
+    {
+        "id": "87",
+        "titulo": "Gestión de vehículos con herencia",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "En un sistema de gestión de vehículos para una empresa de transporte, se necesita modelar diferentes tipos de vehículos, como coches, camiones y motocicletas. Todos los vehículos comparten características comunes como matrícula, marca y modelo, pero cada tipo tiene atributos específicos:\n    · Coches tienen número de puertas.\n    · Camiones tienen capacidad de carga en toneladas.\n    · Motocicletas tienen tipo de manillar (por ejemplo, deportivo o clásico).\n\nCrea una jerarquía de clases usando herencia para representar estos vehículos. La clase base debe ser Vehiculo, y las clases derivadas Coche, Camion y Motocicleta. Implementa métodos para mostrar la información completa de cada vehículo.\n\nAdemás, crea un pequeño programa que permita crear varios vehículos de diferentes tipos y mostrar sus datos en consola.",
+        "tareas": [
+            "Crear la clase base Vehiculo con atributos comunes: matricula, marca, modelo.",
+            "Crear clases derivadas: Coche, Camion y Motocicleta con sus atributos específicos.",
+            "Implementar en cada clase un método mostrar_info() que muestre todos los atributos del vehículo.",
+            "Crear un programa que permita crear instancias de cada tipo de vehículo y mostrar su información."
+        ],
+        "pistas": [
+            "Usa herencia para evitar duplicar atributos comunes.",
+            "Los constructores de las clases derivadas deben llamar al constructor de la clase base.",
+            "El método mostrar_info() puede sobrescribirse en cada clase derivada para incluir los atributos específicos.",
+            "Imprime la información de forma clara y ordenada."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Vehículo: Matrícula ABC123, Marca Toyota, Modelo Corolla, Puertas: 4",
+                "Vehículo: Matrícula XYZ987, Marca Volvo, Modelo FH, Capacidad: 15 toneladas",
+                "Vehículo: Matrícula MOTO45, Marca Yamaha, Modelo YZF-R3, Manillar: Deportivo"
+            ],
+            "salida": ""
+        }
+    },
+    {
+        "id": "88",
+        "titulo": "Gestión de membresías en gimnasio",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Un gimnasio desea gestionar las membresías de sus socios. Cada socio tiene un nombre, un número de identificación y un tipo de membresía que puede ser “Básica”, “Premium” o “VIP”. Según el tipo de membresía, el socio tendrá acceso a diferentes servicios y descuentos:\n    · Básica: acceso a máquinas y clases grupales básicas.\n    · Premium: todo lo de Básica, más acceso a clases especializadas y sauna.\n    · VIP: acceso ilimitado a todas las instalaciones y servicios, además de un entrenador personal.\n\nCrea una clase base Socio con los atributos comunes, y clases derivadas para cada tipo de membresía que incluyan los servicios y descuentos correspondientes. Implementa un método que muestre la información completa del socio y los servicios a los que puede acceder.\n\nFinalmente, crea un programa que permita ingresar datos de varios socios y muestre la lista con sus detalles completos.",
+        "tareas": [
+            "Crear la clase base Socio con atributos: nombre, id, tipo_membresia.",
+            "Crear clases derivadas: Basica, Premium y VIP, que extiendan Socio y definan los servicios correspondientes.",
+            "Implementar un método mostrar_info() en todas las clases que muestre la información del socio y sus servicios.",
+            "Crear un programa para ingresar varios socios y mostrar la lista completa."
+        ],
+        "pistas": [
+            "Utiliza herencia para compartir los atributos comunes.",
+            "Sobrescribe el método mostrar_info() en las clases derivadas para incluir servicios específicos.",
+            "Los servicios pueden representarse como listas de strings en cada clase derivada.",
+            "Organiza el código para que sea claro y fácil de extender."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Socio: Ana López, ID: 1234, Membresía: Básica",
+                "Socio: Juan Pérez, ID: 5678, Membresía: Premium",
+                "Socio: Marta Gómez, ID: 9012, Membresía: VIP"
+            ],
+            "salida": [
+                "Socio: Ana López, ID: 1234, Membresía: Básica",
+                "Servicios: máquinas, clases grupales básicas",
+                "",
+                "Socio: Juan Pérez, ID: 5678, Membresía: Premium",
+                "Servicios: máquinas, clases grupales básicas, clases especializadas, sauna",
+                "",
+                "Socio: Marta Gómez, ID: 9012, Membresía: VIP",
+                "Servicios: acceso total a instalaciones, entrenador personal"
+            ]
+        }
+    },
+    {
+        "id": "89",
+        "titulo": "Gestión de libros y autores en librería",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Una librería quiere llevar un control de sus libros y autores. Cada libro tiene un título, un año de publicación y un autor. Cada autor tiene un nombre, nacionalidad y año de nacimiento. Además, un autor puede tener varios libros publicados.\n\nCrea dos clases, Autor y Libro. La clase Autor debe contener la información del autor y un método para mostrar sus datos junto con la lista de títulos de sus libros publicados. La clase Libro debe contener los atributos del libro y una referencia a su autor.\n\nImplementa un programa que permita crear varios autores y libros, asociándolos correctamente, y que al mostrar un autor muestre también sus libros.",
+        "tareas": [
+            "Crear la clase Autor con atributos: nombre, nacionalidad, año_nacimiento, y lista de libros.",
+            "Crear la clase Libro con atributos: título, año_publicacion y referencia al autor.",
+            "Implementar un método mostrar_info() en Autor que muestre los datos del autor y los títulos de sus libros.",
+            "Crear un programa que permita añadir autores y libros, asociándolos correctamente."
+        ],
+        "pistas": [
+            "Utiliza composición para que cada Autor tenga una lista de libros.",
+            "Cada Libro debe mantener una referencia al autor pero no debe contener la lista de libros.",
+            "Al mostrar un autor, itera sobre su lista de libros para mostrar los títulos.",
+            "El método mostrar_info() debe estar en la clase Autor."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Autor: Gabriel García Márquez, Nacionalidad: Colombiana, Nació en 1927",
+                "Libros: Cien años de soledad, El amor en los tiempos del cólera",
+                "Autor: Jane Austen, Nacionalidad: Británica, Nació en 1775",
+                "Libros: Orgullo y prejuicio, Sentido y sensibilidad"
+            ],
+            "salida": [
+                "Autor: Gabriel García Márquez, Nacionalidad: Colombiana, Nació en 1927",
+                "Libros publicados:",
+                "- Cien años de soledad",
+                "- El amor en los tiempos del cólera",
+                "",
+                "Autor: Jane Austen, Nacionalidad: Británica, Nació en 1775",
+                "Libros publicados:",
+                "- Orgullo y prejuicio",
+                "- Sentido y sensibilidad"
+            ]
+        }
+    },
+    {
+        "id": "90",
+        "titulo": "Sistema de sensores ambientales con herencia",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "En un centro de control meteorológico, se desea modelar diferentes tipos de sensores que miden variables ambientales. Todos los sensores comparten atributos básicos como id_sensor, ubicación y unidad_de_medida, pero cada tipo de sensor tiene sus propios datos adicionales:\n · Sensor de temperatura: tiene un método que convierte la temperatura de Celsius a Fahrenheit.\n · Sensor de humedad: registra un porcentaje de humedad y puede determinar si el ambiente está seco, normal o húmedo según ese porcentaje.\n · Sensor de presión: mide la presión atmosférica en hPa y puede convertirla a atmósferas (atm).\n\nCrea una clase base Sensor con los atributos comunes y un método para mostrar la información básica. Luego, crea clases derivadas SensorTemperatura, SensorHumedad y SensorPresion que implementen los métodos específicos mencionados.",
+        "tareas": [
+            "Crear la clase base Sensor con atributos: id_sensor, ubicacion, unidad_de_medida.",
+            "Implementar un método mostrar_info() en Sensor que muestre la información básica.",
+            "Crear la clase SensorTemperatura que herede de Sensor y añada método para convertir Celsius a Fahrenheit.",
+            "Crear la clase SensorHumedad que herede de Sensor, que registre porcentaje de humedad y determine el estado del ambiente.",
+            "Crear la clase SensorPresion que herede de Sensor y convierta la presión de hPa a atmósferas.",
+            "Crear un programa que permita crear objetos de cada tipo de sensor y mostrar sus datos."
+        ],
+        "pistas": [
+            "Usa herencia para reutilizar los atributos comunes.",
+            "La fórmula para Celsius a Fahrenheit es: F = C * 9/5 + 32.",
+            "El estado de humedad depende del porcentaje: <30% seco, 30-60% normal, >60% húmedo.",
+            "Para convertir hPa a atm: 1 atm = 1013.25 hPa aproximadamente.",
+            "Formatea las salidas para que sean claras y legibles."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Sensor Temperatura - ID: T100 - Ubicación: Invernadero, medición: 25 °C",
+                "Sensor Humedad - ID: H200 - Ubicación: Bodega, medición: 35%",
+                "Sensor Presión - ID: P300 - Ubicación: Montaña, medición: 1013 hPa"
+            ],
+            "salida": [
+                "Sensor Temperatura - ID: T100 - Ubicación: Invernadero",
+                "Medición actual: 25 °C",
+                "Equivalente en Fahrenheit: 77 °F",
+                "",
+                "Sensor Humedad - ID: H200 - Ubicación: Bodega",
+                "Medición actual: 35%",
+                "Estado ambiente: Normal",
+                "",
+                "Sensor Presión - ID: P300 - Ubicación: Montaña",
+                "Medición actual: 1013 hPa",
+                "Equivalente en atmósferas: 1 atm"
+            ]
+        }
+    },
+    {
+        "id": "91",
+        "titulo": "Jerarquía de vehículos con aptitud para transporte",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Una empresa de transporte cuenta con diferentes vehículos: coches, camiones y motos. Todos tienen matrícula, marca y velocidad máxima. Los camiones tienen además capacidad de carga, las motos tienen cilindrada y los coches tipo de combustible. Se pide crear una jerarquía de clases para representar estos vehículos, con un método para mostrar los detalles completos de cada uno.\n\nAdemás, implementa un método que devuelva si el vehículo es apto para transportar mercancías (solo los camiones con capacidad mayor a 5000 kg).",
+        "tareas": [
+            "Crear la clase base Vehiculo con atributos: matrícula, marca y velocidad máxima.",
+            "Crear clases derivadas Coche, Camion y Moto con sus atributos específicos.",
+            "Implementar un método mostrar_info() en cada clase para mostrar todos los datos.",
+            "Implementar en la clase Camion un método puede_transportar() que devuelva True si la capacidad es mayor a 5000 kg, False en otro caso.",
+            "Crear un programa que instancie vehículos y muestre sus detalles y si pueden transportar mercancías."
+        ],
+        "pistas": [
+            "Usa herencia para evitar repetir atributos comunes.",
+            "Los métodos mostrar_info deben ser claros y bien formateados.",
+            "El método puede_transportar solo existe en la clase Camion.",
+            "Para coches y motos, el método puede_transportar no está definido o devuelve False.",
+            "La capacidad se mide en kg."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Coche: Matrícula ABC123, Marca Toyota, Combustible: Gasolina, Velocidad máxima: 180 km/h",
+                "Camión: Matrícula XYZ789, Marca Volvo, Capacidad: 8000 kg, Velocidad máxima: 120 km/h",
+                "Moto: Matrícula MOTO45, Marca Yamaha, Cilindrada: 600 cc, Velocidad máxima: 160 km/h"
+            ],
+            "salida": [
+                "Coche: Matrícula ABC123, Marca Toyota, Combustible: Gasolina, Velocidad máxima: 180 km/h",
+                "¿Puede transportar mercancías? No",
+                "",
+                "Camión: Matrícula XYZ789, Marca Volvo, Capacidad: 8000 kg, Velocidad máxima: 120 km/h",
+                "¿Puede transportar mercancías? Sí",
+                "",
+                "Moto: Matrícula MOTO45, Marca Yamaha, Cilindrada: 600 cc, Velocidad máxima: 160 km/h",
+                "¿Puede transportar mercancías? No"
+            ]
+        }
+    },
+    {
+        "id": "92",
+        "titulo": "Juego de cartas coleccionables con polimorfismo",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "En un juego de cartas coleccionables, cada carta tiene un nombre, tipo (monstruo, hechizo, trampa), y un nivel de poder. Los monstruos tienen además puntos de ataque y defensa, los hechizos un efecto especial y las trampas una condición para activarse.\n\nDiseña una clase base Carta y las clases derivadas correspondientes. Incluye métodos para mostrar la información detallada y para comparar dos cartas según su nivel de poder.",
+        "tareas": [
+            "Crear la clase base Carta con atributos: nombre, tipo y nivel.",
+            "Crear clases derivadas CartaMonstruo, CartaHechizo y CartaTrampa con sus atributos específicos.",
+            "Implementar un método mostrar_info() que utilice polimorfismo para mostrar los detalles según el tipo de carta.",
+            "Implementar un método para comparar dos cartas basado en su nivel de poder.",
+            "Crear un programa que instancie cartas y muestre la comparación entre dos cartas."
+        ],
+        "pistas": [
+            "El método mostrar_info debe estar sobrescrito en cada clase derivada.",
+            "El método de comparación debe recibir otra carta y devolver cuál es más poderosa o si son iguales.",
+            "El atributo tipo puede ser útil para identificar la clase de carta.",
+            "El nivel es un entero.",
+            "Para comparación, considera que mayor nivel significa más poderosa."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Carta Monstruo: Dragón Rojo, Nivel 7, Ataque 2500, Defensa 2000",
+                "Carta Hechizo: Lluvia de Fuego, Nivel 4, Efecto: Daño en área",
+                "Carta Trampa: Alarma, Nivel 2, Condición: Activar si atacan"
+            ],
+            "salida": [
+                "Carta Monstruo: Dragón Rojo, Nivel 7, Ataque 2500, Defensa 2000",
+                "Carta Hechizo: Lluvia de Fuego, Nivel 4, Efecto: Daño en área",
+                "Carta Trampa: Alarma, Nivel 2, Condición: Activar si atacan",
+                "",
+                "Comparación: Dragón Rojo es más poderosa que Lluvia de Fuego"
+            ]
+        }
+    },
+    {
+        "id": "93",
+        "titulo": "Gestión de personal en escuela usando herencia",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Una escuela quiere gestionar su personal: profesores y administrativos. Todos tienen nombre, DNI y años de antigüedad. Los profesores tienen una asignatura que enseñan, y los administrativos un departamento.\n\nEl sueldo base es de 1000€, más un plus del 100€ por cada año de antigüedad. Además, los profesores reciben un plus adicional de 300€, y los administrativos de 150€.\n\nCrea la jerarquía de clases y métodos para calcular el sueldo total y mostrar los datos completos de cada empleado.",
+        "tareas": [
+            "Crear clase base Empleado con atributos: nombre, DNI, años de antigüedad.",
+            "Validar que años de antigüedad no sean negativos.",
+            "Crear clases derivadas Profesor y Administrativo con atributos específicos.",
+            "Implementar método calcular_sueldo() que incluya sueldo base, plus por antigüedad y plus específico.",
+            "Implementar método mostrar_datos() para mostrar información completa y sueldo total.",
+            "Crear un programa que instancie varios empleados y muestre sus datos."
+        ],
+        "pistas": [
+            "El sueldo base es 1000€.",
+            "Por cada año de antigüedad suma 100€.",
+            "Profesores reciben plus extra de 300€; administrativos 150€.",
+            "La validación para años negativos puede ser simple (por ejemplo, asignar 0 si es negativo)."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Profesor: María López, DNI: 12345678X, Antigüedad: 5 años, Asignatura: Matemáticas",
+                "Administrativo: Juan Pérez, DNI: 87654321Y, Antigüedad: 3 años, Departamento: Recursos Humanos"
+            ],
+            "salida": [
+                "Profesor: María López, DNI: 12345678X, Antigüedad: 5 años, Asignatura: Matemáticas",
+                "Sueldo total: 1800€",
+                "",
+                "Administrativo: Juan Pérez, DNI: 87654321Y, Antigüedad: 3 años, Departamento: Recursos Humanos",
+                "Sueldo total: 1450€"
+            ]
+        }
+    },
+    {
+        "id": "94",
+        "titulo": "Gestión de trabajos mecánicos con coste según vehículo",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Un taller mecánico gestiona trabajos de reparación para coches y motos. Cada trabajo tiene un código, descripción y coste base. Los trabajos en coches pueden incluir un coste adicional por piezas, mientras que los de motos pueden tener un descuento por mano de obra.\n\nCrea una jerarquía de clases que permita calcular el coste total del trabajo, considerando los extras o descuentos según el tipo de vehículo.",
+        "tareas": [
+            "Crear clase base Trabajo con atributos código, descripción y coste base.",
+            "Crear clases derivadas TrabajoCoche y TrabajoMoto con atributos específicos: coste adicional por piezas para coches y descuento por mano de obra para motos.",
+            "Implementar método calcular_coste_total() en cada clase, usando polimorfismo para ajustar el coste según tipo.",
+            "Implementar método mostrar_info() que muestre todos los detalles y coste total.",
+            "Crear un programa que instancie trabajos de ambos tipos y muestre la información."
+        ],
+        "pistas": [
+            "El método calcular_coste_total() en la clase base puede devolver el coste base.",
+            "Las subclases deben sobrescribir este método para añadir piezas o descontar mano de obra.",
+            "Formatea los costes con el símbolo € para mayor claridad."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Trabajo coche: Cambio de motor, coste base 500€, piezas 150€",
+                "Trabajo moto: Ajuste de frenos, coste base 200€, descuento mano de obra 20€"
+            ],
+            "salida": [
+                "Trabajo coche: Código T001, Descripción: Cambio de motor, Coste base: 500€, Piezas: 150€",
+                "Coste total: 650€",
+                "",
+                "Trabajo moto: Código T002, Descripción: Ajuste de frenos, Coste base: 200€, Descuento mano de obra: 20€",
+                "Coste total: 180€"
+            ]
+        }
+    },
+    {
+        "id": "95",
+        "titulo": "Gestión de mascotas con jerarquía",
+        "nivel": "fácil",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "En un sistema de gestión de mascotas, se registran perros, gatos y aves. Todos tienen nombre, edad y dueño. Los perros tienen una raza, los gatos un color de pelaje, y las aves el tipo de canto.\n\nModela esta jerarquía con POO y crea un método para que cada mascota \"hable\", retornando un mensaje específico según el tipo de mascota (por ejemplo, \"Guau\" para perros, \"Miau\" para gatos y \"Pío\" para aves).",
+        "tareas": [
+            "Crear clase base Mascota con atributos nombre, edad y dueño.",
+            "Crear clases derivadas Perro, Gato y Ave con atributos específicos: raza para perros, color de pelaje para gatos y tipo de canto para aves.",
+            "Implementar método hablar() en cada clase que retorne el sonido característico de cada mascota.",
+            "Crear método mostrar_info() que muestre todos los detalles de la mascota.",
+            "Crear un programa que instancie varias mascotas de cada tipo y muestre su información y el resultado del método hablar."
+        ],
+        "pistas": [
+            "Usa herencia para evitar repetir código común en Mascota.",
+            "Sobrescribe el método hablar() en cada subclase para devolver el sonido correspondiente.",
+            "El método mostrar_info() debe ser claro y mostrar todos los atributos."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Perro: Rex, 4 años, Dueño: Carlos, Raza: Pastor Alemán",
+                "Gato: Mimi, 2 años, Dueña: Laura, Pelaje: Atigrado",
+                "Ave: Tweety, 1 año, Dueña: Ana, Tipo canto: Mel"
+            ],
+            "salida": [
+                "Perro: Rex, 4 años, Dueño: Carlos, Raza: Pastor Alemán",
+                "Habla: Guau",
+                "",
+                "Gato: Mimi, 2 años, Dueña: Laura, Pelaje: Atigrado",
+                "Habla: Miau",
+                "",
+                "Ave: Tweety, 1 año, Dueña: Ana, Tipo canto: Mel",
+                "Habla: Pío"
+            ]
+        }
+    },
+    {
+        "id": "96",
+        "titulo": "Gestión de tienda online con productos y usuarios",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Una aplicación para gestionar una tienda online tiene productos y usuarios. Los productos pueden ser electrónicos o ropa. Los electrónicos tienen garantía y voltaje, la ropa tiene talla y material. Los usuarios pueden ser clientes o administradores, con permisos distintos.\n\nModela las clases necesarias para representar productos y usuarios con sus atributos y métodos para mostrar información. Además, implementa un método para verificar si un usuario tiene permiso para modificar productos (solo administradores).",
+        "tareas": [
+            "Crear clase base Producto con atributos comunes como nombre.",
+            "Crear clases derivadas ProductoElectronico y ProductoRopa con atributos específicos: garantía y voltaje para electrónicos, talla y material para ropa.",
+            "Crear clase base Usuario con atributos comunes como nombre.",
+            "Crear clases derivadas Cliente y Administrador.",
+            "Implementar método tiene_permiso_modificar() en Usuario que devuelva True solo para administradores.",
+            "Implementar métodos mostrar_info() para productos y usuarios con detalles completos.",
+            "Crear un programa que instancie productos y usuarios, y muestre la información junto con los permisos de usuario."
+        ],
+        "pistas": [
+            "Usa herencia para compartir atributos y métodos comunes.",
+            "Sobrescribe métodos donde sea necesario para mostrar detalles específicos.",
+            "El método tiene_permiso_modificar() debe devolver un valor booleano claro.",
+            "Formatea la salida para que sea legible y clara."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Producto electrónico: Smartphone, Garantía: 2 años, Voltaje: 5V",
+                "Producto ropa: Camiseta, Talla: M, Material: Algodón",
+                "Usuario cliente: Juan Pérez",
+                "Usuario administrador: Ana Gómez"
+            ],
+            "salida": [
+                "Producto electrónico: Smartphone, Garantía: 2 años, Voltaje: 5V",
+                "Producto ropa: Camiseta, Talla: M, Material: Algodón",
+                "",
+                "Usuario cliente: Juan Pérez, Permiso para modificar productos: No",
+                "Usuario administrador: Ana Gómez, Permiso para modificar productos: Sí"
+            ]
+        }
+    },
+    {
+        "id": "97",
+        "titulo": "Planes de suscripción en empresa de telecomunicaciones",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Una empresa de telecomunicaciones ofrece distintos planes de suscripción: Básico, Premium y Corporativo. Todos los planes tienen un nombre y un precio base. Los planes Premium incluyen llamadas internacionales, y los Corporativos incluyen soporte 24/7 y número de usuarios ilimitados.\n\nCrea la jerarquía de clases adecuada, con métodos para mostrar los detalles de cada plan y calcular el precio final, que será:\n\n    Básico: precio base.\n\n    Premium: precio base + 15€ por llamadas internacionales.\n\n    Corporativo: precio base + 50€ por soporte.",
+        "tareas": [
+            "Crear clase base Plan con atributos nombre y precio_base.",
+            "Crear clases derivadas PlanBasico, PlanPremium y PlanCorporativo con atributos específicos según corresponda.",
+            "Implementar método calcular_precio_final() usando polimorfismo para cada tipo de plan.",
+            "Implementar método mostrar_info() que muestre detalles completos del plan y el precio final.",
+            "Agregar validaciones básicas para el precio base (no negativo)."
+        ],
+        "pistas": [
+            "El método calcular_precio_final() en PlanBasico devuelve solo el precio base.",
+            "PlanPremium añade 15€ al precio base para llamadas internacionales.",
+            "PlanCorporativo añade 50€ al precio base para soporte.",
+            "Usa herencia para evitar repetir código común."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Plan Básico: Precio base 10€",
+                "Plan Premium: Precio base 20€",
+                "Plan Corporativo: Precio base 100€"
+            ],
+            "salida": [
+                "Plan Básico: Precio base 10€",
+                "Precio final: 10€",
+                "",
+                "Plan Premium: Precio base 20€",
+                "Precio final: 35€",
+                "",
+                "Plan Corporativo: Precio base 100€",
+                "Precio final: 150€"
+            ]
+        }
+    },
+    {
+        "id": "98",
+        "titulo": "Gestión de contenidos en plataforma de streaming",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Una plataforma de streaming ofrece diferentes tipos de contenido: películas, series y documentales. Todos tienen título, duración y año de lanzamiento. Las series además tienen número de temporadas, las películas tienen director y los documentales un tema principal.\n\nCrea una jerarquía de clases para modelar esta situación e implementa un método que muestre un resumen detallado del contenido según su tipo.",
+        "tareas": [
+            "Crear clase base Contenido con atributos título, duración y año de lanzamiento.",
+            "Crear clases derivadas Pelicula, Serie y Documental con atributos específicos.",
+            "Implementar método resumen() con polimorfismo para cada tipo de contenido.",
+            "Implementar método mostrar_info() para mostrar todos los detalles completos.",
+            "Crear un programa que instancie varios contenidos y muestre su información y resumen."
+        ],
+        "pistas": [
+            "Usa herencia para compartir atributos comunes.",
+            "Sobrescribe el método resumen() en cada subclase para mostrar el mensaje adecuado.",
+            "Formatea la salida para que sea clara y fácil de leer."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Película: \"Inception\", Duración: 148 min, Año: 2010, Director: Christopher Nolan",
+                "Serie: \"Stranger Things\", Duración: 50 min por episodio, Año: 2016, Temporadas: 4",
+                "Documental: \"Planeta Tierra\", Duración: 60 min, Año: 2006, Tema: Naturaleza"
+            ],
+            "salida": [
+                "Película: \"Inception\", Duración: 148 min, Año: 2010, Director: Christopher Nolan",
+                "Resumen: Película dirigida por Christopher Nolan.",
+                "",
+                "Serie: \"Stranger Things\", Duración: 50 min por episodio, Año: 2016, Temporadas: 4",
+                "Resumen: Serie con 4 temporadas.",
+                "",
+                "Documental: \"Planeta Tierra\", Duración: 60 min, Año: 2006, Tema: Naturaleza",
+                "Resumen: Documental sobre la naturaleza."
+            ]
+        }
+    },
+    {
+        "id": "99",
+        "titulo": "Gestión de animales en zoológico",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Un zoológico quiere gestionar sus animales, que pueden ser mamíferos, aves o reptiles. Todos los animales tienen un nombre, edad y especie. Los mamíferos tienen un tipo de pelaje, las aves tienen una longitud de ala, y los reptiles una característica especial (por ejemplo, si son venenosos o no).\n\nSe pide crear la jerarquía de clases adecuada para representar estos animales, con un método que devuelva un sonido característico de cada tipo de animal.",
+        "tareas": [
+            "Crear clase base Animal con atributos nombre, edad y especie.",
+            "Crear subclases Mamifero, Ave y Reptil con atributos específicos.",
+            "Implementar método emitir_sonido() en cada subclase que retorne un sonido característico.",
+            "Implementar método mostrar_info() para mostrar toda la información del animal.",
+            "Crear instancias de cada tipo y mostrar su información y sonido."
+        ],
+        "pistas": [
+            "Usa herencia para evitar duplicar código de atributos comunes.",
+            "Sobrescribe el método emitir_sonido() en cada subclase con el sonido correspondiente.",
+            "Formatea la salida para que sea clara y legible."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Mamífero: León, Edad: 5, Pelaje: Corto",
+                "Ave: Águila, Edad: 3, Longitud de ala: 2 metros",
+                "Reptil: Cobra, Edad: 4, Venenoso: Sí"
+            ],
+            "salida": [
+                "Mamífero: León, Edad: 5, Pelaje: Corto",
+                "Sonido: Rugido",
+                "",
+                "Ave: Águila, Edad: 3, Longitud de ala: 2 metros",
+                "Sonido: Chillido",
+                "",
+                "Reptil: Cobra, Edad: 4, Venenoso: Sí",
+                "Sonido: Silbido"
+            ]
+        }
+    },
+    {
+        "id": "100",
+        "titulo": "Gestión de colonia espacial",
+        "nivel": "medio",
+        "tipo": "Programación orientada a objetos",
+        "enunciado": "Imagina que estás diseñando un sistema para gestionar una colonia espacial en un planeta lejano. Cada colono tiene un nombre, edad y rol dentro de la colonia (por ejemplo, ingeniero, biólogo, médico, agricultor).\n\nCada rol tiene diferentes responsabilidades:\n    · Ingeniero: puede reparar módulos de la colonia.\n    · Biólogo: puede analizar muestras de plantas alienígenas.\n    · Médico: puede atender colonos enfermos.\n    · Agricultor: puede cultivar y cosechar alimentos.\n\nSe pide:\n    1. Crear una clase base Colono con atributos comunes (nombre, edad, rol).\n    2. Crear clases derivadas para cada rol que implementen un método propio específico (por ejemplo, reparar(), analizar_muestra(), atender_enfermo(), cultivar()), que impriman un mensaje indicando la acción realizada por el colono con su nombre.\n    3. Crear una clase Colonia que pueda agregar colonos, listar colonos por rol y ejecutar la acción específica de todos los colonos de un rol dado.",
+        "tareas": [
+            "Crear clase base Colono con atributos nombre, edad y rol.",
+            "Crear clases derivadas Ingeniero, Biologo, Medico y Agricultor con métodos específicos: reparar(), analizar_muestra(), atender_enfermo(), cultivar().",
+            "Implementar método en clase Colonia para agregar colonos a la colonia.",
+            "Implementar método para listar colonos según rol.",
+            "Implementar método para ejecutar la acción específica de todos los colonos de un rol dado."
+        ],
+        "pistas": [
+            "Usar herencia para compartir atributos comunes y polimorfismo para métodos específicos de cada rol.",
+            "El método de acción debe imprimir un mensaje con el nombre del colono y la acción que realiza.",
+            "La clase Colonia debe almacenar colonos en una lista o estructura similar.",
+            "Para ejecutar acciones por rol, filtra los colonos según su clase."
+        ],
+        "ejemplo": {
+            "entrada": [
+                "Añadir colono: Ana, Ingeniero, 34 años",
+                "Añadir colono: Luis, Médico, 41 años",
+                "Añadir colono: Marta, Agricultora, 29 años",
+                "Listar colonos por rol: Ingeniero",
+                "Ejecutar acciones por rol: Ingeniero",
+                "Ejecutar acciones por rol: Médico"
+            ],
+            "salida": [
+                "Se añade colono: Ana, Ingeniero, 34 años",
+                "Se añade colono: Luis, Médico, 41 años",
+                "Se añade colono: Marta, Agricultora, 29 años",
+                "",
+                "Listado de Ingenieros:",
+                "- Ana (34 años)",
+                "",
+                "Acciones de los Ingenieros:",
+                "Ana está reparando módulos de la colonia.",
+                "",
+                "Acciones de los Médicos:",
+                "Luis está atendiendo a colonos enfermos."
+            ]
+        }
+    }
+]
