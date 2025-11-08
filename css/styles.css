@@ -67,7 +67,6 @@ header .titulo-paginacion span:hover {
 
 /* --------- Contenido principal --------- */
 main {
-    flex: 1;
     padding: 40px 20px;
 }
 
