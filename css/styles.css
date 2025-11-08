@@ -67,7 +67,7 @@ header .titulo-paginacion span:hover {
 
 /* --------- Contenido principal --------- */
 main {
-    padding: 40px 20px;
+    width: 100%;
 }
 
 /* --------- Contenedor de tarjetas --------- */
