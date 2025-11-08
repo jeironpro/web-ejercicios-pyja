@@ -10,10 +10,9 @@
 body {
     background-color: #f5f7fa;
     color: #222;
-    display: grid;
-    flex-direction: column;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100dvh;
+    display: flex;              /* ← cambio importante */
+    flex-direction: column;     /* organiza header, main, footer en columna */
+    min-height: 100dvh;         /* alto total de la pantalla */
 }
 
 /* --------- Header --------- */
@@ -67,7 +66,8 @@ header .titulo-paginacion span:hover {
 
 /* --------- Contenido principal --------- */
 main {
-    width: 100%;
+    flex: 1;                   /* ← asegura que ocupe el espacio restante */
+    padding: 40px 20px;
 }
 
 /* --------- Contenedor de tarjetas --------- */
@@ -286,6 +286,8 @@ footer {
     padding: 12px 0;
     text-align: center;
 }
+
+/* --------- Media Queries --------- */
 
 /* Tablets */
 @media (min-width: 601px) and (max-width: 900px) {
