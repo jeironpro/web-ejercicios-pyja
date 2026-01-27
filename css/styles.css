@@ -1,431 +1,437 @@
-/* --------- globales--------- */
-* {
-    box-sizing: border-box;
-    font-family: "Fredoka", sans-serif;
-    margin: 0;
-    user-select: none;
+/* --------- Globales --------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fredoka:wght@300..700&display=swap");
+
+:root {
+  --borde: #e2e8f0;
+  --fondo: #f8fafc;
+  --fondo-tarjeta: #ffffff;
+  --hover-primario: #1d4ed8;
+  --primario: #2563eb;
+  --sombra: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --sombra-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --texto-principal: #1e293b;
+  --texto-secundario: #64748b;
+  --transicion: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --------- Estructura principal --------- */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka", sans-serif;
+}
+
 body {
-    background-color: #f5f7fa;
-    color: #222;
-    display: flex;              /* ← cambio importante */
-    flex-direction: column;     /* organiza header, main, footer en columna */
-    min-height: 100dvh;         /* alto total de la pantalla */
+  background-color: var(--fondo);
+  color: var(--texto-principal);
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 /* --------- Header --------- */
 header {
-    background-color: transparent;
-    padding: 30px 20px;
-    position: sticky;
-    top: 0;
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1000;
+  background-color: transparent;
+  padding: 24px;
+  position: sticky;
+  top: 0;
+  transition: var(--transicion);
+  z-index: 1000;
 }
 
-header.scrolled {
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+header.desplazada {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--borde);
+  padding: 16px 24px;
 }
 
 header .titulo-principal {
-    align-items: center;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-header h1,
-header .titulo-paginacion {
-    color: #333;
-    font-size: 2.5rem;
-    transition: transform 0.2s ease;
+  color: var(--primario);
+  font-size: 3rem;
+  letter-spacing: -0.025em;
+  margin: 0;
+  text-align: center;
 }
 
 header .titulo-paginacion {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
-header .titulo-paginacion span {
-    background-color: #000;
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    padding: 5px;
+.cabecera-ejercicios {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding: 8px 16px;
+  width: fit-content;
 }
 
-header .titulo-paginacion span:hover {
-    background-color: #a1a1a1;
+.botones-navegacion {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.botones-navegacion a,
+.botones-navegacion span {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 12px;
+  color: var(--texto-secundario);
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  overflow: hidden;
+  text-decoration: none;
+  transition: var(--transicion);
+  width: 44px;
+}
+
+.botones-navegacion img {
+  height: 24px;
+  object-fit: contain;
+  width: 24px;
+}
+
+.botones-navegacion a:hover,
+.botones-navegacion span:hover {
+  background-color: var(--fondo);
+  color: var(--primario);
+}
+
+.titulo-texto {
+  color: var(--texto-principal);
+  font-family: "Fredoka", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-align: center;
 }
 
 /* --------- Contenido principal --------- */
 main {
-    flex: 1;                   /* ← asegura que ocupe el espacio restante */
-    padding: 40px 20px;
+  flex: 1;
+  padding: 48px 24px;
+  width: 100%;
 }
 
-/* --------- Contenedor de tarjetas --------- */
 .contenedor-principal {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-    max-width: 1000px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 /* --------- Tarjetas --------- */
-.card {
-    align-items: center;
-    background-color: #88e684;
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    justify-content: center;
-    overflow: hidden;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.tarjeta {
+  align-items: center;
+  background-color: var(--fondo-tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 24px;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  justify-content: center;
+  min-height: 500px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: var(--transicion);
 }
 
-.card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    transform: translateY(-8px);
+.tarjeta:hover {
+  box-shadow: var(--sombra-hover);
+  transform: translateY(-8px);
 }
 
-/* --------- Contenido de tarjeta --------- */
-.card .lenguaje {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px 20px;
+.tarjeta .lenguaje {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.card h2 {
-    color: #000;
-    font-size: 28px;
-    margin-bottom: 15px;
+.tarjeta h2 {
+  color: var(--texto-principal);
+  font-size: 3rem;
+  margin: 0;
 }
 
-.card .imagen {
-    transition: transform 0.3s ease;
-    width: 150px;
+.tarjeta .imagen {
+  transition: var(--transicion);
+  width: 140px;
 }
 
-.card:hover .imagen {
-    transform: scale(1.1);
+.tarjeta:hover .imagen {
+  transform: scale(1.1) rotate(-5deg);
 }
 
-.card img {
-    height: auto;
-    width: 100%;
+.tarjeta img {
+  height: auto;
+  width: 100%;
 }
 
 /* --------- Ejercicios --------- */
-.ejercicio {
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    line-height: 1.7;
-    margin-bottom: 40px;
-    padding: 25px;
+#contenedor-ejercicios {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-.ejercicio:last-child {
-    margin-bottom: 0;
+.ejercicio {
+  background-color: var(--fondo-tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+  padding: 32px;
+  transition: var(--transicion);
+}
+
+.ejercicio:hover {
+  box-shadow: var(--sombra-hover);
 }
 
 .titulo-ejercicio {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 10px;
+  color: var(--texto-principal);
+  font-size: 1.75rem;
+  margin-bottom: 20px;
 }
 
 .detalles-ejercicio {
-    font-size: 16px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .dificultad,
 .tipo {
-    display: inline-block;
-    border-radius: 12px;
-    color: #333333;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 6px 6px 6px 0;
-    padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 6px 12px;
 }
 
 .nivel-facil {
-    background-color: #d4edda;
-    color: #155724;
+  background-color: #dcfce7;
+  color: #166534;
 }
 
 .nivel-medio {
-    background-color: #fff3cd;
-    color: #856404;
+  background-color: #fef9c3;
+  color: #854d0e;
 }
 
 .nivel-dificil {
-    background-color: #f8d7da;
-    color: #721c24;
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.tipo {
+  background-color: #f1f5f9;
+  color: #475569;
 }
 
 .tipo.elementos-basicos {
-    background-color: #c2ffc4;
+  background-color: #e0f2fe;
+  color: #0369a1;
 }
 
 .tipo.programacion-orientada-a-objetos {
-    background-color: #bde1ff;
+  background-color: #f3e8ff;
+  color: #7e22ce;
 }
 
 .tipo.funcional {
-    background-color: #ff9800;
+  background-color: #ffedd5;
+  color: #c2410c;
 }
 
 .tipo.avanzado {
-    background-color: #9c27b0;
+  background-color: #fdf2f8;
+  color: #be185d;
 }
 
 .tareas-programa,
 .pistas {
-    margin-top: 20px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  margin-top: 24px;
+  padding: 20px;
 }
 
 .pistas {
-    background-color: #fdf6e3;
-    border-left: 4px solid #f0ad4e;
-    color: #664d03;
-    font-style: italic;
-    margin-bottom: 20px;
-    padding: 10px 15px;
+  background-color: #fffbeb;
+  border-left: 4px solid #fbbf24;
 }
 
 ul {
-    margin: 0 20px;
+  list-style: none;
+  margin-top: 12px;
+}
+
+li {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+li::before {
+  color: var(--primario);
+  content: "→";
+  font-weight: bold;
 }
 
 .ejemplo-codigo {
-    background-color: #eeeeee;
-    border-radius: 10px;
-    color: #303028;
-    font-size: 14px;
-    overflow-x: auto;
-    padding: 15px;
+  background-color: #1e293b;
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 24px;
+  padding: 24px;
+}
+
+.ejemplo-codigo pre {
+  margin-top: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
 }
 
 .uml-diagrama {
-    margin-top: 1em;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    background-color: #f9f9f9;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    width: 500px;
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  margin-top: 24px;
+  overflow: hidden;
+  padding: 16px;
+  text-align: center;
 }
 
 .uml-diagrama img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  height: auto;
+  max-width: 100%;
 }
 
 /* --------- Paginación --------- */
 #paginacion {
-    margin: 40px 0;
-    text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  justify-content: center;
+  margin: 48px 0;
+  overflow: hidden;
+  padding: 8px 0;
+  width: 100%;
 }
 
 #paginacion button {
-    background: #333;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(78, 78, 78, 0.3);
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    margin: 0 6px;
-    padding: 10px 16px;
-    transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  color: var(--texto-secundario);
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  height: 28px;
+  justify-content: center;
+  min-width: 28px;
+  padding: 0 2px;
+  transition: var(--transicion);
 }
 
 #paginacion button:hover:not(:disabled) {
-    background: #636363;
-    transform: translateY(-2px);
+  background-color: var(--fondo);
+  border-color: var(--primario);
+  color: var(--primario);
 }
 
 #paginacion button:disabled {
-    background: #808080;
-    box-shadow: none;
-    cursor: default;
-    transform: none;
-}
-
-#paginacion button:disabled:hover {
-    background: #969696;
-    cursor: default;
+  background-color: var(--primario);
+  border-color: var(--primario);
+  color: #ffffff;
+  cursor: default;
 }
 
 /* --------- Footer --------- */
 footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 600;
-    padding: 12px 0;
-    text-align: center;
+  background-color: #ffffff;
+  border-top: 1px solid var(--borde);
+  color: var(--texto-secundario);
+  font-size: 0.875rem;
+  margin-top: auto;
+  padding: 24px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* --------- Media Queries --------- */
+@media (max-width: 768px) {
+  header {
+    padding: 16px;
+  }
 
-/* Tablets */
-@media (min-width: 601px) and (max-width: 900px) {
-    header .titulo-principal {
-        font-size: 2rem;
-    }
+  header .titulo-principal {
+    font-size: 2.25rem;
+  }
 
-    .contenedor-principal {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        padding: 0 15px;
-    }
+  .titulo-texto {
+    font-size: 1.75rem;
+  }
 
-    header .titulo-paginacion {
-        font-size: 1.5rem;
-    }
+  main {
+    padding: 24px 16px;
+  }
 
-    header .titulo-paginacion span {
-        padding: 2px;
-    }
+  .tarjeta {
+    height: 40vh;
+    min-height: 450px;
+  }
 
-    .card h2 {
-        font-size: 24px;
-    }
+  .ejercicio {
+    padding: 20px;
+  }
 
-    .card .imagen {
-        width: 140px;
-    }
-
-    main {
-        height: auto;
-        padding: 30px 15px;
-    }
-
-    .ejercicio {
-        padding: 22px 18px;
-        margin-bottom: 35px;
-    }
-
-    .titulo-ejercicio {
-        font-size: 24px;
-    }
-
-    .detalles-ejercicio {
-        font-size: 15px;
-    }
-
-    .dificultad,
-    .tipo {
-        font-size: 14px;
-    }
-
-    .uml-diagrama {
-        width: 100%;
-        max-width: 480px;
-    }
+  .titulo-ejercicio {
+    font-size: 1.5rem;
+  }
 }
 
-/* Smartphones */
-@media (max-width: 600px) {
-    header .titulo-principal {
-        font-size: 1.8rem;
-    }
 
-    .contenedor-principal {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 10px;
-    }
-    
-    .card {
-        border-radius: 10px;
-        height: 35vh;
-    }
-
-    .card .lenguaje {
-        padding: 20px 15px;
-    }
-
-    .card h2 {
-        font-size: 22px;
-    }
-
-    .card .imagen {
-        width: 120px;
-    }
-
-    main {
-        padding: 20px 10px;
-        height: auto;
-    }
-
-    header .titulo-paginacion {
-        font-size: 1.2rem;
-    }
-
-    header .titulo-paginacion span {
-        padding: 0;
-    }
-
-    .ejercicio {
-        padding: 20px 15px;
-        margin-bottom: 30px;
-    }
-
-    .titulo-ejercicio {
-        font-size: 22px;
-    }
-
-    .detalles-ejercicio {
-        font-size: 14px;
-    }
-
-    .dificultad,
-    .tipo {
-        font-size: 12px;
-    }
-
-    .uml-diagrama {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    #paginacion {
-        padding: 5px;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    #paginacion button {
-        min-width: 30px;
-        font-size: 10px;
-        padding: 5px;
-        margin: 5px;
-        white-space: nowrap;
-    }
-
-    footer {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contenedor-principal {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
