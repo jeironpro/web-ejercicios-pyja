@@ -1,3 +1,6 @@
+// Renderiza la colección de ejercicios (Python o Java) cargando el JSON indicado en window.CONFIG.jsonUrl.
+// Se usa desde python.html y java.html; el bloque UML solo se muestra cuando el ejercicio lo define.
+
 const normalizarCadena = (cadena) => {
     return cadena
         .normalize("NFD")
@@ -11,7 +14,7 @@ let numPagina = 1;
 const ordenamientoNivel = ["fácil", "medio", "dificil"];
 const ordenamientoParadigma = ["Elementos básicos", "Programación orientada a objetos"];
 
-fetch("json/python.json")
+fetch(window.CONFIG.jsonUrl)
     .then((response) => response.json())
     .then((datos) => {
         const contenedorEjercicios = document.querySelector("#contenedor-ejercicios");
@@ -35,7 +38,7 @@ fetch("json/python.json")
 
         const mostrarPagina = (pagina) => {
             numPagina = pagina;
-            contenedorEjercicios.replaceChildren(); 
+            contenedorEjercicios.replaceChildren();
             paginaActual = pagina;
 
             const inicio = (pagina - 1) * ejerciciosPorPagina;
@@ -79,7 +82,7 @@ fetch("json/python.json")
                 if (ejercicio.tareas && ejercicio.tareas.length > 0) {
                     const divTareas = document.createElement("div");
                     divTareas.classList.add("tareas-programa");
-                    
+
                     const pTareas = document.createElement("p");
                     const strongTareas = document.createElement("strong");
                     strongTareas.textContent = "El programa debe:";
@@ -101,7 +104,7 @@ fetch("json/python.json")
                     const divPistas = document.createElement("div");
                     divPistas.classList.add("pistas");
                     divPistas.appendChild(document.createTextNode("Pistas:"));
-                    
+
                     const ulPistas = document.createElement("ul");
                     ejercicio.pistas.forEach(pista => {
                         const li = document.createElement("li");
@@ -127,7 +130,7 @@ fetch("json/python.json")
                         const preEntrada = document.createElement("pre");
                         preEntrada.textContent = formatearEjemploTexto(ejercicio.ejemplo.entrada);
                         divEjemplo.appendChild(preEntrada);
-                        
+
                         divEjemplo.appendChild(document.createElement("br"));
                     }
 
@@ -146,6 +149,19 @@ fetch("json/python.json")
                     articulo.appendChild(divEjemplo);
                 }
 
+                // UML
+                if (ejercicio.uml) {
+                    const divUml = document.createElement("div");
+                    divUml.classList.add("uml-diagrama");
+
+                    const imgUml = document.createElement("img");
+                    imgUml.src = ejercicio.uml;
+                    imgUml.alt = "Diagrama UML del ejercicio";
+                    divUml.appendChild(imgUml);
+
+                    articulo.appendChild(divUml);
+                }
+
                 contenedorEjercicios.appendChild(articulo);
             });
 
@@ -159,7 +175,7 @@ fetch("json/python.json")
         if (btnAnterior) {
             btnAnterior.addEventListener("click", () => {
                 if (numPagina <= 1) {
-                     numPagina = totalPaginas + 1;
+                    numPagina = totalPaginas + 1;
                 }
 
                 if (numPagina > 1) {
@@ -174,7 +190,7 @@ fetch("json/python.json")
                 if (numPagina >= totalPaginas) {
                     numPagina = 0;
                 }
-                
+
                 if (numPagina < totalPaginas) {
                     numPagina++;
                     mostrarPagina(numPagina);
@@ -191,19 +207,19 @@ fetch("json/python.json")
         }
 
         const actualizarPaginacion = () => {
-             paginacionDiv.replaceChildren();
-             
-             for (let i = 1; i <= totalPaginas; i++) {
-                 const btnPagina = document.createElement("button");
-                 btnPagina.textContent = i;
-                 
-                 if (i === paginaActual) {
-                     btnPagina.disabled = true;
-                 }
-                 
-                 btnPagina.addEventListener("click", () => mostrarPagina(i));
-                 paginacionDiv.appendChild(btnPagina);
-             }
+            paginacionDiv.replaceChildren();
+
+            for (let i = 1; i <= totalPaginas; i++) {
+                const btnPagina = document.createElement("button");
+                btnPagina.textContent = i;
+
+                if (i === paginaActual) {
+                    btnPagina.disabled = true;
+                }
+
+                btnPagina.addEventListener("click", () => mostrarPagina(i));
+                paginacionDiv.appendChild(btnPagina);
+            }
         };
 
         mostrarPagina(1);
