@@ -14,6 +14,169 @@ let numPagina = 1;
 const ordenamientoNivel = ["fácil", "medio", "dificil"];
 const ordenamientoParadigma = ["Elementos básicos", "Programación orientada a objetos"];
 
+// ---------- Soluciones ----------
+const URL_MANIFEST_SOLUCIONES = "json/soluciones.json";
+let manifestSoluciones = null;
+
+const cargarManifestSoluciones = async () => {
+    if (!manifestSoluciones) {
+        const respuesta = await fetch(URL_MANIFEST_SOLUCIONES);
+        if (!respuesta.ok) {
+            throw new Error("No se pudo cargar el índice de soluciones");
+        }
+        manifestSoluciones = await respuesta.json();
+    }
+    return manifestSoluciones;
+};
+
+const comentarioLinea = (lenguaje) => (lenguaje === "python" ? "#" : "//");
+
+const cargarSolucion = async (lenguaje, idEjercicio) => {
+    const manifest = await cargarManifestSoluciones();
+    const rutas = manifest[lenguaje] && manifest[lenguaje][idEjercicio];
+    if (!rutas || rutas.length === 0) {
+        return null;
+    }
+
+    const contenidos = [];
+    for (const ruta of rutas) {
+        const respuesta = await fetch(ruta);
+        if (!respuesta.ok) {
+            throw new Error(`No se pudo descargar la solución (${ruta})`);
+        }
+        const texto = await respuesta.text();
+        const nombre = ruta.split("/").pop();
+        contenidos.push(`${comentarioLinea(lenguaje)} ===== ${nombre} =====\n${texto}`);
+    }
+    return contenidos.join("\n\n");
+};
+
+// ---------- Modal ----------
+let modalActual = null;
+
+const crearModal = () => {
+    const fondo = document.createElement("div");
+    fondo.classList.add("modal-fondo");
+
+    const panel = document.createElement("div");
+    panel.classList.add("modal-panel");
+
+    const cabecera = document.createElement("div");
+    cabecera.classList.add("modal-cabecera");
+
+    const titulo = document.createElement("h3");
+    titulo.classList.add("modal-titulo");
+
+    const cerrar = document.createElement("button");
+    cerrar.classList.add("modal-cerrar");
+    cerrar.setAttribute("aria-label", "Cerrar");
+    cerrar.textContent = "✕";
+
+    const contenido = document.createElement("div");
+    contenido.classList.add("modal-contenido");
+
+    cabecera.appendChild(titulo);
+    cabecera.appendChild(cerrar);
+    panel.appendChild(cabecera);
+    panel.appendChild(contenido);
+    fondo.appendChild(panel);
+    document.body.appendChild(fondo);
+
+    const cerrarModal = () => {
+        fondo.remove();
+        document.removeEventListener("keydown", alTecla);
+        modalActual = null;
+    };
+
+    const alTecla = (evento) => {
+        if (evento.key === "Escape") {
+            cerrarModal();
+        }
+    };
+
+    document.addEventListener("keydown", alTecla);
+    fondo.addEventListener("click", (evento) => {
+        if (evento.target === fondo) {
+            cerrarModal();
+        }
+    });
+    cerrar.addEventListener("click", cerrarModal);
+
+    return { contenido, titulo, cerrarModal };
+};
+
+const abrirModal = (tituloTexto) => {
+    if (modalActual) {
+        modalActual.cerrarModal();
+    }
+    modalActual = crearModal();
+    modalActual.titulo.textContent = tituloTexto;
+    return modalActual;
+};
+
+const mostrarAvisoSolucion = (modal, mensaje, error) => {
+    modal.contenido.replaceChildren();
+
+    const aviso = document.createElement("div");
+    aviso.classList.add("modal-aviso");
+    if (error) {
+        aviso.classList.add("modal-aviso-error");
+    }
+
+    const icono = document.createElement("span");
+    icono.classList.add("material-symbols-outlined");
+    icono.textContent = error ? "cloud_off" : "schedule";
+
+    const texto = document.createElement("p");
+    texto.textContent = mensaje;
+
+    aviso.appendChild(icono);
+    aviso.appendChild(texto);
+    modal.contenido.appendChild(aviso);
+};
+
+const mostrarCodigoSolucion = (modal, codigo, lenguaje) => {
+    modal.contenido.replaceChildren();
+
+    const envoltorio = document.createElement("div");
+    envoltorio.classList.add("codigo-con-lineas");
+
+    const numeros = document.createElement("div");
+    numeros.classList.add("numeros-linea");
+    const totalLineas = codigo.split("\n").length;
+    numeros.textContent = Array.from({ length: totalLineas }, (_, i) => i + 1).join("\n");
+
+    const pre = document.createElement("pre");
+    pre.classList.add("codigo-solucion");
+
+    const code = document.createElement("code");
+    code.innerHTML = window.resaltarCodigo(codigo, lenguaje);
+    pre.appendChild(code);
+
+    envoltorio.appendChild(numeros);
+    envoltorio.appendChild(pre);
+    modal.contenido.appendChild(envoltorio);
+};
+
+const abrirSolucion = async (ejercicio, indice) => {
+    const lenguaje = window.CONFIG.lenguaje;
+    const nombreLenguaje = lenguaje === "python" ? "Python" : "Java";
+    const modal = abrirModal(`${indice} - ${ejercicio.titulo} · Solución ${nombreLenguaje}`);
+    modal.contenido.textContent = "Cargando solución…";
+
+    try {
+        const codigo = await cargarSolucion(lenguaje, ejercicio.id);
+        if (!codigo) {
+            mostrarAvisoSolucion(modal, "Solución proximamente");
+            return;
+        }
+        mostrarCodigoSolucion(modal, codigo, lenguaje);
+    } catch (error) {
+        console.error("Error al cargar la solución:", error);
+        mostrarAvisoSolucion(modal, "No se pudo cargar la solución. Inténtalo de nuevo más tarde.", true);
+    }
+};
+
 fetch(window.CONFIG.jsonUrl)
     .then((response) => response.json())
     .then((datos) => {
@@ -161,6 +324,14 @@ fetch(window.CONFIG.jsonUrl)
 
                     articulo.appendChild(divUml);
                 }
+
+                // Botón ver solución
+                const btnSolucion = document.createElement("button");
+                btnSolucion.classList.add("boton-solucion");
+                btnSolucion.type = "button";
+                btnSolucion.textContent = "Ver solución";
+                btnSolucion.addEventListener("click", () => abrirSolucion(ejercicio, indice));
+                articulo.appendChild(btnSolucion);
 
                 contenedorEjercicios.appendChild(articulo);
             });
