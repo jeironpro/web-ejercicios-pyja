@@ -1,0 +1,10 @@
+# Archivos y directorios locales
+.freebuff/
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Editores/IDE
+.vscode/
+.idea/
