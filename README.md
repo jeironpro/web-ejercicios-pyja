@@ -41,6 +41,7 @@ El sitio esta construido con HTML, CSS y JavaScript puro, sin frameworks ni paso
 ├── soluciones/
 │   ├── python/             Soluciones de Python (una carpeta por ejercicio)
 │   └── java/               Soluciones de Java (una carpeta por ejercicio)
+│       └── Entrada.java   Utilidad compartida de lectura de la entrada estandar
 └── scripts/
     └── generar-soluciones.py   Regenera json/soluciones.json a partir de soluciones/
 ```
@@ -81,6 +82,8 @@ python3 scripts/generar-soluciones.py
 3. Confirmar los cambios.
 
 El manifest `json/soluciones.json` se genera a partir de las carpetas presentes en `soluciones/`; los ejercicios sin carpeta muestran "Solucion proximamente" en el sitio.
+
+Las soluciones de Java que leen datos del usuario usan una utilidad compartida, `soluciones/java/Entrada.java` (un unico archivo para todas). Al ser comun, no se incluye en el manifest ni se muestra en la modal, que muestra unicamente los archivos propios de cada solucion.
 
 ## Licencia
 

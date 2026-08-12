@@ -1,201 +1,154 @@
 {
   "java": {
     "01": [
-      "soluciones/java/basicos/01_calculadora_basica_interactiva/CalculadoraBasicaInteractiva.java",
-      "soluciones/java/basicos/01_calculadora_basica_interactiva/Entrada.java"
+      "soluciones/java/basicos/01_calculadora_basica_interactiva/CalculadoraBasicaInteractiva.java"
     ],
     "02": [
-      "soluciones/java/basicos/02_reloj_binario/Entrada.java",
       "soluciones/java/basicos/02_reloj_binario/RelojBinario.java"
     ],
     "03": [
-      "soluciones/java/basicos/03_tabla_clima_semanal/Entrada.java",
       "soluciones/java/basicos/03_tabla_clima_semanal/TablaClimaSemanal.java"
     ],
     "04": [
-      "soluciones/java/basicos/04_patron_serpiente/Entrada.java",
       "soluciones/java/basicos/04_patron_serpiente/PatronSerpiente.java"
     ],
     "05": [
-      "soluciones/java/basicos/05_numeros_palabras/Entrada.java",
       "soluciones/java/basicos/05_numeros_palabras/NumeroPalabras.java"
     ],
     "06": [
-      "soluciones/java/basicos/06_numero_feliz/Entrada.java",
       "soluciones/java/basicos/06_numero_feliz/NumeroFeliz.java"
     ],
     "07": [
-      "soluciones/java/basicos/07_marcador_inverso/Entrada.java",
       "soluciones/java/basicos/07_marcador_inverso/MarcadorInverso.java"
     ],
     "08": [
-      "soluciones/java/basicos/08_clave_intercalada/ClaveIntercalada.java",
-      "soluciones/java/basicos/08_clave_intercalada/Entrada.java"
+      "soluciones/java/basicos/08_clave_intercalada/ClaveIntercalada.java"
     ],
     "09": [
-      "soluciones/java/basicos/09_divisores_primos/DivisoresPrimos.java",
-      "soluciones/java/basicos/09_divisores_primos/Entrada.java"
+      "soluciones/java/basicos/09_divisores_primos/DivisoresPrimos.java"
     ],
     "10": [
-      "soluciones/java/basicos/10_silabas_abiertas/Entrada.java",
       "soluciones/java/basicos/10_silabas_abiertas/SilabasAbiertas.java"
     ],
     "11": [
-      "soluciones/java/basicos/11_eco_infinito/EcoInfinito.java",
-      "soluciones/java/basicos/11_eco_infinito/Entrada.java"
+      "soluciones/java/basicos/11_eco_infinito/EcoInfinito.java"
     ],
     "12": [
-      "soluciones/java/basicos/12_factorial_truncado/Entrada.java",
       "soluciones/java/basicos/12_factorial_truncado/FactorialTruncado.java"
     ],
     "13": [
-      "soluciones/java/basicos/13_sistema_duo/Entrada.java",
       "soluciones/java/basicos/13_sistema_duo/SistemaDuo.java"
     ],
     "14": [
-      "soluciones/java/basicos/14_cadenas_espejo/CadenasEspejo.java",
-      "soluciones/java/basicos/14_cadenas_espejo/Entrada.java"
+      "soluciones/java/basicos/14_cadenas_espejo/CadenasEspejo.java"
     ],
     "15": [
-      "soluciones/java/basicos/15_contador_vocales_consonantes/ContadorLetras.java",
-      "soluciones/java/basicos/15_contador_vocales_consonantes/Entrada.java"
+      "soluciones/java/basicos/15_contador_vocales_consonantes/ContadorLetras.java"
     ],
     "16": [
-      "soluciones/java/basicos/16_matriz_fantasma/Entrada.java",
       "soluciones/java/basicos/16_matriz_fantasma/MatrizFantasma.java"
     ],
     "17": [
-      "soluciones/java/basicos/17_conversor_notacion_leet/Entrada.java",
       "soluciones/java/basicos/17_conversor_notacion_leet/LeetConverter.java"
     ],
     "18": [
-      "soluciones/java/basicos/18_suma_piramidal/Entrada.java",
       "soluciones/java/basicos/18_suma_piramidal/SumaPiramidal.java"
     ],
     "19": [
-      "soluciones/java/basicos/19_intercambio_palabras_extremas/Entrada.java",
       "soluciones/java/basicos/19_intercambio_palabras_extremas/IntercambioExtremos.java"
     ],
     "20": [
-      "soluciones/java/basicos/20_criptograma_desplazado/CriptogramaDesplazado.java",
-      "soluciones/java/basicos/20_criptograma_desplazado/Entrada.java"
+      "soluciones/java/basicos/20_criptograma_desplazado/CriptogramaDesplazado.java"
     ],
     "21": [
-      "soluciones/java/basicos/21_contador_palindromos/ContadorPalindromos.java",
-      "soluciones/java/basicos/21_contador_palindromos/Entrada.java"
+      "soluciones/java/basicos/21_contador_palindromos/ContadorPalindromos.java"
     ],
     "22": [
-      "soluciones/java/basicos/22_minero_numeros_primos/Entrada.java",
       "soluciones/java/basicos/22_minero_numeros_primos/MineroPrimos.java"
     ],
     "23": [
-      "soluciones/java/basicos/23_calendario_mensual_alineacion_semanal/CalendarioMes.java",
-      "soluciones/java/basicos/23_calendario_mensual_alineacion_semanal/Entrada.java"
+      "soluciones/java/basicos/23_calendario_mensual_alineacion_semanal/CalendarioMes.java"
     ],
     "24": [
-      "soluciones/java/basicos/24_decodificador_codigo_morse/DecodificadorMorse.java",
-      "soluciones/java/basicos/24_decodificador_codigo_morse/Entrada.java"
+      "soluciones/java/basicos/24_decodificador_codigo_morse/DecodificadorMorse.java"
     ],
     "25": [
-      "soluciones/java/basicos/25_analizador_temperatura_mensuales/AnalizadorTemperaturaSemanal.java",
-      "soluciones/java/basicos/25_analizador_temperatura_mensuales/Entrada.java"
+      "soluciones/java/basicos/25_analizador_temperatura_mensuales/AnalizadorTemperaturaSemanal.java"
     ],
     "26": [
-      "soluciones/java/basicos/26_conversor_bases_numericas/ConversorBases.java",
-      "soluciones/java/basicos/26_conversor_bases_numericas/Entrada.java"
+      "soluciones/java/basicos/26_conversor_bases_numericas/ConversorBases.java"
     ],
     "27": [
-      "soluciones/java/basicos/27_juego_adivina_numero/AdivinaNumero.java",
-      "soluciones/java/basicos/27_juego_adivina_numero/Entrada.java"
+      "soluciones/java/basicos/27_juego_adivina_numero/AdivinaNumero.java"
     ],
     "28": [
       "soluciones/java/basicos/28_suma_digitos_pares/SumaDigitosPares.java"
     ],
     "29": [
-      "soluciones/java/basicos/29_calculadora_fracciones/CalculadoraFracciones.java",
-      "soluciones/java/basicos/29_calculadora_fracciones/Entrada.java"
+      "soluciones/java/basicos/29_calculadora_fracciones/CalculadoraFracciones.java"
     ],
     "30": [
-      "soluciones/java/basicos/30_contador_palabras_unicas/ContadorPalabrasUnicas.java",
-      "soluciones/java/basicos/30_contador_palabras_unicas/Entrada.java"
+      "soluciones/java/basicos/30_contador_palabras_unicas/ContadorPalabrasUnicas.java"
     ],
     "31": [
-      "soluciones/java/basicos/31_analizador_secuencia_numerica/AnalizadorSecuencia.java",
-      "soluciones/java/basicos/31_analizador_secuencia_numerica/Entrada.java"
+      "soluciones/java/basicos/31_analizador_secuencia_numerica/AnalizadorSecuencia.java"
     ],
     "32": [
-      "soluciones/java/basicos/32_simulador_cambio_moneda/Entrada.java",
       "soluciones/java/basicos/32_simulador_cambio_moneda/SimuladorCambio.java"
     ],
     "33": [
-      "soluciones/java/basicos/33_contador_vocales_consonantes_porcentajes/ContadorVocalesConsonantes.java",
-      "soluciones/java/basicos/33_contador_vocales_consonantes_porcentajes/Entrada.java"
+      "soluciones/java/basicos/33_contador_vocales_consonantes_porcentajes/ContadorVocalesConsonantes.java"
     ],
     "34": [
-      "soluciones/java/basicos/34_validador_palindromo_numerico/Entrada.java",
       "soluciones/java/basicos/34_validador_palindromo_numerico/ValidadorPalindromo.java"
     ],
     "35": [
-      "soluciones/java/basicos/35_simulador_cola_clientes/Entrada.java",
       "soluciones/java/basicos/35_simulador_cola_clientes/SimuladorCola.java"
     ],
     "36": [
-      "soluciones/java/basicos/36_conversor_temperaturas/ConversorTemperaturas.java",
-      "soluciones/java/basicos/36_conversor_temperaturas/Entrada.java"
+      "soluciones/java/basicos/36_conversor_temperaturas/ConversorTemperaturas.java"
     ],
     "37": [
       "soluciones/java/basicos/37_temperatura_promedio_valida/TemperaturaPromedio.java"
     ],
     "38": [
-      "soluciones/java/basicos/38_calculadora_matrices_2x2/CalculadoraMatrices2x2.java",
-      "soluciones/java/basicos/38_calculadora_matrices_2x2/Entrada.java"
+      "soluciones/java/basicos/38_calculadora_matrices_2x2/CalculadoraMatrices2x2.java"
     ],
     "39": [
       "soluciones/java/basicos/39_palabra_mas_larga/PalabraMasLarga.java"
     ],
     "40": [
-      "soluciones/java/basicos/40_frecuencia_caracteres/Entrada.java",
       "soluciones/java/basicos/40_frecuencia_caracteres/FrecuenciaCaracteres.java"
     ],
     "41": [
-      "soluciones/java/basicos/41_conversor_divisas/ConversorDivisas.java",
-      "soluciones/java/basicos/41_conversor_divisas/Entrada.java"
+      "soluciones/java/basicos/41_conversor_divisas/ConversorDivisas.java"
     ],
     "42": [
-      "soluciones/java/basicos/42_generador_claves_seguras/Entrada.java",
       "soluciones/java/basicos/42_generador_claves_seguras/GeneradorClaves.java"
     ],
     "43": [
-      "soluciones/java/basicos/43_inversor_lista_numeros/Entrada.java",
       "soluciones/java/basicos/43_inversor_lista_numeros/InversorListaNumeros.java"
     ],
     "44": [
-      "soluciones/java/basicos/44_buscador_palindromas_frase/BuscadorPalindromas.java",
-      "soluciones/java/basicos/44_buscador_palindromas_frase/Entrada.java"
+      "soluciones/java/basicos/44_buscador_palindromas_frase/BuscadorPalindromas.java"
     ],
     "45": [
-      "soluciones/java/basicos/45_calculadora_factorial_interactiva/CalculadoraFactorial.java",
-      "soluciones/java/basicos/45_calculadora_factorial_interactiva/Entrada.java"
+      "soluciones/java/basicos/45_calculadora_factorial_interactiva/CalculadoraFactorial.java"
     ],
     "46": [
-      "soluciones/java/basicos/46_contador_palabras_vocales/ContadorPalabrasVocales.java",
-      "soluciones/java/basicos/46_contador_palabras_vocales/Entrada.java"
+      "soluciones/java/basicos/46_contador_palabras_vocales/ContadorPalabrasVocales.java"
     ],
     "47": [
-      "soluciones/java/basicos/47_generador_numeros_primos/Entrada.java",
       "soluciones/java/basicos/47_generador_numeros_primos/GeneradorPrimos.java"
     ],
     "48": [
-      "soluciones/java/basicos/48_simulador_lanzamientos_dados/Entrada.java",
       "soluciones/java/basicos/48_simulador_lanzamientos_dados/SimuladorDados.java"
     ],
     "49": [
-      "soluciones/java/basicos/49_verificador_par_impar/Entrada.java",
       "soluciones/java/basicos/49_verificador_par_impar/VerificadorParImpar.java"
     ],
     "50": [
-      "soluciones/java/basicos/50_simulador_cajero_automatico/CajeroAutomatico.java",
-      "soluciones/java/basicos/50_simulador_cajero_automatico/Entrada.java"
+      "soluciones/java/basicos/50_simulador_cajero_automatico/CajeroAutomatico.java"
     ],
     "51": [
       "soluciones/java/orientados_objetos/51_clase_usuario/Usuario.java"
