@@ -92,7 +92,8 @@ header .titulo-paginacion {
 }
 
 .botones-navegacion a,
-.botones-navegacion span {
+.botones-navegacion span,
+.botones-navegacion button {
   align-items: center;
   background-color: transparent;
   border-radius: 12px;
@@ -113,8 +114,15 @@ header .titulo-paginacion {
   width: 24px;
 }
 
+.botones-navegacion button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .botones-navegacion a:hover,
-.botones-navegacion span:hover {
+.botones-navegacion span:hover,
+.botones-navegacion button:hover {
   background-color: var(--fondo);
   color: var(--primario);
 }
