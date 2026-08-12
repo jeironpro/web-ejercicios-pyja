@@ -566,8 +566,6 @@ footer {
 /* --------- Código de solución --------- */
 .codigo-con-lineas {
   display: flex;
-  max-height: calc(85vh - 70px);
-  overflow: auto;
 }
 
 .numeros-linea {

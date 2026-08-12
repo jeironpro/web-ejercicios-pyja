@@ -81,8 +81,10 @@ const crearModal = () => {
     panel.appendChild(contenido);
     fondo.appendChild(panel);
     document.body.appendChild(fondo);
+    document.body.style.overflow = "hidden";
 
     const cerrarModal = () => {
+        document.body.style.overflow = "";
         fondo.remove();
         document.removeEventListener("keydown", alTecla);
         modalActual = null;
