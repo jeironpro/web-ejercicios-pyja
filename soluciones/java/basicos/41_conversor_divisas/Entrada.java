@@ -3,25 +3,25 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 /**
- * Classe que simplifica la lectura des de l'entrada estàndard.
+ * Clase que simplifica la lectura desde la entrada estàndard.
  */
 public final class Entrada {
     private static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-    // Constructor privat per evitar instanciació
+    // Constructor privado para evitar instanciación
     private Entrada() {}
 
     /**
-     * Llegeix una línia de l'entrada estàndard.
-     * @return la línia llegida com a String
-     * @throws Converteix IOException en RuntimeException per evitar que sigui
-     * obligatòri gestionar-la
+     * Lee una línea de la entrada estàndard.
+     * @return la línea leida como un String
+     * @throws Convierte IOException en RuntimeException para evitar que sea
+     * obligatorio gestionarla
      */
     public static String readLine() {
         try {
             String linia = reader.readLine();
             if (linia == null) {
-                throw new RuntimeException("S'ha cridat massa cops Entrada.readLine()");
+                throw new RuntimeException("Se ha llamado demasiadas veces a Entrada.readLine()");
             }
             return linia;
         } catch (IOException e) {
